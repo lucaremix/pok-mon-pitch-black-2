@@ -461,27 +461,9 @@ const DATA_URLS = [
   "assets/data/unova_variants.json"
 ];
 
-const TYPE_ICONS = {
-  "Normal": "https://archives.bulbagarden.net/media/upload/thumb/9/95/Normal_icon_SwSh.png/48px-Normal_icon_SwSh.png",
-  "Fighting": "https://archives.bulbagarden.net/media/upload/thumb/3/3b/Fighting_icon_SwSh.png/48px-Fighting_icon_SwSh.png",
-  "Flying": "https://archives.bulbagarden.net/media/upload/thumb/b/b5/Flying_icon_SwSh.png/48px-Flying_icon_SwSh.png",
-  "Poison": "https://archives.bulbagarden.net/media/upload/thumb/8/8d/Poison_icon_SwSh.png/48px-Poison_icon_SwSh.png",
-  "Ground": "https://archives.bulbagarden.net/media/upload/thumb/2/27/Ground_icon_SwSh.png/48px-Ground_icon_SwSh.png",
-  "Rock": "https://archives.bulbagarden.net/media/upload/thumb/1/11/Rock_icon_SwSh.png/48px-Rock_icon_SwSh.png",
-  "Bug": "https://archives.bulbagarden.net/media/upload/thumb/9/9c/Bug_icon_SwSh.png/48px-Bug_icon_SwSh.png",
-  "Ghost": "https://archives.bulbagarden.net/media/upload/thumb/0/01/Ghost_icon_SwSh.png/48px-Ghost_icon_SwSh.png",
-  "Fire": "https://archives.bulbagarden.net/media/upload/thumb/a/ab/Fire_icon_SwSh.png/48px-Fire_icon_SwSh.png",
-  "Water": "https://archives.bulbagarden.net/media/upload/thumb/8/80/Water_icon_SwSh.png/48px-Water_icon_SwSh.png",
-  "Grass": "https://archives.bulbagarden.net/media/upload/thumb/a/a8/Grass_icon_SwSh.png/48px-Grass_icon_SwSh.png",
-  "Electric": "https://archives.bulbagarden.net/media/upload/thumb/7/7b/Electric_icon_SwSh.png/48px-Electric_icon_SwSh.png",
-  "Psychic": "https://archives.bulbagarden.net/media/upload/thumb/7/73/Psychic_icon_SwSh.png/48px-Psychic_icon_SwSh.png",
-  "Ice": "https://archives.bulbagarden.net/media/upload/thumb/1/15/Ice_icon_SwSh.png/48px-Ice_icon_SwSh.png",
-  "Dragon": "https://archives.bulbagarden.net/media/upload/thumb/7/70/Dragon_icon_SwSh.png/48px-Dragon_icon_SwSh.png",
-  "Dark": "https://archives.bulbagarden.net/media/upload/thumb/d/d5/Dark_icon_SwSh.png/48px-Dark_icon_SwSh.png",
-  "Steel": "https://archives.bulbagarden.net/media/upload/thumb/0/09/Steel_icon_SwSh.png/48px-Steel_icon_SwSh.png",
-  "Fairy": "https://archives.bulbagarden.net/media/upload/thumb/c/c6/Fairy_icon_SwSh.png/48px-Fairy_icon_SwSh.png",
-  "Sound": "https://archives.bulbagarden.net/media/upload/thumb/8/83/DarkIC_NPSnap.png/48px-DarkIC_NPSnap.png"
-};
+const TYPE_ICONS = {};
+["Normal","Fighting","Flying","Poison","Ground","Rock","Bug","Ghost","Fire","Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Steel","Fairy","Sound"]
+  .forEach(function (t) { TYPE_ICONS[t] = "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/typinglogos/" + t.toLowerCase() + ".svg"; });
 
 const MOVE_TYPES = {"Absorb":"Grass","Acid":"Poison","Acrobatics":"Flying","Aerial Ace":"Flying","Agility":"Psychic","Air Cutter":"Flying","Air Slash":"Flying","Amnesia":"Psychic","Aqua Ring":"Water","Aqua Tail":"Water","Astonish":"Ghost","Attack Order":"Bug","Bind":"Normal","Bite":"Dark","Body Slam":"Normal","Brave Bird":"Flying","Brick Break":"Fighting","Brine":"Water","Bubble Beam":"Water","Bug Bite":"Bug","Bulldoze":"Ground","Bullet Punch":"Steel","Charge":"Electric","Close Combat":"Fighting","Confusion":"Psychic","Cotton Guard":"Grass","Crunch":"Dark","Curse":"Ghost","Defend Order":"Bug","Defense Curl":"Normal","Detect":"Fighting","Disable":"Normal","Discharge":"Electric","Double Team":"Normal","Double-Edge":"Normal","Dragon Breath":"Dragon","Dragon Claw":"Dragon","Dragon Dance":"Dragon","Dragon Rage":"Dragon","Dragon Rush":"Dragon","Earth Power":"Ground","Earthquake":"Ground","Ember":"Fire","Endure":"Normal","Flame Burst":"Fire","Focus Energy":"Normal","Fury Attack":"Normal","Fury Cutter":"Bug","Fury Swipes":"Normal","Giga Drain":"Grass","Growl":"Normal","Growth":"Normal","Gunk Shot":"Poison","Gyro Ball":"Steel","Harden":"Normal","Headbutt":"Normal","Heal Pulse":"Psychic","Heavy Slam":"Steel","Hone Claws":"Dark","Horn Drill":"Normal","Hurricane":"Flying","Hydro Pump":"Water","Ingrain":"Grass","Iron Defense":"Steel","Iron Head":"Steel","Iron Tail":"Steel","Lava Plume":"Fire","Leech Seed":"Grass","Leer":"Normal","Lucky Chant":"Normal","Magical Leaf":"Grass","Magnitude":"Ground","Mega Drain":"Grass","Megahorn":"Bug","Metal Claw":"Steel","Metal Sound":"Steel","Mirror Move":"Flying","Mist":"Ice","Mud Sport":"Ground","Mud-Slap":"Ground","Natural Gift":"Normal","Night Slash":"Dark","Outrage":"Dragon","Peck":"Flying","Petal Dance":"Grass","Pluck":"Flying","Poison Fang":"Poison","Poison Jab":"Poison","Poison Sting":"Poison","Protect":"Normal","Psycho Cut":"Psychic","Quick Attack":"Normal","Rage":"Normal","Rain Dance":"Water","Recover":"Normal","Refresh":"Normal","Rock Polish":"Rock","Rock Slide":"Rock","Rock Throw":"Rock","Rock Tomb":"Rock","Round":"Normal","Sacred Sword":"Fighting","Safeguard":"Normal","Sand Tomb":"Ground","Scary Face":"Normal","Screech":"Normal","Seed Bomb":"Grass","Shock Wave":"Electric","Sing":"Normal","Slack Off":"Normal","Slam":"Normal","Slash":"Normal","Smack Down":"Rock","Solar Beam":"Grass","Stealth Rock":"Rock","Sweet Scent":"Fairy","Swords Dance":"Normal","Synthesis":"Grass","Tackle":"Normal","Tailwind":"Flying","Take Down":"Normal","Teleport":"Psychic","Thunder":"Electric","Thunder Shock":"Electric","Toxic":"Poison","U-turn":"Bug","Venoshock":"Poison","Water Gun":"Water","Water Pulse":"Water","Whirlpool":"Water","Wing Attack":"Flying","X-Scissor":"Bug","Yawn":"Normal"};
 const TYPE_COLORS = {
