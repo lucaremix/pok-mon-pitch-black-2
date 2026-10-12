@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07090d">
+<title>Pokémon Pitch Black 2 – Wiki</title>
+<meta name="description" content="The official wiki of Pokémon Pitch Black 2: Pokémon changes, Unova variants and every challenge of the game.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --ink: #07090d;
+    --panel: #10141c;
+    --panel-2: #161b26;
+    --line: #232b3a;
+    --line-2: #34405a;
+    --text: #eaf0fb;
+    --muted: #8e9ab2;
+    --bolt: #2f7bff;
+    --volt: #ffcb05;
+    --display: "Anybody", "Arial Narrow", system-ui, sans-serif;
+    --body: "Barlow", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+    background: var(--ink); color: var(--text);
+    font-family: var(--body); font-size: 16px; line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible { outline: 3px solid var(--volt); outline-offset: 3px; }
+  .wrap { width: min(1240px, 100% - 32px); margin-inline: auto; }
+
+  /* ───────── hero ───────── */
+  .hero-zone { position: relative; isolation: isolate; overflow: hidden; }
+  .hero-zone::before {
+    content: ""; position: absolute; inset: 0; z-index: -2;
+    background:
+      radial-gradient(900px 460px at 50% 30%, rgba(47,123,255,.38), transparent 70%),
+      radial-gradient(460px 280px at 86% 10%, rgba(255,203,5,.08), transparent 70%),
+      radial-gradient(420px 260px at 12% 80%, rgba(111,53,252,.12), transparent 70%);
+  }
+  .hero-zone::after {
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background: repeating-linear-gradient(115deg, rgba(255,255,255,.04) 0 2px, transparent 2px 24px);
+    -webkit-mask-image: radial-gradient(ellipse 70% 80% at 50% 35%, #000 0%, transparent 75%);
+            mask-image: radial-gradient(ellipse 70% 80% at 50% 35%, #000 0%, transparent 75%);
+  }
+  .hero { text-align: center; padding: 48px 0 44px; }
+  .logo {
+    display: block; margin: 0 auto 18px; width: min(560px, 88vw); height: auto;
+    filter: drop-shadow(0 0 34px rgba(47,123,255,.55)) drop-shadow(0 8px 18px rgba(0,0,0,.55));
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+  .tag {
+    display: inline-flex; align-items: center; gap: 8px; margin: 0 0 14px; padding: 5px 14px 5px 10px;
+    border-radius: 999px; font-size: 13.5px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+    color: var(--volt); background: rgba(255,203,5,.08); border: 1px solid rgba(255,203,5,.35);
+  }
+  .tag i { width: 8px; height: 8px; border-radius: 50%; background: var(--volt); box-shadow: 0 0 10px var(--volt); }
+  .lead { margin: 0 auto; max-width: 620px; color: #c3cde2; font-size: 18px; }
+
+  /* ───────── section cards ───────── */
+  main { flex: 1; padding: 8px 0 56px; }
+  .sec-title {
+    margin: 0 0 16px; font-family: var(--display); font-weight: 800; font-stretch: 115%;
+    font-size: 15px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted);
+  }
+  .grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .card {
+    --c1: #2f7bff; --c2: #ffcb05;
+    position: relative; display: flex; flex-direction: column; height: 100%; overflow: hidden;
+    border-radius: 18px; background: var(--panel); color: inherit; text-decoration: none;
+    border: 1px solid color-mix(in srgb, var(--c1) 34%, var(--line));
+    transition: transform .2s cubic-bezier(.2,.7,.2,1), border-color .2s, box-shadow .2s;
+  }
+  .card:hover, .card:focus-visible {
+    transform: translateY(-4px);
+    border-color: color-mix(in srgb, var(--c1) 85%, #fff 8%);
+    box-shadow: 0 20px 50px rgba(0,0,0,.45), 0 0 0 1px color-mix(in srgb, var(--c1) 35%, transparent);
+  }
+  .stage {
+    --t1: color-mix(in srgb, var(--c1) 48%, #0a0d13);
+    --t2: color-mix(in srgb, var(--c2) 44%, #0a0d13);
+    position: relative; height: 196px;
+    background:
+      radial-gradient(170px 110px at 50% 70%, rgba(255,255,255,.2), transparent 72%),
+      linear-gradient(to top, rgba(7,9,13,.75), transparent 55%),
+      linear-gradient(112deg, var(--t1) 0 49.3%, rgba(255,255,255,.38) 49.3% 50.2%, var(--t2) 50.2% 100%);
+  }
+  .stage::after {
+    content: ""; position: absolute; left: 50%; bottom: 30px; width: 220px; height: 18px;
+    transform: translateX(-50%); background: radial-gradient(closest-side, rgba(0,0,0,.5), transparent);
+  }
+  .sprites { position: absolute; z-index: 1; inset: 18px 12px 34px; display: flex; justify-content: center; align-items: flex-end; gap: 6px; }
+  .sprites img { display: block; image-rendering: pixelated; transition: transform .25s; }
+  .card:hover .sprites img:nth-child(2) { transform: translateY(-6px); }
+  .card:hover .sprites img:nth-child(1), .card:hover .sprites img:nth-child(3) { transform: translateY(-3px); }
+  .num {
+    position: absolute; top: 12px; left: 16px; z-index: 2;
+    font-family: var(--display); font-weight: 800; font-size: 20px; color: #fff; text-shadow: 0 1px 10px rgba(0,0,0,.5);
+  }
+  .body { flex: 1; display: flex; flex-direction: column; gap: 10px; padding: 18px 20px 20px; }
+  .name { margin: 0; font-family: var(--display); font-weight: 800; font-stretch: 112%; font-size: 28px; line-height: 1.05; }
+  .desc { margin: 0; color: #c3cde2; font-size: 15.5px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+  .chip {
+    padding: 3px 10px; border-radius: 8px; font-size: 13px; font-weight: 600; color: #dbe3f4;
+    background: var(--panel-2); border: 1px solid var(--line);
+  }
+  .go {
+    margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line);
+    display: flex; align-items: center; justify-content: space-between;
+    font-weight: 700; font-size: 15px; color: var(--text);
+  }
+  .go span.arrow {
+    width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%;
+    background: color-mix(in srgb, var(--c1) 26%, #0b0e14); border: 1px solid color-mix(in srgb, var(--c1) 60%, transparent);
+    transition: background .2s, transform .2s;
+  }
+  .go svg { width: 18px; height: 18px; }
+  .card:hover .go span.arrow { background: var(--volt); color: #0a0d13; border-color: var(--volt); transform: translateX(3px); }
+
+  /* ───────── footer ───────── */
+  .site-footer {
+    padding: 34px 0 44px; text-align: center; border-top: 1px solid var(--line);
+    background: linear-gradient(180deg, rgba(47,123,255,.12), transparent 80%);
+  }
+  .credits {
+    margin: 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+    gap: 8px 18px; color: var(--muted); font-size: 14.5px;
+  }
+  .credits .game { color: var(--volt); font-family: var(--display); font-weight: 800; font-stretch: 112%; letter-spacing: .01em; font-size: 15.5px; }
+  .credits strong { color: var(--text); font-weight: 700; }
+  .credits .rule { width: 1px; height: 16px; background: var(--line-2); }
+  .credits a { color: inherit; }
+
+  @media (max-width: 520px) {
+    .hero { padding: 32px 0 30px; }
+    .lead { font-size: 16.5px; }
+    .grid { grid-template-columns: 1fr; }
+    .credits { flex-direction: column; gap: 6px; }
+    .credits .rule { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .logo { animation: none; }
+    .card, .sprites img, .go span.arrow { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero-zone">
+  <header class="wrap hero">
+    <img class="logo" id="logo"
+      src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/logofull.png"
+      alt="Pokémon Pitch Black 2" width="1774" height="887"
+      onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://raw.githubusercontent.com/lucaremix/pok-mon-pitch-black-2/main/assets/images/logofull.png'}">
+    <p class="tag"><i aria-hidden="true"></i>Official wiki</p>
+    <p class="lead">Everything you need to beat Unova again: reworked Pokémon, brand-new regional variants and every boss battle with its level cap.</p>
+  </header>
+</div>
+
+<main class="wrap">
+  <h2 class="sec-title">Explore</h2>
+  <ul class="grid">
+    <li>
+      <a class="card" href="changes.html" style="--c1:#ee8130;--c2:#6f35fc">
+        <div class="stage">
+          <span class="num">01</span>
+          <div class="sprites">
+            <img data-box="70" src="https://play.pokemonshowdown.com/sprites/gen5ani/garchomp.gif" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="96" src="https://play.pokemonshowdown.com/sprites/gen5ani/charizard.gif" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="70" src="https://play.pokemonshowdown.com/sprites/gen5ani/tyranitar.gif" alt="" loading="lazy" onload="fit(this)">
+          </div>
+        </div>
+        <div class="body">
+          <h3 class="name">Pokémon Changes</h3>
+          <p class="desc">New types, abilities, base stats, evolution lines and level-up movesets for every reworked Pokémon.</p>
+          <div class="chips"><span class="chip">Types</span><span class="chip">Abilities</span><span class="chip">Base stats</span><span class="chip">Movesets</span></div>
+          <div class="go">Open the list <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="card" href="unova_variants.html" style="--c1:#a6b91a;--c2:#b7b7ce">
+        <div class="stage">
+          <span class="num">02</span>
+          <div class="sprites">
+            <img data-box="70" src="https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="96" src="https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="70" src="https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif" alt="" loading="lazy" onload="fit(this)">
+          </div>
+        </div>
+        <div class="body">
+          <h3 class="name">Unova Variants</h3>
+          <p class="desc">Regional forms found only in Pitch Black 2, with their typings, stats, evolution methods and moves.</p>
+          <div class="chips"><span class="chip">Regional forms</span><span class="chip">Evolutions</span><span class="chip">Movesets</span></div>
+          <div class="go">Discover the variants <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="card" href="challenges.html" style="--c1:#c22e28;--c2:#ffcb05">
+        <div class="stage">
+          <span class="num">03</span>
+          <div class="sprites">
+            <img data-box="78" src="https://play.pokemonshowdown.com/sprites/trainers/elesa.png" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="104" src="https://play.pokemonshowdown.com/sprites/trainers/iris.png" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="78" src="https://play.pokemonshowdown.com/sprites/trainers/ghetsis.png" alt="" loading="lazy" onload="fit(this)">
+          </div>
+        </div>
+        <div class="body">
+          <h3 class="name">Challenges</h3>
+          <p class="desc">Every gym leader, rival and boss: level caps, full teams, held items, abilities and movesets.</p>
+          <div class="chips"><span class="chip">Gym leaders</span><span class="chip">Rivals</span><span class="chip">Elite Four</span><span class="chip">Level caps</span></div>
+          <div class="go">See the battles <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="credits">
+      <span class="game">Pokémon Pitch Black 2</span>
+      <span class="rule" aria-hidden="true"></span>
+      <span>Pokémon &copy; Nintendo / Game Freak</span>
+      <span class="rule" aria-hidden="true"></span>
+      <span>created by <strong>lucaremix</strong></span>
+    </p>
+  </div>
+</footer>
+
+<script>
+  // scale every sprite so its longest side fits its box, keeping pixel art crisp
+  function fit(img) {
+    var w = img.naturalWidth, h = img.naturalHeight; if (!w || !h) return;
+    var k = (+img.dataset.box || 96) / Math.max(w, h);
+    img.style.width = Math.round(w * k) + "px";
+    img.style.height = Math.round(h * k) + "px";
+    img.style.imageRendering = k > 1 ? "pixelated" : "auto";
+  }
+</script>
+</body>
+</html>
