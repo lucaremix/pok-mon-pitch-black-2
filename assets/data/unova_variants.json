@@ -1,0 +1,1133 @@
+[
+  {
+    "name": "Unovan Slowbro",
+    "pokedex_id": 80,
+    "type1": "Normal",
+    "type2": "Bug",
+    "bst": 490,
+    "abilities": [
+      "Honey Gather",
+      "Gluttony"
+    ],
+    "stats": {
+      "hp": 95,
+      "atk": 110,
+      "def": 75,
+      "spa": 70,
+      "spd": 80,
+      "spe": 60
+    },
+    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "preevo": [
+      {
+        "name": "Slowpoke",
+        "pokedex_id": 79,
+        "type1": "Water",
+        "type2": "Psychic",
+        "abilities": [
+          "Own Tempo",
+          "Gluttony"
+        ],
+        "evo": "Use Honey",
+        "moves": [
+          {
+            "move": "Curse",
+            "level": 1
+          },
+          {
+            "move": "Yawn",
+            "level": 1
+          },
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Growl",
+            "level": 5
+          },
+          {
+            "move": "Water Gun",
+            "level": 9
+          },
+          {
+            "move": "Confusion",
+            "level": 14
+          },
+          {
+            "move": "Disable",
+            "level": 19
+          },
+          {
+            "move": "Headbutt",
+            "level": 23
+          },
+          {
+            "move": "Water Pulse",
+            "level": 28
+          },
+          {
+            "move": "Slack Off",
+            "level": 36
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Curse",
+        "level": 1
+      },
+      {
+        "move": "Yawn",
+        "level": 1
+      },
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Sweet Scent",
+        "level": 1
+      },
+      {
+        "move": "Growl",
+        "level": 5
+      },
+      {
+        "move": "Bug Bite",
+        "level": 9
+      },
+      {
+        "move": "Fury Swipes",
+        "level": 14
+      },
+      {
+        "move": "Disable",
+        "level": 19
+      },
+      {
+        "move": "Headbutt",
+        "level": 23
+      },
+      {
+        "move": "U-turn",
+        "level": 28
+      },
+      {
+        "move": "Body Slam",
+        "level": 32
+      },
+      {
+        "move": "Slack Off",
+        "level": 36
+      },
+      {
+        "move": "Defense Curl",
+        "level": 37
+      },
+      {
+        "move": "Hone Claws",
+        "level": 43
+      },
+      {
+        "move": "Defend Order",
+        "level": 49
+      },
+      {
+        "move": "Attack Order",
+        "level": 55
+      },
+      {
+        "move": "Double-Edge",
+        "level": 62
+      },
+      {
+        "move": "Megahorn",
+        "level": 68
+      }
+    ]
+  },
+  {
+    "name": "Unovan Altaria",
+    "pokedex_id": 334,
+    "type1": "Flying",
+    "type2": "Electric",
+    "bst": 490,
+    "abilities": [
+      "Static",
+      "Cloud Nine"
+    ],
+    "stats": {
+      "hp": 75,
+      "atk": 90,
+      "def": 70,
+      "spa": 105,
+      "spd": 70,
+      "spe": 80
+    },
+    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "preevo": [
+      {
+        "name": "Swablu",
+        "pokedex_id": 333,
+        "type1": "Flying",
+        "type2": "Normal",
+        "abilities": [
+          "Natural Cure",
+          "Cloud Nine"
+        ],
+        "evo": "Use Thunder Stone",
+        "moves": [
+          {
+            "move": "Peck",
+            "level": 1
+          },
+          {
+            "move": "Growl",
+            "level": 1
+          },
+          {
+            "move": "Astonish",
+            "level": 4
+          },
+          {
+            "move": "Sing",
+            "level": 8
+          },
+          {
+            "move": "Fury Attack",
+            "level": 10
+          },
+          {
+            "move": "Safeguard",
+            "level": 13
+          },
+          {
+            "move": "Mist",
+            "level": 15
+          },
+          {
+            "move": "Round",
+            "level": 18
+          },
+          {
+            "move": "Natural Gift",
+            "level": 21
+          },
+          {
+            "move": "Take Down",
+            "level": 25
+          },
+          {
+            "move": "Refresh",
+            "level": 29
+          },
+          {
+            "move": "Mirror Move",
+            "level": 34
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Pluck",
+        "level": 1
+      },
+      {
+        "move": "Peck",
+        "level": 1
+      },
+      {
+        "move": "Growl",
+        "level": 1
+      },
+      {
+        "move": "Sing",
+        "level": 1
+      },
+      {
+        "move": "Astonish",
+        "level": 5
+      },
+      {
+        "move": "Thunder Shock",
+        "level": 9
+      },
+      {
+        "move": "Fury Attack",
+        "level": 13
+      },
+      {
+        "move": "Safeguard",
+        "level": 18
+      },
+      {
+        "move": "Wing Attack",
+        "level": 21
+      },
+      {
+        "move": "Mist",
+        "level": 24
+      },
+      {
+        "move": "Charge",
+        "level": 28
+      },
+      {
+        "move": "Take Down",
+        "level": 32
+      },
+      {
+        "move": "Shock Wave",
+        "level": 35
+      },
+      {
+        "move": "Tailwind",
+        "level": 39
+      },
+      {
+        "move": "Air Slash",
+        "level": 43
+      },
+      {
+        "move": "Cotton Guard",
+        "level": 47
+      },
+      {
+        "move": "Discharge",
+        "level": 52
+      },
+      {
+        "move": "Rain Dance",
+        "level": 58
+      },
+      {
+        "move": "Thunder",
+        "level": 64
+      },
+      {
+        "move": "Hurricane",
+        "level": 70
+      }
+    ]
+  },
+  {
+    "name": "Unovan Camerupt",
+    "pokedex_id": 323,
+    "type1": "Ground",
+    "type2": "Grass",
+    "bst": 490,
+    "abilities": [
+      "Sap Sipper",
+      "Chlorophyll"
+    ],
+    "stats": {
+      "hp": 80,
+      "atk": 100,
+      "def": 80,
+      "spa": 115,
+      "spd": 75,
+      "spe": 40
+    },
+    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "preevo": [
+      {
+        "name": "Numel",
+        "pokedex_id": 322,
+        "type1": "Fire",
+        "type2": "Ground",
+        "abilities": [
+          "Oblivious",
+          "Simple"
+        ],
+        "evo": "Use Leaf Stone",
+        "moves": [
+          {
+            "move": "Growl",
+            "level": 1
+          },
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Ember",
+            "level": 5
+          },
+          {
+            "move": "Magnitude",
+            "level": 8
+          },
+          {
+            "move": "Focus Energy",
+            "level": 12
+          },
+          {
+            "move": "Flame Burst",
+            "level": 15
+          },
+          {
+            "move": "Amnesia",
+            "level": 19
+          },
+          {
+            "move": "Lava Plume",
+            "level": 22
+          },
+          {
+            "move": "Earth Power",
+            "level": 26
+          },
+          {
+            "move": "Curse",
+            "level": 29
+          },
+          {
+            "move": "Take Down",
+            "level": 31
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Growl",
+        "level": 1
+      },
+      {
+        "move": "Growth",
+        "level": 1
+      },
+      {
+        "move": "Mud-Slap",
+        "level": 1
+      },
+      {
+        "move": "Absorb",
+        "level": 8
+      },
+      {
+        "move": "Magnitude",
+        "level": 12
+      },
+      {
+        "move": "Leech Seed",
+        "level": 15
+      },
+      {
+        "move": "Bulldoze",
+        "level": 19
+      },
+      {
+        "move": "Mega Drain",
+        "level": 22
+      },
+      {
+        "move": "Amnesia",
+        "level": 26
+      },
+      {
+        "move": "Seed Bomb",
+        "level": 29
+      },
+      {
+        "move": "Take Down",
+        "level": 31
+      },
+      {
+        "move": "Earth Power",
+        "level": 33
+      },
+      {
+        "move": "Ingrain",
+        "level": 37
+      },
+      {
+        "move": "Giga Drain",
+        "level": 41
+      },
+      {
+        "move": "Earthquake",
+        "level": 46
+      },
+      {
+        "move": "Synthesis",
+        "level": 51
+      },
+      {
+        "move": "Petal Dance",
+        "level": 57
+      },
+      {
+        "move": "Solar Beam",
+        "level": 64
+      }
+    ]
+  },
+  {
+    "name": "Unovan Gallade",
+    "pokedex_id": 475,
+    "type1": "Flying",
+    "type2": "Fighting",
+    "bst": 518,
+    "abilities": [
+      "Justified",
+      "Inner Focus"
+    ],
+    "stats": {
+      "hp": 68,
+      "atk": 125,
+      "def": 80,
+      "spa": 65,
+      "spd": 65,
+      "spe": 115
+    },
+    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "preevo": [
+      {
+        "name": "Ralts",
+        "pokedex_id": 280,
+        "type1": "Psychic",
+        "abilities": [
+          "Synchronize",
+          "Trace"
+        ],
+        "evo": "Level 20",
+        "moves": [
+          {
+            "move": "Growl",
+            "level": 1
+          },
+          {
+            "move": "Confusion",
+            "level": 6
+          },
+          {
+            "move": "Double Team",
+            "level": 10
+          },
+          {
+            "move": "Teleport",
+            "level": 12
+          },
+          {
+            "move": "Lucky Chant",
+            "level": 17
+          }
+        ]
+      },
+      {
+        "name": "Kirlia",
+        "pokedex_id": 281,
+        "type1": "Psychic",
+        "abilities": [
+          "Synchronize",
+          "Trace"
+        ],
+        "evo": "Level up while knowing Aerial Ace",
+        "moves": [
+          {
+            "move": "Growl",
+            "level": 1
+          },
+          {
+            "move": "Confusion",
+            "level": 1
+          },
+          {
+            "move": "Double Team",
+            "level": 1
+          },
+          {
+            "move": "Teleport",
+            "level": 1
+          },
+          {
+            "move": "Confusion",
+            "level": 6
+          },
+          {
+            "move": "Double Team",
+            "level": 10
+          },
+          {
+            "move": "Teleport",
+            "level": 12
+          },
+          {
+            "move": "Lucky Chant",
+            "level": 17
+          },
+          {
+            "move": "Magical Leaf",
+            "level": 22
+          },
+          {
+            "move": "Heal Pulse",
+            "level": 25
+          },
+          {
+            "move": "Aerial Ace",
+            "level": 30
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Leer",
+        "level": 1
+      },
+      {
+        "move": "Quick Attack",
+        "level": 1
+      },
+      {
+        "move": "Double Team",
+        "level": 1
+      },
+      {
+        "move": "Wing Attack",
+        "level": 1
+      },
+      {
+        "move": "Fury Cutter",
+        "level": 10
+      },
+      {
+        "move": "Detect",
+        "level": 14
+      },
+      {
+        "move": "Aerial Ace",
+        "level": 18
+      },
+      {
+        "move": "Slash",
+        "level": 23
+      },
+      {
+        "move": "Agility",
+        "level": 27
+      },
+      {
+        "move": "Air Cutter",
+        "level": 31
+      },
+      {
+        "move": "Brick Break",
+        "level": 35
+      },
+      {
+        "move": "Acrobatics",
+        "level": 40
+      },
+      {
+        "move": "Swords Dance",
+        "level": 44
+      },
+      {
+        "move": "Air Slash",
+        "level": 47
+      },
+      {
+        "move": "Close Combat",
+        "level": 52
+      },
+      {
+        "move": "Psycho Cut",
+        "level": 58
+      },
+      {
+        "move": "Brave Bird",
+        "level": 64
+      }
+    ]
+  },
+  {
+    "name": "Unovan Heracross",
+    "pokedex_id": 214,
+    "type1": "Bug",
+    "type2": "Steel",
+    "bst": 500,
+    "abilities": [
+      "Mold Breaker",
+      "Battle Armor"
+    ],
+    "stats": {
+      "hp": 80,
+      "atk": 125,
+      "def": 95,
+      "spa": 40,
+      "spd": 95,
+      "spe": 65
+    },
+    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "preevo": [],
+    "moves": [
+      {
+        "move": "Leer",
+        "level": 1
+      },
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Fury Cutter",
+        "level": 1
+      },
+      {
+        "move": "Metal Claw",
+        "level": 1
+      },
+      {
+        "move": "Endure",
+        "level": 7
+      },
+      {
+        "move": "Bullet Punch",
+        "level": 10
+      },
+      {
+        "move": "Aerial Ace",
+        "level": 13
+      },
+      {
+        "move": "Slash",
+        "level": 17
+      },
+      {
+        "move": "Metal Sound",
+        "level": 21
+      },
+      {
+        "move": "Night Slash",
+        "level": 25
+      },
+      {
+        "move": "Brick Break",
+        "level": 29
+      },
+      {
+        "move": "X-Scissor",
+        "level": 33
+      },
+      {
+        "move": "Iron Head",
+        "level": 37
+      },
+      {
+        "move": "Swords Dance",
+        "level": 42
+      },
+      {
+        "move": "Sacred Sword",
+        "level": 47
+      },
+      {
+        "move": "Megahorn",
+        "level": 52
+      },
+      {
+        "move": "Close Combat",
+        "level": 58
+      },
+      {
+        "move": "Horn Drill",
+        "level": 65
+      }
+    ]
+  },
+  {
+    "name": "Unovan Salamence",
+    "pokedex_id": 373,
+    "type1": "Dragon",
+    "type2": "Poison",
+    "bst": 550,
+    "abilities": [
+      "Rock Head",
+      "Intimidate"
+    ],
+    "stats": {
+      "hp": 95,
+      "atk": 125,
+      "def": 70,
+      "spa": 100,
+      "spd": 70,
+      "spe": 90
+    },
+    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "preevo": [
+      {
+        "name": "Bagon",
+        "pokedex_id": 371,
+        "type1": "Dragon",
+        "abilities": [
+          "Rock Head",
+          "Sheer Force"
+        ],
+        "evo": "Level 20",
+        "moves": [
+          {
+            "move": "Rage",
+            "level": 1
+          },
+          {
+            "move": "Bite",
+            "level": 5
+          },
+          {
+            "move": "Leer",
+            "level": 10
+          },
+          {
+            "move": "Headbutt",
+            "level": 16
+          },
+          {
+            "move": "Focus Energy",
+            "level": 20
+          },
+          {
+            "move": "Ember",
+            "level": 25
+          }
+        ]
+      },
+      {
+        "name": "Shelgon",
+        "pokedex_id": 372,
+        "type1": "Dragon",
+        "abilities": [
+          "Rock Head",
+          "Overcoat"
+        ],
+        "evo": "Level 40",
+        "moves": [
+          {
+            "move": "Rage",
+            "level": 1
+          },
+          {
+            "move": "Bite",
+            "level": 1
+          },
+          {
+            "move": "Leer",
+            "level": 1
+          },
+          {
+            "move": "Headbutt",
+            "level": 1
+          },
+          {
+            "move": "Bite",
+            "level": 5
+          },
+          {
+            "move": "Leer",
+            "level": 10
+          },
+          {
+            "move": "Headbutt",
+            "level": 16
+          },
+          {
+            "move": "Focus Energy",
+            "level": 20
+          },
+          {
+            "move": "Ember",
+            "level": 25
+          },
+          {
+            "move": "Protect",
+            "level": 30
+          },
+          {
+            "move": "Dragon Breath",
+            "level": 32
+          },
+          {
+            "move": "Scary Face",
+            "level": 43
+          },
+          {
+            "move": "Crunch",
+            "level": 50
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Leer",
+        "level": 1
+      },
+      {
+        "move": "Bite",
+        "level": 1
+      },
+      {
+        "move": "Poison Sting",
+        "level": 1
+      },
+      {
+        "move": "Rage",
+        "level": 1
+      },
+      {
+        "move": "Dragon Rage",
+        "level": 7
+      },
+      {
+        "move": "Acid",
+        "level": 12
+      },
+      {
+        "move": "Headbutt",
+        "level": 17
+      },
+      {
+        "move": "Dragon Breath",
+        "level": 22
+      },
+      {
+        "move": "Poison Fang",
+        "level": 27
+      },
+      {
+        "move": "Crunch",
+        "level": 32
+      },
+      {
+        "move": "Toxic",
+        "level": 37
+      },
+      {
+        "move": "Dragon Claw",
+        "level": 42
+      },
+      {
+        "move": "Venoshock",
+        "level": 47
+      },
+      {
+        "move": "Dragon Dance",
+        "level": 52
+      },
+      {
+        "move": "Poison Jab",
+        "level": 55
+      },
+      {
+        "move": "Dragon Rush",
+        "level": 60
+      },
+      {
+        "move": "Gunk Shot",
+        "level": 65
+      },
+      {
+        "move": "Outrage",
+        "level": 70
+      }
+    ]
+  },
+  {
+    "name": "Unovan Steelix",
+    "pokedex_id": 208,
+    "type1": "Steel",
+    "type2": "Water",
+    "bst": 510,
+    "abilities": [
+      "Rock Head",
+      "Swift Swim"
+    ],
+    "stats": {
+      "hp": 75,
+      "atk": 75,
+      "def": 150,
+      "spa": 55,
+      "spd": 75,
+      "spe": 80
+    },
+    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "preevo": [
+      {
+        "name": "Onix",
+        "pokedex_id": 95,
+        "type1": "Rock",
+        "type2": "Ground",
+        "abilities": [
+          "Rock Head",
+          "Sturdy"
+        ],
+        "evo": "Use Water Stone",
+        "moves": [
+          {
+            "move": "Mud Sport",
+            "level": 1
+          },
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Harden",
+            "level": 1
+          },
+          {
+            "move": "Bind",
+            "level": 1
+          },
+          {
+            "move": "Curse",
+            "level": 4
+          },
+          {
+            "move": "Rock Throw",
+            "level": 7
+          },
+          {
+            "move": "Rage",
+            "level": 10
+          },
+          {
+            "move": "Rock Tomb",
+            "level": 13
+          },
+          {
+            "move": "Stealth Rock",
+            "level": 16
+          },
+          {
+            "move": "Rock Polish",
+            "level": 19
+          },
+          {
+            "move": "Smack Down",
+            "level": 22
+          },
+          {
+            "move": "Dragon Breath",
+            "level": 25
+          },
+          {
+            "move": "Slam",
+            "level": 28
+          },
+          {
+            "move": "Screech",
+            "level": 31
+          },
+          {
+            "move": "Rock Slide",
+            "level": 34
+          },
+          {
+            "move": "Sand Tomb",
+            "level": 37
+          },
+          {
+            "move": "Iron Tail",
+            "level": 40
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Harden",
+        "level": 1
+      },
+      {
+        "move": "Water Gun",
+        "level": 1
+      },
+      {
+        "move": "Bind",
+        "level": 1
+      },
+      {
+        "move": "Rock Throw",
+        "level": 7
+      },
+      {
+        "move": "Bubble Beam",
+        "level": 12
+      },
+      {
+        "move": "Iron Defense",
+        "level": 17
+      },
+      {
+        "move": "Aqua Ring",
+        "level": 21
+      },
+      {
+        "move": "Iron Head",
+        "level": 24
+      },
+      {
+        "move": "Rock Tomb",
+        "level": 28
+      },
+      {
+        "move": "Brine",
+        "level": 32
+      },
+      {
+        "move": "Rock Slide",
+        "level": 35
+      },
+      {
+        "move": "Aqua Tail",
+        "level": 39
+      },
+      {
+        "move": "Whirlpool",
+        "level": 43
+      },
+      {
+        "move": "Earthquake",
+        "level": 47
+      },
+      {
+        "move": "Curse",
+        "level": 52
+      },
+      {
+        "move": "Iron Tail",
+        "level": 55
+      },
+      {
+        "move": "Hydro Pump",
+        "level": 57
+      },
+      {
+        "move": "Heavy Slam",
+        "level": 62
+      },
+      {
+        "move": "Recover",
+        "level": 68
+      },
+      {
+        "move": "Gyro Ball",
+        "level": 70
+      }
+    ]
+  }
+]

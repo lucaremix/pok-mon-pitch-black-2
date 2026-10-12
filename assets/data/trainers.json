@@ -1,0 +1,1947 @@
+{
+  "_readme": "Edit freely: species, level, types, ability, item, moves, location. 'sprite' is the slug for the Pokemon GIF (variants use 'unown-question' until real sprites exist). Each move's type is in its 'type' field. 'hidden': true = spoiler battle, opens only after clicking. 'role' is optional (gym leaders have none).",
+  "meta": {
+    "game": "Pokemon Pitch Black 2",
+    "urls": {
+      "trainer": "https://play.pokemonshowdown.com/sprites/trainers/{sprite}.png",
+      "pokemon": "https://play.pokemonshowdown.com/sprites/gen5ani/{sprite}.gif",
+      "item": "https://play.pokemonshowdown.com/sprites/itemicons/{item}.png"
+    },
+    "itemSlugRule": "lowercase item name, spaces become hyphens, apostrophes/periods removed (e.g. 'Sitrus Berry' -> 'sitrus-berry', 'Never-Melt Ice' -> 'never-melt-ice')",
+    "levelRule": "the highest-level Pokemon of each trainer is exactly the level cap; the others are 1-2 levels below"
+  },
+  "trainers": [
+    {
+      "id": "gym1-cheren",
+      "name": "Cheren",
+      "location": "Aspertia City Gym",
+      "levelCap": 13,
+      "sprite": "cheren",
+      "hidden": false,
+      "order": 1,
+      "bag": [{"item": "Potion", "count": 1}],
+      "pokemon": [
+        {
+          "species": "Minccino",
+          "sprite": "minccino",
+          "level": 12,
+          "types": ["Normal", "Fairy"],
+          "ability": "Technician",
+          "item": "Silk Scarf",
+          "moves": [
+            {"name": "Covet", "type": "Fairy"},
+            {"name": "Sing", "type": "Normal"},
+            {"name": "Slack Off", "type": "Normal"},
+            {"name": "Disarming Voice", "type": "Fairy"}
+          ]
+        },
+        {
+          "species": "Shuppet",
+          "sprite": "shuppet",
+          "level": 12,
+          "types": ["Ghost"],
+          "ability": "Frisk",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Shadow Sneak", "type": "Ghost"},
+            {"name": "Knock Off", "type": "Dark"},
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Curse", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Spinda",
+          "sprite": "spinda",
+          "level": 13,
+          "types": ["Normal", "Psychic"],
+          "ability": "Contrary",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Uproar", "type": "Normal"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Superpower", "type": "Fighting"},
+            {"name": "Sucker Punch", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "U Slowbro",
+          "sprite": "unown-question",
+          "level": 13,
+          "types": ["Normal", "Bug"],
+          "ability": "Honey Gather",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Bug Bite", "type": "Bug"},
+            {"name": "Body Slam", "type": "Normal"},
+            {"name": "Slack Off", "type": "Normal"},
+            {"name": "Aqua Tail", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Dunsparce",
+          "sprite": "dunsparce",
+          "level": 13,
+          "types": ["Normal", "Dragon"],
+          "ability": "Serene Grace",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Headbutt", "type": "Normal"},
+            {"name": "Dragon Breath", "type": "Dragon"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Glare", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Lillipup",
+          "sprite": "lillipup",
+          "level": 13,
+          "types": ["Normal", "Ice"],
+          "ability": "Vital Spirit",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Take Down", "type": "Normal"},
+            {"name": "Ice Fang", "type": "Ice"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Ice Shard", "type": "Ice"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym2-roxie",
+      "name": "Roxie",
+      "location": "Virbank City Gym",
+      "levelCap": 21,
+      "sprite": "roxie",
+      "hidden": false,
+      "order": 2,
+      "bag": [{"item": "Potion", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Trubbish",
+          "sprite": "trubbish",
+          "level": 19,
+          "types": ["Poison"],
+          "ability": "Stench",
+          "item": "Black Sludge",
+          "moves": [
+            {"name": "Toxic Spikes", "type": "Poison"},
+            {"name": "Sludge Bomb", "type": "Poison"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Bullet Seed", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Seviper",
+          "sprite": "seviper",
+          "level": 19,
+          "types": ["Poison", "Dark"],
+          "ability": "Intimidate",
+          "item": "Poison Barb",
+          "moves": [
+            {"name": "Poison Fang", "type": "Poison"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Glare", "type": "Normal"},
+            {"name": "Aqua Tail", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Shellos",
+          "sprite": "shellos",
+          "level": 20,
+          "types": ["Ground", "Poison"],
+          "ability": "Sticky Hold",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Sludge Bomb", "type": "Poison"},
+            {"name": "Recover", "type": "Normal"},
+            {"name": "Toxic", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Palpitoad",
+          "sprite": "palpitoad",
+          "level": 20,
+          "types": ["Water", "Poison"],
+          "ability": "Hydration",
+          "item": "Mystic Water",
+          "moves": [
+            {"name": "Muddy Water", "type": "Water"},
+            {"name": "Bulldoze", "type": "Ground"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Toxic", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Nidoqueen",
+          "sprite": "nidoqueen",
+          "level": 21,
+          "types": ["Poison", "Psychic"],
+          "ability": "Poison Point",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Sludge Bomb", "type": "Poison"},
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Psycho Cut", "type": "Psychic"},
+            {"name": "Double Kick", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Deino",
+          "sprite": "deino",
+          "level": 21,
+          "types": ["Dragon", "Poison"],
+          "ability": "Hustle",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Dragon Pulse", "type": "Dragon"},
+            {"name": "Sludge Bomb", "type": "Poison"},
+            {"name": "Dark Pulse", "type": "Dark"},
+            {"name": "Flamethrower", "type": "Fire"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rival-blue",
+      "name": "Blue",
+      "role": "Rival",
+      "location": "Route 4",
+      "levelCap": 23,
+      "sprite": "blue",
+      "hidden": true,
+      "order": 3,
+      "bag": [{"item": "Super Potion", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Pidgeotto",
+          "sprite": "pidgeotto",
+          "level": 22,
+          "types": ["Normal", "Flying"],
+          "ability": "Keen Eye",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Wing Attack", "type": "Flying"},
+            {"name": "Quick Attack", "type": "Normal"},
+            {"name": "Sand Attack", "type": "Ground"},
+            {"name": "Whirlwind", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Kadabra",
+          "sprite": "kadabra",
+          "level": 22,
+          "types": ["Psychic"],
+          "ability": "Magic Guard",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Psybeam", "type": "Psychic"},
+            {"name": "Disable", "type": "Normal"},
+            {"name": "Recover", "type": "Normal"},
+            {"name": "Reflect", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Growlithe",
+          "sprite": "growlithe",
+          "level": 22,
+          "types": ["Fire", "Normal"],
+          "ability": "Intimidate",
+          "item": "Oran Berry",
+          "moves": [
+            {"name": "Flare Blitz", "type": "Fire"},
+            {"name": "Return", "type": "Normal"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Wild Charge", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Rhyhorn",
+          "sprite": "rhyhorn",
+          "level": 22,
+          "types": ["Ground", "Rock"],
+          "ability": "Rock Head",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Bulldoze", "type": "Ground"},
+            {"name": "Rock Blast", "type": "Rock"},
+            {"name": "Horn Attack", "type": "Normal"},
+            {"name": "Scary Face", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Exeggcute",
+          "sprite": "exeggcute",
+          "level": 23,
+          "types": ["Grass", "Psychic"],
+          "ability": "Harvest",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Hypnosis", "type": "Psychic"},
+            {"name": "Confusion", "type": "Psychic"},
+            {"name": "Leech Seed", "type": "Grass"},
+            {"name": "Stun Spore", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Gyarados",
+          "sprite": "gyarados",
+          "level": 23,
+          "types": ["Water", "Flying"],
+          "ability": "Intimidate",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Bite", "type": "Dark"},
+            {"name": "Dragon Rage", "type": "Dragon"},
+            {"name": "Twister", "type": "Dragon"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym3-burgh",
+      "name": "Burgh",
+      "location": "Castelia City Gym",
+      "levelCap": 27,
+      "sprite": "burgh",
+      "hidden": false,
+      "order": 4,
+      "bag": [{"item": "Super Potion", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Accelgor",
+          "sprite": "accelgor",
+          "level": 26,
+          "types": ["Bug", "Dark"],
+          "ability": "Unburden",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "Dark Pulse", "type": "Dark"},
+            {"name": "Ancient Power", "type": "Rock"},
+            {"name": "Water Pulse", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Parasect",
+          "sprite": "parasect",
+          "level": 26,
+          "types": ["Bug", "Ghost"],
+          "ability": "Effect Spore",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Spore", "type": "Grass"},
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Shadow Claw", "type": "Ghost"},
+            {"name": "Dig", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Beautifly",
+          "sprite": "beautifly",
+          "level": 26,
+          "types": ["Bug", "Fairy"],
+          "ability": "Magic Bounce",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Quiver Dance", "type": "Bug"},
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "Moonblast", "type": "Fairy"},
+            {"name": "Giga Drain", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Scyther",
+          "sprite": "scyther",
+          "level": 27,
+          "types": ["Bug", "Fighting"],
+          "ability": "Technician",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Aerial Ace", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "U Heracross",
+          "sprite": "unown-question",
+          "level": 27,
+          "types": ["Bug", "Steel"],
+          "ability": "Mold Breaker",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Megahorn", "type": "Bug"},
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Stone Edge", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Vibrava",
+          "sprite": "vibrava",
+          "level": 27,
+          "types": ["Dragon", "Bug"],
+          "ability": "Levitate",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "Air Slash", "type": "Flying"},
+            {"name": "Ancient Power", "type": "Rock"},
+            {"name": "Dragon Breath", "type": "Dragon"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colress-1",
+      "name": "Colress",
+      "role": "Scientist",
+      "location": "Route 4",
+      "levelCap": 31,
+      "sprite": "colress",
+      "hidden": false,
+      "order": 5,
+      "bag": [{"item": "Super Potion", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Electrode",
+          "sprite": "electrode",
+          "level": 30,
+          "types": ["Electric", "Steel"],
+          "ability": "Motor Drive",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Flash Cannon", "type": "Steel"},
+            {"name": "Taunt", "type": "Dark"},
+            {"name": "Explosion", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Klink",
+          "sprite": "klink",
+          "level": 30,
+          "types": ["Steel", "Electric"],
+          "ability": "Plus",
+          "item": "Magnet",
+          "moves": [
+            {"name": "Shift Gear", "type": "Steel"},
+            {"name": "Gear Grind", "type": "Steel"},
+            {"name": "Discharge", "type": "Electric"},
+            {"name": "Flash Cannon", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Elgyem",
+          "sprite": "elgyem",
+          "level": 30,
+          "types": ["Psychic"],
+          "ability": "Analytic",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Signal Beam", "type": "Bug"},
+            {"name": "Calm Mind", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Magneton",
+          "sprite": "magneton",
+          "level": 31,
+          "types": ["Electric", "Steel"],
+          "ability": "Magnet Pull",
+          "item": "Air Balloon",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Flash Cannon", "type": "Steel"},
+            {"name": "Hidden Power Fire", "type": "Fire"},
+            {"name": "Psychic", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Lumineon",
+          "sprite": "lumineon",
+          "level": 31,
+          "types": ["Water", "Electric"],
+          "ability": "Lightning Rod",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Scald", "type": "Water"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Volt Switch", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Porygon",
+          "sprite": "porygon",
+          "level": 31,
+          "types": ["Normal"],
+          "ability": "Download",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Tri Attack", "type": "Normal"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Recover", "type": "Normal"},
+            {"name": "Thunder Wave", "type": "Electric"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym4-elesa",
+      "name": "Elesa",
+      "location": "Nimbasa City Gym",
+      "levelCap": 36,
+      "sprite": "elesa",
+      "hidden": false,
+      "order": 6,
+      "bag": [{"item": "Super Potion", "count": 1}, {"item": "Hyper Potion", "count": 1}],
+      "pokemon": [
+        {
+          "species": "Klink",
+          "sprite": "klink",
+          "level": 35,
+          "types": ["Steel", "Electric"],
+          "ability": "Plus",
+          "item": "Air Balloon",
+          "moves": [
+            {"name": "Shift Gear", "type": "Steel"},
+            {"name": "Gear Grind", "type": "Steel"},
+            {"name": "Discharge", "type": "Electric"},
+            {"name": "Rock Slide", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Zebstrika",
+          "sprite": "zebstrika",
+          "level": 35,
+          "types": ["Electric", "Normal"],
+          "ability": "Sap Sipper",
+          "item": "Choice Scarf",
+          "moves": [
+            {"name": "Wild Charge", "type": "Electric"},
+            {"name": "Return", "type": "Normal"},
+            {"name": "Overheat", "type": "Fire"},
+            {"name": "Grass Knot", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Eelektrik",
+          "sprite": "eelektrik",
+          "level": 35,
+          "types": ["Electric", "Water"],
+          "ability": "Levitate",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Charge Beam", "type": "Electric"},
+            {"name": "Thunder Wave", "type": "Electric"},
+            {"name": "Water Pulse", "type": "Water"},
+            {"name": "Ice Beam", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Ampharos",
+          "sprite": "ampharos",
+          "level": 36,
+          "types": ["Electric", "Dragon"],
+          "ability": "Static",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Dragon Pulse", "type": "Dragon"},
+            {"name": "Focus Blast", "type": "Fighting"},
+            {"name": "Frost Breath", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "U Altaria",
+          "sprite": "unown-question",
+          "level": 36,
+          "types": ["Flying", "Electric"],
+          "ability": "Static",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Roost", "type": "Flying"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Air Slash", "type": "Flying"},
+            {"name": "Heat Wave", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Raikou",
+          "sprite": "raikou",
+          "level": 36,
+          "types": ["Electric", "Ground"],
+          "ability": "Pressure",
+          "item": "Choice Specs",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Aura Sphere", "type": "Fighting"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rival-steven",
+      "name": "Steven",
+      "role": "Rival",
+      "location": "Driftveil City",
+      "levelCap": 40,
+      "sprite": "steven",
+      "hidden": true,
+      "order": 7,
+      "bag": [{"item": "Hyper Potion", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Skarmory",
+          "sprite": "skarmory",
+          "level": 39,
+          "types": ["Steel", "Flying"],
+          "ability": "Sturdy",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Spikes", "type": "Ground"},
+            {"name": "Steel Wing", "type": "Steel"},
+            {"name": "Drill Peck", "type": "Flying"},
+            {"name": "Agility", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Claydol",
+          "sprite": "claydol",
+          "level": 39,
+          "types": ["Psychic", "Rock"],
+          "ability": "Levitate",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Power Gem", "type": "Rock"},
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Rapid Spin", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Cradily",
+          "sprite": "cradily",
+          "level": 39,
+          "types": ["Rock", "Grass"],
+          "ability": "Storm Drain",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Recover", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Armaldo",
+          "sprite": "armaldo",
+          "level": 40,
+          "types": ["Rock", "Bug"],
+          "ability": "Battle Armor",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "X-Scissor", "type": "Bug"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Swords Dance", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Lairon",
+          "sprite": "lairon",
+          "level": 40,
+          "types": ["Steel"],
+          "ability": "Sturdy",
+          "item": "Eviolite",
+          "moves": [
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Iron Defense", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Metagross",
+          "sprite": "metagross",
+          "level": 40,
+          "types": ["Steel", "Fighting"],
+          "ability": "Clear Body",
+          "item": "Metal Coat",
+          "moves": [
+            {"name": "Meteor Mash", "type": "Steel"},
+            {"name": "Drain Punch", "type": "Fighting"},
+            {"name": "Zen Headbutt", "type": "Psychic"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym5-clay",
+      "name": "Clay",
+      "location": "Driftveil City Gym",
+      "levelCap": 43,
+      "sprite": "clay",
+      "hidden": false,
+      "order": 8,
+      "bag": [{"item": "Hyper Potion", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Hippowdon",
+          "sprite": "hippowdon",
+          "level": 42,
+          "types": ["Ground", "Grass"],
+          "ability": "Sand Stream",
+          "item": "Yache Berry",
+          "moves": [
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Seed Bomb", "type": "Grass"},
+            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Slack Off", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Miltank",
+          "sprite": "miltank",
+          "level": 42,
+          "types": ["Normal", "Ground"],
+          "ability": "Sap Sipper",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Curse", "type": "Ghost"},
+            {"name": "Body Slam", "type": "Normal"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Milk Drink", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Muk",
+          "sprite": "muk",
+          "level": 42,
+          "types": ["Poison", "Ground"],
+          "ability": "Sticky Hold",
+          "item": "Black Sludge",
+          "moves": [
+            {"name": "Gunk Shot", "type": "Poison"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Ice Punch", "type": "Ice"},
+            {"name": "Fire Punch", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Grumpig",
+          "sprite": "grumpig",
+          "level": 43,
+          "types": ["Psychic", "Ground"],
+          "ability": "Thick Fat",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Shadow Ball", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Ursaring",
+          "sprite": "ursaring",
+          "level": 43,
+          "types": ["Fighting", "Ground"],
+          "ability": "Mold Breaker",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Crunch", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "U Camerupt",
+          "sprite": "unown-question",
+          "level": 43,
+          "types": ["Ground", "Grass"],
+          "ability": "Sap Sipper",
+          "item": "Yache Berry",
+          "moves": [
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Energy Ball", "type": "Grass"},
+            {"name": "Ingrain", "type": "Grass"},
+            {"name": "Power Gem", "type": "Rock"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym6-skyla",
+      "name": "Skyla",
+      "location": "Mistralton City Gym",
+      "levelCap": 52,
+      "sprite": "skyla",
+      "hidden": false,
+      "order": 9,
+      "bag": [{"item": "Hyper Potion", "count": 3}],
+      "pokemon": [
+        {
+          "species": "Swoobat",
+          "sprite": "swoobat",
+          "level": 51,
+          "types": ["Flying", "Fairy"],
+          "ability": "Unaware",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Tailwind", "type": "Flying"},
+            {"name": "Air Slash", "type": "Flying"},
+            {"name": "Moonblast", "type": "Fairy"},
+            {"name": "Energy Ball", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Chimecho",
+          "sprite": "chimecho",
+          "level": 51,
+          "types": ["Psychic", "Flying"],
+          "ability": "Own Tempo",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Air Slash", "type": "Flying"},
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Wish", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Cryogonal",
+          "sprite": "cryogonal",
+          "level": 51,
+          "types": ["Ice", "Flying"],
+          "ability": "Snow Warning",
+          "item": "Charti Berry",
+          "moves": [
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Air Slash", "type": "Flying"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Recover", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Dodrio",
+          "sprite": "dodrio",
+          "level": 52,
+          "types": ["Flying", "Ground"],
+          "ability": "Early Bird",
+          "item": "Shuca Berry",
+          "moves": [
+            {"name": "Brave Bird", "type": "Flying"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Knock Off", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "U Gallade",
+          "sprite": "unown-question",
+          "level": 52,
+          "types": ["Flying", "Fighting"],
+          "ability": "Justified",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Acrobatics", "type": "Flying"},
+            {"name": "Psycho Cut", "type": "Psychic"}
+          ]
+        },
+        {
+          "species": "Garchomp",
+          "sprite": "garchomp",
+          "level": 52,
+          "types": ["Flying", "Steel"],
+          "ability": "Rough Skin",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Brave Bird", "type": "Flying"},
+            {"name": "Iron Head", "type": "Steel"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Stone Edge", "type": "Rock"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rival-n",
+      "name": "N",
+      "role": "Rival",
+      "location": "Relic Castle",
+      "levelCap": 56,
+      "sprite": "n",
+      "hidden": true,
+      "order": 10,
+      "bag": [{"item": "Hyper Potion", "count": 2}, {"item": "Full Restore", "count": 1}],
+      "pokemon": [
+        {
+          "species": "Zoroark",
+          "sprite": "zoroark",
+          "level": 55,
+          "types": ["Dark", "Fairy"],
+          "ability": "Prankster",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Night Daze", "type": "Dark"},
+            {"name": "Moonblast", "type": "Fairy"},
+            {"name": "Flamethrower", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Carracosta",
+          "sprite": "carracosta",
+          "level": 55,
+          "types": ["Water", "Rock"],
+          "ability": "Solid Rock",
+          "item": "Rindo Berry",
+          "moves": [
+            {"name": "Shell Smash", "type": "Normal"},
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Vanilluxe",
+          "sprite": "vanilluxe",
+          "level": 55,
+          "types": ["Ice", "Fairy"],
+          "ability": "Simple",
+          "item": "Never-Melt Ice",
+          "moves": [
+            {"name": "Calm Mind", "type": "Psychic"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Moonblast", "type": "Fairy"},
+            {"name": "Earth Power", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Klinklang",
+          "sprite": "klinklang",
+          "level": 56,
+          "types": ["Steel", "Electric"],
+          "ability": "Clear Body",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Gear Grind", "type": "Steel"},
+            {"name": "Wild Charge", "type": "Electric"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Substitute", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Archeops",
+          "sprite": "archeops",
+          "level": 56,
+          "types": ["Rock", "Dragon"],
+          "ability": "Levitate",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "U-turn", "type": "Bug"}
+          ]
+        },
+        {
+          "species": "Reshiram",
+          "sprite": "reshiram",
+          "level": 56,
+          "types": ["Dragon", "Fire"],
+          "ability": "Turboblaze",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Draco Meteor", "type": "Dragon"},
+            {"name": "Fusion Flare", "type": "Fire"},
+            {"name": "Blue Flare", "type": "Fire"},
+            {"name": "Psychic", "type": "Psychic"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym7-drayden",
+      "name": "Drayden",
+      "location": "Opelucid City Gym",
+      "levelCap": 61,
+      "sprite": "drayden",
+      "hidden": false,
+      "order": 11,
+      "bag": [{"item": "Hyper Potion", "count": 2}, {"item": "Full Restore", "count": 1}],
+      "pokemon": [
+        {
+          "species": "Druddigon",
+          "sprite": "druddigon",
+          "level": 60,
+          "types": ["Dragon", "Fighting"],
+          "ability": "Rough Skin",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Sucker Punch", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Archeops",
+          "sprite": "archeops",
+          "level": 60,
+          "types": ["Rock", "Dragon"],
+          "ability": "Levitate",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "U-turn", "type": "Bug"}
+          ]
+        },
+        {
+          "species": "Flygon",
+          "sprite": "flygon",
+          "level": 61,
+          "types": ["Dragon", "Bug"],
+          "ability": "Levitate",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Dragon Pulse", "type": "Dragon"},
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Bug Buzz", "type": "Bug"},
+            {"name": "Flamethrower", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Haxorus",
+          "sprite": "haxorus",
+          "level": 61,
+          "types": ["Dragon", "Steel"],
+          "ability": "Mold Breaker",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Dragon Dance", "type": "Dragon"},
+            {"name": "Dragon Tail", "type": "Dragon"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Iron Head", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "U Salamence",
+          "sprite": "unown-question",
+          "level": 61,
+          "types": ["Dragon", "Poison"],
+          "ability": "Intimidate",
+          "item": "Poison Barb",
+          "moves": [
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Cross Poison", "type": "Poison"},
+            {"name": "Fire Blast", "type": "Fire"},
+            {"name": "Crunch", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Dragonite",
+          "sprite": "dragonite",
+          "level": 61,
+          "types": ["Dragon", "Water"],
+          "ability": "Multiscale",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Draco Meteor", "type": "Dragon"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Surf", "type": "Water"},
+            {"name": "Extreme Speed", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gym8-marlon",
+      "name": "Marlon",
+      "location": "Humilau City Gym",
+      "levelCap": 64,
+      "sprite": "marlon",
+      "hidden": false,
+      "order": 12,
+      "bag": [{"item": "Hyper Potion", "count": 2}, {"item": "Full Restore", "count": 1}],
+      "pokemon": [
+        {
+          "species": "Politoed",
+          "sprite": "politoed",
+          "level": 63,
+          "types": ["Water", "Grass"],
+          "ability": "Drizzle",
+          "item": "Damp Rock",
+          "moves": [
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Encore", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Octillery",
+          "sprite": "octillery",
+          "level": 63,
+          "types": ["Water", "Fire"],
+          "ability": "Suction Cups",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Aura Sphere", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Floatzel",
+          "sprite": "floatzel",
+          "level": 64,
+          "types": ["Water", "Fighting"],
+          "ability": "Swift Swim",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Aqua Jet", "type": "Water"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Ice Punch", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "U Steelix",
+          "sprite": "unown-question",
+          "level": 64,
+          "types": ["Steel", "Water"],
+          "ability": "Swift Swim",
+          "item": "Rocky Helmet",
+          "moves": [
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Aqua Tail", "type": "Water"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Iron Head", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Huntail",
+          "sprite": "huntail",
+          "level": 64,
+          "types": ["Water", "Dragon"],
+          "ability": "Intimidate",
+          "item": "White Herb",
+          "moves": [
+            {"name": "Shell Smash", "type": "Normal"},
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Ice Fang", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Suicune",
+          "sprite": "suicune",
+          "level": 64,
+          "types": ["Water", "Ice"],
+          "ability": "Pressure",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Calm Mind", "type": "Psychic"},
+            {"name": "Scald", "type": "Water"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Thunderbolt", "type": "Electric"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colress-2",
+      "name": "Colress",
+      "role": "Scientist",
+      "location": "Control Room",
+      "levelCap": 66,
+      "sprite": "colress",
+      "hidden": false,
+      "order": 13,
+      "bag": [{"item": "Hyper Potion", "count": 2}, {"item": "Full Restore", "count": 1}],
+      "pokemon": [
+        {
+          "species": "Magnezone",
+          "sprite": "magnezone",
+          "level": 65,
+          "types": ["Electric", "Steel"],
+          "ability": "Magnet Pull",
+          "item": "Air Balloon",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Flash Cannon", "type": "Steel"},
+            {"name": "Grass Knot", "type": "Grass"},
+            {"name": "Volt Switch", "type": "Electric"}
+          ]
+        },
+        {
+          "species": "Beheeyem",
+          "sprite": "beheeyem",
+          "level": 65,
+          "types": ["Psychic"],
+          "ability": "Analytic",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Calm Mind", "type": "Psychic"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Signal Beam", "type": "Bug"}
+          ]
+        },
+        {
+          "species": "Porygon-Z",
+          "sprite": "porygonz",
+          "level": 66,
+          "types": ["Normal"],
+          "ability": "Adaptability",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Tri Attack", "type": "Normal"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Nasty Plot", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Klinklang",
+          "sprite": "klinklang",
+          "level": 66,
+          "types": ["Steel", "Electric"],
+          "ability": "Clear Body",
+          "item": "Shuca Berry",
+          "moves": [
+            {"name": "Gear Grind", "type": "Steel"},
+            {"name": "Wild Charge", "type": "Electric"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Shift Gear", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Electivire",
+          "sprite": "electivire",
+          "level": 66,
+          "types": ["Electric", "Fighting"],
+          "ability": "Motor Drive",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Wild Charge", "type": "Electric"},
+            {"name": "Cross Chop", "type": "Fighting"},
+            {"name": "Ice Punch", "type": "Ice"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Deoxys Speed",
+          "sprite": "deoxys-speed",
+          "level": 66,
+          "types": ["Psychic", "Electric"],
+          "ability": "Pressure",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Psycho Boost", "type": "Psychic"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Focus Blast", "type": "Fighting"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ghetsis",
+      "name": "Ghetsis",
+      "role": "Team Plasma",
+      "location": "Giant Chasm",
+      "levelCap": 68,
+      "sprite": "ghetsis",
+      "hidden": false,
+      "order": 14,
+      "bag": [{"item": "Full Restore", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Toxicroak",
+          "sprite": "toxicroak",
+          "level": 67,
+          "types": ["Fighting", "Ghost"],
+          "ability": "Limber",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Drain Punch", "type": "Fighting"},
+            {"name": "Shadow Claw", "type": "Ghost"},
+            {"name": "Sucker Punch", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Cofagrigus",
+          "sprite": "cofagrigus",
+          "level": 67,
+          "types": ["Ghost", "Steel"],
+          "ability": "Mummy",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Flash Cannon", "type": "Steel"},
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Drapion",
+          "sprite": "drapion",
+          "level": 68,
+          "types": ["Poison", "Dark"],
+          "ability": "Sniper",
+          "item": "Poison Barb",
+          "moves": [
+            {"name": "Swords Dance", "type": "Normal"},
+            {"name": "Cross Poison", "type": "Poison"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Seismitoad",
+          "sprite": "seismitoad",
+          "level": 68,
+          "types": ["Water", "Poison"],
+          "ability": "Poison Touch",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Sludge Wave", "type": "Poison"},
+            {"name": "Earth Power", "type": "Ground"},
+            {"name": "Focus Blast", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Eelektross",
+          "sprite": "eelektross",
+          "level": 68,
+          "types": ["Electric", "Water"],
+          "ability": "Levitate",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Surf", "type": "Water"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Giga Drain", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Hydreigon",
+          "sprite": "hydreigon",
+          "level": 68,
+          "types": ["Dragon", "Poison"],
+          "ability": "Levitate",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Draco Meteor", "type": "Dragon"},
+            {"name": "Dark Pulse", "type": "Dark"},
+            {"name": "Sludge Bomb", "type": "Poison"},
+            {"name": "Fire Blast", "type": "Fire"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lance",
+      "name": "Lance",
+      "role": "Rival",
+      "location": "Victory Road",
+      "levelCap": 70,
+      "sprite": "lance",
+      "hidden": true,
+      "order": 15,
+      "bag": [{"item": "Full Restore", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Gyarados",
+          "sprite": "gyarados",
+          "level": 69,
+          "types": ["Water", "Flying"],
+          "ability": "Intimidate",
+          "item": "Wacan Berry",
+          "moves": [
+            {"name": "Dragon Dance", "type": "Dragon"},
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Ice Fang", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Aerodactyl",
+          "sprite": "aerodactyl",
+          "level": 69,
+          "types": ["Rock", "Dragon"],
+          "ability": "Levitate",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Dragon Claw", "type": "Dragon"},
+            {"name": "Earthquake", "type": "Ground"}
+          ]
+        },
+        {
+          "species": "Charizard",
+          "sprite": "charizard",
+          "level": 70,
+          "types": ["Fire", "Dragon"],
+          "ability": "Levitate",
+          "item": "Charcoal",
+          "moves": [
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Dragon Pulse", "type": "Dragon"},
+            {"name": "Focus Blast", "type": "Fighting"},
+            {"name": "Air Slash", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Kingdra",
+          "sprite": "kingdra",
+          "level": 70,
+          "types": ["Water", "Dragon"],
+          "ability": "Damp",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Draco Meteor", "type": "Dragon"},
+            {"name": "Hydro Pump", "type": "Water"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Focus Blast", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "U Salamence",
+          "sprite": "unown-question",
+          "level": 70,
+          "types": ["Dragon", "Poison"],
+          "ability": "Intimidate",
+          "item": "Air Balloon",
+          "moves": [
+            {"name": "Outrage", "type": "Dragon"},
+            {"name": "Poison Jab", "type": "Poison"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Stone Edge", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Dragonite",
+          "sprite": "dragonite",
+          "level": 70,
+          "types": ["Dragon", "Water"],
+          "ability": "Multiscale",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Dragon Breath", "type": "Dragon"},
+            {"name": "Aqua Tail", "type": "Water"},
+            {"name": "Extreme Speed", "type": "Normal"},
+            {"name": "Flamethrower", "type": "Fire"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e4-shauntal",
+      "name": "Shauntal",
+      "role": "Elite Four",
+      "location": "Pokémon League W Room",
+      "levelCap": 78,
+      "sprite": "shauntal",
+      "hidden": false,
+      "order": 16,
+      "bag": [{"item": "Full Restore", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Spiritomb",
+          "sprite": "spiritomb",
+          "level": 77,
+          "types": ["Ghost", "Rock"],
+          "ability": "Cursed Body",
+          "item": "Air Balloon",
+          "moves": [
+            {"name": "Hypnosis", "type": "Psychic"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Will-O-Wisp", "type": "Fire"},
+            {"name": "Ominous Wind", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Gengar",
+          "sprite": "gengar",
+          "level": 77,
+          "types": ["Ghost", "Poison"],
+          "ability": "Levitate",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Sludge Bomb", "type": "Poison"},
+            {"name": "Aura Sphere", "type": "Fighting"},
+            {"name": "Energy Ball", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Mismagius",
+          "sprite": "mismagius",
+          "level": 77,
+          "types": ["Ghost", "Fairy"],
+          "ability": "Levitate",
+          "item": "Spell Tag",
+          "moves": [
+            {"name": "Mystical Fire", "type": "Fire"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Dazzling Gleam", "type": "Fairy"},
+            {"name": "Nasty Plot", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Golurk",
+          "sprite": "golurk",
+          "level": 77,
+          "types": ["Ghost", "Steel"],
+          "ability": "Iron Fist",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Shadow Punch", "type": "Ghost"},
+            {"name": "Shadow Sneak", "type": "Ghost"},
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Ice Punch", "type": "Ice"}
+          ]
+        },
+        {
+          "species": "Shiftry",
+          "sprite": "shiftry",
+          "level": 77,
+          "types": ["Grass", "Ghost"],
+          "ability": "Frisk",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Fake Out", "type": "Normal"},
+            {"name": "Extrasensory", "type": "Psychic"},
+            {"name": "Shadow Punch", "type": "Ghost"},
+            {"name": "Leaf Blade", "type": "Grass"}
+          ]
+        },
+        {
+          "species": "Chandelure",
+          "sprite": "chandelure",
+          "level": 78,
+          "types": ["Ghost", "Fire"],
+          "ability": "Shadow Tag",
+          "item": "Expert Belt",
+          "moves": [
+            {"name": "Heat Wave", "type": "Fire"},
+            {"name": "Shadow Ball", "type": "Ghost"},
+            {"name": "Substitute", "type": "Normal"},
+            {"name": "Energy Ball", "type": "Grass"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e4-grimsley",
+      "name": "Grimsley",
+      "role": "Elite Four",
+      "location": "Pokémon League NW Room",
+      "levelCap": 78,
+      "sprite": "grimsley",
+      "hidden": false,
+      "order": 17,
+      "bag": [{"item": "Full Restore", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Krookodile",
+          "sprite": "krookodile",
+          "level": 78,
+          "types": ["Ground", "Dark"],
+          "ability": "Intimidate",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Knock Off", "type": "Dark"},
+            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Close Combat", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Absol",
+          "sprite": "absol",
+          "level": 77,
+          "types": ["Dark", "Ice"],
+          "ability": "Cute Charm",
+          "item": "Chople Berry",
+          "moves": [
+            {"name": "Night Slash", "type": "Dark"},
+            {"name": "Icicle Crash", "type": "Ice"},
+            {"name": "Psycho Cut", "type": "Psychic"},
+            {"name": "Sucker Punch", "type": "Dark"}
+          ]
+        },
+        {
+          "species": "Honchkrow",
+          "sprite": "honchkrow",
+          "level": 77,
+          "types": ["Dark", "Flying"],
+          "ability": "Moxie",
+          "item": "Custap Berry",
+          "moves": [
+            {"name": "Night Slash", "type": "Dark"},
+            {"name": "Brave Bird", "type": "Flying"},
+            {"name": "Superpower", "type": "Fighting"},
+            {"name": "Heat Wave", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Sharpedo",
+          "sprite": "sharpedo",
+          "level": 77,
+          "types": ["Water", "Dark"],
+          "ability": "Speed Boost",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Protect", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Zoroark",
+          "sprite": "zoroark",
+          "level": 77,
+          "types": ["Dark", "Fairy"],
+          "ability": "Prankster",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Night Daze", "type": "Dark"},
+            {"name": "Flamethrower", "type": "Fire"},
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Moonblast", "type": "Fairy"}
+          ]
+        },
+        {
+          "species": "Drapion",
+          "sprite": "drapion",
+          "level": 77,
+          "types": ["Poison", "Dark"],
+          "ability": "Sniper",
+          "item": "Scope Lens",
+          "moves": [
+            {"name": "Storm Throw", "type": "Fighting"},
+            {"name": "Cross Poison", "type": "Poison"},
+            {"name": "Night Slash", "type": "Dark"},
+            {"name": "Swords Dance", "type": "Normal"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e4-caitlin",
+      "name": "Caitlin",
+      "role": "Elite Four",
+      "location": "Pokémon League NE Room",
+      "levelCap": 78,
+      "sprite": "caitlin",
+      "hidden": false,
+      "order": 18,
+      "bag": [{"item": "Full Restore", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Musharna",
+          "sprite": "musharna",
+          "level": 77,
+          "types": ["Psychic", "Fairy"],
+          "ability": "Magic Guard",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Trick Room", "type": "Psychic"},
+            {"name": "Psyshock", "type": "Psychic"},
+            {"name": "Dazzling Gleam", "type": "Fairy"},
+            {"name": "Shadow Ball", "type": "Ghost"}
+          ]
+        },
+        {
+          "species": "Claydol",
+          "sprite": "claydol",
+          "level": 77,
+          "types": ["Psychic", "Rock"],
+          "ability": "Levitate",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Fire Blast", "type": "Fire"},
+            {"name": "Scald", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Nidoqueen",
+          "sprite": "nidoqueen",
+          "level": 77,
+          "types": ["Poison", "Psychic"],
+          "ability": "Rivalry",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Psycho Cut", "type": "Psychic"},
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Ice Punch", "type": "Ice"},
+            {"name": "Poison Jab", "type": "Poison"}
+          ]
+        },
+        {
+          "species": "Gothitelle",
+          "sprite": "gothitelle",
+          "level": 78,
+          "types": ["Psychic", "Dark"],
+          "ability": "Frisk",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Heat Wave", "type": "Fire"},
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Dark Pulse", "type": "Dark"},
+            {"name": "Focus Blast", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Xatu",
+          "sprite": "xatu",
+          "level": 77,
+          "types": ["Psychic", "Grass"],
+          "ability": "Big Pecks",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Aura Sphere", "type": "Fighting"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Heat Wave", "type": "Fire"},
+            {"name": "Air Slash", "type": "Flying"}
+          ]
+        },
+        {
+          "species": "Raichu",
+          "sprite": "raichu",
+          "level": 77,
+          "types": ["Electric", "Psychic"],
+          "ability": "Lightning Rod",
+          "item": "Air Balloon",
+          "moves": [
+            {"name": "Psychic", "type": "Psychic"},
+            {"name": "Thunderbolt", "type": "Electric"},
+            {"name": "Focus Blast", "type": "Fighting"},
+            {"name": "Flash Cannon", "type": "Steel"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e4-marshal",
+      "name": "Marshal",
+      "role": "Elite Four",
+      "location": "Pokémon League E Room",
+      "levelCap": 78,
+      "sprite": "marshal",
+      "hidden": false,
+      "order": 19,
+      "bag": [{"item": "Full Restore", "count": 2}],
+      "pokemon": [
+        {
+          "species": "Hitmontop",
+          "sprite": "hitmontop",
+          "level": 77,
+          "types": ["Fighting"],
+          "ability": "Intimidate",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Ice Punch", "type": "Ice"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Fake Out", "type": "Normal"},
+            {"name": "Close Combat", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Infernape",
+          "sprite": "infernape",
+          "level": 77,
+          "types": ["Fire", "Fighting"],
+          "ability": "Blaze",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Heat Wave", "type": "Fire"},
+            {"name": "Thunder Punch", "type": "Electric"},
+            {"name": "Poison Jab", "type": "Poison"},
+            {"name": "Close Combat", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Breloom",
+          "sprite": "breloom",
+          "level": 77,
+          "types": ["Grass", "Fighting"],
+          "ability": "Technician",
+          "item": "Salac Berry",
+          "moves": [
+            {"name": "Spore", "type": "Grass"},
+            {"name": "Mach Punch", "type": "Fighting"},
+            {"name": "Bullet Seed", "type": "Grass"},
+            {"name": "Rock Tomb", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Toxicroak",
+          "sprite": "toxicroak",
+          "level": 77,
+          "types": ["Fighting", "Ghost"],
+          "ability": "Limber",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Icicle Crash", "type": "Ice"},
+            {"name": "Shadow Punch", "type": "Ghost"},
+            {"name": "Drain Punch", "type": "Fighting"},
+            {"name": "Bullet Punch", "type": "Steel"}
+          ]
+        },
+        {
+          "species": "Lucario",
+          "sprite": "lucario",
+          "level": 77,
+          "types": ["Fighting", "Steel"],
+          "ability": "Justified",
+          "item": "Air Balloon",
+          "moves": [
+            {"name": "Close Combat", "type": "Fighting"},
+            {"name": "Ice Punch", "type": "Ice"},
+            {"name": "Bullet Punch", "type": "Steel"},
+            {"name": "Rock Slide", "type": "Rock"}
+          ]
+        },
+        {
+          "species": "Conkeldurr",
+          "sprite": "conkeldurr",
+          "level": 78,
+          "types": ["Fighting", "Rock"],
+          "ability": "Guts",
+          "item": "Flame Orb",
+          "moves": [
+            {"name": "Poison Jab", "type": "Poison"},
+            {"name": "Drain Punch", "type": "Fighting"},
+            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Mach Punch", "type": "Fighting"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "champion-iris",
+      "name": "Iris",
+      "role": "Champion",
+      "location": "Pokémon League",
+      "levelCap": 79,
+      "sprite": "iris",
+      "hidden": false,
+      "order": 20,
+      "bag": [{"item": "Full Restore", "count": 3}],
+      "pokemon": [
+        {
+          "species": "Serperior",
+          "sprite": "serperior",
+          "level": 78,
+          "types": ["Grass", "Dragon"],
+          "ability": "Contrary",
+          "item": "Yache Berry",
+          "moves": [
+            {"name": "Leaf Storm", "type": "Grass"},
+            {"name": "Draco Meteor", "type": "Dragon"},
+            {"name": "Substitute", "type": "Normal"},
+            {"name": "Glare", "type": "Normal"}
+          ]
+        },
+        {
+          "species": "Dragonite",
+          "sprite": "dragonite",
+          "level": 78,
+          "types": ["Dragon", "Water"],
+          "ability": "Multiscale",
+          "item": "Leftovers",
+          "moves": [
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Surf", "type": "Water"},
+            {"name": "Dragon Breath", "type": "Dragon"},
+            {"name": "Fire Blast", "type": "Fire"}
+          ]
+        },
+        {
+          "species": "Empoleon",
+          "sprite": "empoleon",
+          "level": 78,
+          "types": ["Water", "Steel"],
+          "ability": "Torrent",
+          "item": "Shuca Berry",
+          "moves": [
+            {"name": "Agility", "type": "Psychic"},
+            {"name": "Ice Beam", "type": "Ice"},
+            {"name": "Flash Cannon", "type": "Steel"},
+            {"name": "Hydro Pump", "type": "Water"}
+          ]
+        },
+        {
+          "species": "Alakazam",
+          "sprite": "alakazam",
+          "level": 78,
+          "types": ["Psychic"],
+          "ability": "Magic Guard",
+          "item": "Focus Sash",
+          "moves": [
+            {"name": "Psyshock", "type": "Psychic"},
+            {"name": "Nasty Plot", "type": "Dark"},
+            {"name": "Energy Ball", "type": "Grass"},
+            {"name": "Aura Sphere", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Togekiss",
+          "sprite": "togekiss",
+          "level": 78,
+          "types": ["Fairy", "Flying"],
+          "ability": "Serene Grace",
+          "item": "Sitrus Berry",
+          "moves": [
+            {"name": "Moonblast", "type": "Fairy"},
+            {"name": "Air Slash", "type": "Flying"},
+            {"name": "Thunder Wave", "type": "Electric"},
+            {"name": "Aura Sphere", "type": "Fighting"}
+          ]
+        },
+        {
+          "species": "Latios",
+          "sprite": "latios",
+          "level": 79,
+          "types": ["Dragon", "Psychic"],
+          "ability": "Levitate",
+          "item": "Life Orb",
+          "moves": [
+            {"name": "Dragon Pulse", "type": "Dragon"},
+            {"name": "Aura Sphere", "type": "Fighting"},
+            {"name": "Mystical Fire", "type": "Fire"},
+            {"name": "Esper Wing", "type": "Psychic"}
+          ]
+        }
+      ]
+    }
+  ]
+}
