@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07090d">
+<title>Move Changes – Pokémon Pitch Black 2</title>
+<meta name="description" content="Every move changed in Pokémon Pitch Black 2: new Fairy moves, new types, power and accuracy.">
+<!--
+  HOW TO EDIT THE MOVES
+  Everything on this page comes from assets/data/move_changes.json in the repo.
+  Per move: name, new (true = brand-new move), effect, and type / category / power / accuracy / pp as {from, to}.
+  null = no value ("—"). For new moves every "from" is null.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --ink: #07090d;
+    --panel: #10141c;
+    --panel-2: #161b26;
+    --line: #232b3a;
+    --line-2: #34405a;
+    --text: #eaf0fb;
+    --muted: #8e9ab2;
+    --bolt: #2f7bff;
+    --volt: #ffcb05;
+    --display: "Anybody", "Arial Narrow", system-ui, sans-serif;
+    --body: "Barlow", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--ink); color: var(--text);
+    font-family: var(--body); font-size: 16px; line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+  }
+  button, input { font-family: inherit; }
+  :focus-visible { outline: 3px solid var(--volt); outline-offset: 2px; }
+  .wrap { width: min(1240px, 100% - 32px); margin-inline: auto; }
+
+  /* ───────── hero ───────── */
+  .hero-zone { position: relative; isolation: isolate; overflow: hidden; }
+  .hero-zone::before {
+    content: ""; position: absolute; inset: 0; z-index: -2;
+    background:
+      radial-gradient(760px 380px at 50% 18%, rgba(47,123,255,.34), transparent 70%),
+      radial-gradient(420px 260px at 88% 8%, rgba(255,203,5,.07), transparent 70%);
+  }
+  .hero-zone::after {
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background: repeating-linear-gradient(115deg, rgba(255,255,255,.04) 0 2px, transparent 2px 24px);
+    -webkit-mask-image: radial-gradient(ellipse 70% 80% at 50% 25%, #000 0%, transparent 75%);
+            mask-image: radial-gradient(ellipse 70% 80% at 50% 25%, #000 0%, transparent 75%);
+  }
+  .topbar { padding-top: 16px; }
+  .home-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 9px 16px 9px 12px; border-radius: 999px;
+    background: rgba(16,20,28,.7); border: 1px solid var(--line-2);
+    color: var(--text); text-decoration: none; font-size: 14.5px; font-weight: 600;
+    backdrop-filter: blur(8px);
+    transition: border-color .15s, background .15s;
+  }
+  .home-link:hover { border-color: var(--volt); background: rgba(22,27,38,.9); }
+  .home-link svg { width: 16px; height: 16px; }
+
+  .hero { text-align: center; padding: 6px 0 38px; }
+  .hero .logo {
+    display: block; margin: 0 auto 8px; width: min(380px, 80vw); height: auto;
+    filter: drop-shadow(0 0 26px rgba(47,123,255,.55)) drop-shadow(0 6px 14px rgba(0,0,0,.5));
+  }
+  h1 {
+    margin: 0; font-family: var(--display); font-weight: 800; font-stretch: 125%;
+    font-size: clamp(30px, 5.6vw, 54px); line-height: 1.05; letter-spacing: .005em;
+    text-shadow: 0 3px 0 rgba(0,0,0,.35), 0 0 40px rgba(47,123,255,.35);
+  }
+
+  /* ───────── toolbar ───────── */
+  .searchbar {
+    position: sticky; top: 0; z-index: 30; padding: 10px 0;
+    background: rgba(7,9,13,.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-block: 1px solid var(--line);
+  }
+  .search-row { display: flex; gap: 10px; align-items: center; }
+  .search { position: relative; flex: 1 1 auto; min-width: 0; }
+  .search svg.glass { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+  .search input {
+    width: 100%; height: 46px; padding: 0 50px 0 44px; border-radius: 12px;
+    background: var(--panel); border: 1px solid var(--line); color: var(--text);
+    font-size: 16px; font-weight: 500; -webkit-appearance: none; appearance: none;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .search input::-webkit-search-cancel-button { display: none; }
+  .search input::placeholder { color: #67738c; }
+  .search input:focus-visible { outline: none; border-color: var(--bolt); box-shadow: 0 0 0 3px rgba(47,123,255,.35); }
+  .search kbd {
+    position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+    min-width: 24px; padding: 2px 7px; text-align: center; border-radius: 6px;
+    border: 1px solid var(--line-2); background: var(--panel-2); color: var(--muted);
+    font: 600 12px var(--body); pointer-events: none;
+  }
+  .search input:focus ~ kbd, .search input:not(:placeholder-shown) ~ kbd { display: none; }
+  @media (hover: none) { .search kbd { display: none; } }
+  .reset {
+    background: transparent; border: 1px solid var(--line-2); color: var(--text);
+    padding: 0 14px; height: 46px; border-radius: 12px; font-size: 14px; font-weight: 600; cursor: pointer; flex: none;
+    transition: border-color .15s, background .15s;
+  }
+  .reset:hover { border-color: var(--volt); background: var(--panel); }
+  .reset[hidden] { display: none; }
+  .filters { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 16px; }
+  .count { color: var(--muted); font-weight: 600; font-size: 14.5px; font-variant-numeric: tabular-nums; }
+  .collapse {
+    height: 34px; padding: 0 14px; border-radius: 999px; cursor: pointer;
+    background: var(--panel); border: 1px solid var(--line); color: var(--text); font-size: 13.5px; font-weight: 600;
+    transition: border-color .15s;
+  }
+  .collapse:hover { border-color: var(--volt); }
+  .collapse[hidden] { display: none; }
+  .empty { text-align: center; color: var(--muted); padding: 70px 0 30px; font-size: 17px; }
+  .empty strong { display: block; color: var(--text); font-size: 20px; margin-bottom: 4px; }
+  .empty .reset { margin-top: 16px; height: 42px; }
+  .empty[hidden] { display: none; }
+  .error { margin: 24px 0; padding: 16px 18px; border-radius: 12px; background: #2a1216; border: 1px solid #7a2a35; color: #ffd3d8; }
+  .error code { display: block; margin-top: 8px; white-space: pre-wrap; font-size: 13.5px; color: #fff; }
+
+  /* ───────── footer ───────── */
+  .site-footer {
+    padding: 34px 0 44px; text-align: center; border-top: 1px solid var(--line);
+    background: linear-gradient(180deg, rgba(47,123,255,.12), transparent 80%);
+  }
+  .credits {
+    margin: 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+    gap: 8px 18px; color: var(--muted); font-size: 14.5px;
+  }
+  .credits .game { color: var(--volt); font-family: var(--display); font-weight: 800; font-stretch: 112%; letter-spacing: .01em; font-size: 15.5px; }
+  .credits strong { color: var(--text); font-weight: 700; }
+  .credits .rule { width: 1px; height: 16px; background: var(--line-2); }
+
+  .to-top {
+    position: fixed; right: 18px; bottom: 18px; z-index: 40; width: 48px; height: 48px; border-radius: 50%;
+    display: grid; place-items: center; border: 0; cursor: pointer;
+    background: var(--volt); color: #0a0d13; box-shadow: 0 10px 28px rgba(0,0,0,.5);
+    opacity: 0; visibility: hidden; transform: translateY(8px);
+    transition: opacity .2s, transform .2s, visibility .2s;
+  }
+  .to-top.show { opacity: 1; visibility: visible; transform: none; }
+  .to-top svg { width: 20px; height: 20px; }
+
+
+  .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding-top: 16px; }
+  .seg { display: inline-flex; padding: 3px; border-radius: 12px; background: var(--panel); border: 1px solid var(--line); }
+  .seg button {
+    height: 34px; padding: 0 14px; border: 0; border-radius: 9px; cursor: pointer;
+    background: transparent; color: var(--muted); font-size: 14px; font-weight: 600; white-space: nowrap;
+    transition: background .15s, color .15s;
+  }
+  .seg button:hover { color: var(--text); }
+  .seg button[aria-pressed="true"] { background: var(--bolt); color: #fff; }
+  .seg .n { margin-left: 6px; font-size: 12px; opacity: .75; font-variant-numeric: tabular-nums; }
+  .filters { padding-top: 12px; }
+
+  main { padding: 16px 0 48px; }
+  .moves { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); align-items: start; }
+  .mv {
+    --tc: #6b7a9c;
+    border-radius: 18px; overflow: hidden; background: var(--panel);
+    border: 1px solid color-mix(in srgb, var(--tc) 35%, var(--line));
+  }
+  .mv[hidden] { display: none; }
+  .mv-head {
+    display: flex; align-items: center; gap: 12px; padding: 14px 16px;
+    background: linear-gradient(100deg, color-mix(in srgb, var(--tc) 30%, var(--panel)), var(--panel) 70%);
+    border-bottom: 1px solid var(--line);
+  }
+  .mv-head img { width: 34px; height: 34px; flex: none; }
+  .mv-name { margin: 0; font-family: var(--display); font-weight: 800; font-size: 22px; line-height: 1.1; flex: 1; min-width: 0; overflow-wrap: anywhere; }
+  .badge {
+    flex: none; padding: 3px 10px; border-radius: 999px; font: 800 11.5px var(--body); letter-spacing: .08em; text-transform: uppercase;
+  }
+  .badge.new { background: var(--volt); color: #0a0d13; box-shadow: 0 0 16px rgba(255,203,5,.35); }
+  .badge.upd { background: rgba(255,255,255,.08); color: #cdd6e8; border: 1px solid var(--line-2); }
+  .mv-body { padding: 10px 16px 16px; }
+  .stats { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  .stats th { text-align: left; padding: 7px 0; font: 700 11px var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); width: 32%; }
+  .stats td { padding: 7px 0; font-size: 15px; font-weight: 600; }
+  .stats tr + tr th, .stats tr + tr td { border-top: 1px solid rgba(255,255,255,.05); }
+  .chg { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .chg .old { color: var(--muted); text-decoration: line-through; text-decoration-color: rgba(255,255,255,.35); }
+  .chg .arr { color: var(--muted); font-size: 13px; }
+  .chg .val { color: var(--text); }
+  tr.changed .chg .val { color: var(--volt); }
+  tr.changed th { color: #e6d9a0; }
+  .tpill {
+    --c: #6b7a9c;
+    display: inline-flex; align-items: center; gap: 5px; padding: 2px 10px 2px 3px; border-radius: 999px; font-size: 13.5px; font-weight: 700;
+    background: color-mix(in srgb, var(--c) 26%, #0b0e14); border: 1px solid color-mix(in srgb, var(--c) 60%, transparent); color: #fff;
+  }
+  .tpill img { width: 20px; height: 20px; display: block; }
+  .chg .old.tpill, .chg .old .tpill { opacity: .55; text-decoration: none; }
+  .eff { margin: 12px 0 0; padding: 10px 12px; border-radius: 10px; background: var(--panel-2); border-left: 3px solid var(--tc); color: #cdd6e8; font-size: 14.5px; }
+
+  @media (max-width: 560px) {
+    .seg { width: 100%; }
+    .seg button { flex: 1; padding: 0 6px; }
+    .mv-name { font-size: 20px; }
+    .credits { flex-direction: column; gap: 6px; }
+    .credits .rule { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .to-top { transition: none; } }
+  .error[hidden] { display: none; }
+</style>
+</head>
+<body>
+
+<div class="hero-zone">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="home-link" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>
+        Home
+      </a>
+    </div>
+    <header class="hero">
+      <img class="logo" id="logo" src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/logofull.png" alt="Pokémon Pitch Black 2" width="1774" height="887" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='assets/images/logofull.png'}">
+      <h1>Move Changes</h1>
+    </header>
+  </div>
+</div>
+
+<div class="searchbar">
+  <div class="wrap search-row">
+    <div class="search">
+      <svg class="glass" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search a move, a type or an effect" aria-label="Search moves" autocomplete="off" spellcheck="false">
+      <kbd aria-hidden="true">/</kbd>
+    </div>
+    <button class="reset" id="reset" type="button" hidden>Clear</button>
+  </div>
+</div>
+
+<section class="wrap tools" aria-label="View">
+  <div class="seg" id="seg" role="group" aria-label="Show">
+    <button type="button" data-v="all" aria-pressed="true">All</button>
+    <button type="button" data-v="new" aria-pressed="false">New moves</button>
+    <button type="button" data-v="upd" aria-pressed="false">Updated</button>
+  </div>
+</section>
+
+<section class="wrap filters" aria-label="Status">
+  <span class="count" id="count" role="status" aria-live="polite"></span>
+</section>
+
+<main class="wrap">
+  <div id="error" class="error" hidden></div>
+  <ul class="moves" id="list"></ul>
+  <div class="empty" id="empty" hidden>
+    <strong>No move matches your search.</strong>
+    Try another name, type or effect.
+    <div><button class="reset" id="reset2" type="button">Clear search</button></div>
+  </div>
+  <noscript><p class="empty">Turn on JavaScript to see the moves.</p></noscript>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="credits">
+      <span class="game">Pokémon Pitch Black 2</span>
+      <span class="rule" aria-hidden="true"></span>
+      <span>Pokémon &copy; Nintendo / Game Freak</span>
+      <span class="rule" aria-hidden="true"></span>
+      <span>created by <strong>lucaremix</strong></span>
+    </p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 15 7-7 7 7"/></svg>
+</button>
+
+<script>
+// Data lives in assets/data/move_changes.json (same repo): edit that file, not this page.
+const DATA_URLS = [
+  "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/data/move_changes.json",
+  "assets/data/move_changes.json"
+];
+
+function start(DB) {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var q = $("q"), countEl = $("count"), empty = $("empty"), list = $("list"), toTop = $("toTop"), resetBtns = [$("reset"), $("reset2")];
+  var TYPE_COLORS = {
+    Normal: "#a8a77a", Fire: "#ee8130", Water: "#6390f0", Electric: "#f7d02c", Grass: "#7ac74c",
+    Ice: "#96d9d6", Fighting: "#c22e28", Poison: "#a33ea1", Ground: "#e2bf65", Flying: "#a98ff3",
+    Psychic: "#f95587", Bug: "#a6b91a", Rock: "#b6a136", Ghost: "#735797", Dragon: "#6f35fc",
+    Dark: "#705746", Steel: "#b7b7ce", Fairy: "#d685ad", Sound: "#5fb3d6"
+  };
+  var ICON = function (t) { return "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/typinglogos/" + String(t).toLowerCase() + ".svg"; };
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
+  var MOVES = Array.isArray(DB) ? DB : (DB.moves || []);
+
+  function show(v, field) { return v == null ? "—" : (field === "accuracy" && v !== "—" ? v + "%" : v); }
+  function typePill(t) { return t ? '<span class="tpill" style="--c:' + (TYPE_COLORS[t] || "#6b7a9c") + '"><img src="' + ICON(t) + '" alt="" width="20" height="20" loading="lazy">' + esc(t) + "</span>" : "—"; }
+  function row(m, field, label) {
+    var f = m[field] || {}, from = f.from, to = f.to, isNew = m.new, changed = !isNew && from !== to;
+    var fmt = field === "type" ? typePill : function (v) { return esc(show(v, field)); };
+    var cell = isNew || !changed
+      ? '<span class="chg"><span class="val">' + fmt(to) + "</span></span>"
+      : '<span class="chg"><span class="old">' + fmt(from) + '</span><span class="arr">→</span><span class="val">' + fmt(to) + "</span></span>";
+    return '<tr class="' + (changed ? "changed" : "") + '"><th scope="row">' + label + "</th><td>" + cell + "</td></tr>";
+  }
+  function cardHTML(m) {
+    var t = (m.type || {}).to, c = TYPE_COLORS[t] || "#6b7a9c";
+    return '<li class="mv" style="--tc:' + c + '">' +
+      '<header class="mv-head"><img src="' + ICON(t) + '" alt="' + esc(t) + '" width="34" height="34">' +
+        '<h2 class="mv-name">' + esc(m.name) + "</h2>" +
+        (m.new ? '<span class="badge new">New</span>' : '<span class="badge upd">Updated</span>') + "</header>" +
+      '<div class="mv-body"><table class="stats"><tbody>' +
+        row(m, "type", "Type") + row(m, "category", "Category") + row(m, "power", "Power") + row(m, "accuracy", "Accuracy") + row(m, "pp", "PP") +
+      "</tbody></table>" + (m.effect ? '<p class="eff">' + esc(m.effect) + "</p>" : "") + "</div></li>";
+  }
+  var sorted = MOVES.slice().sort(function (a, b) { return (b.new ? 1 : 0) - (a.new ? 1 : 0) || a.name.localeCompare(b.name); });
+  list.innerHTML = sorted.map(cardHTML).join("");
+  var els = Array.prototype.slice.call(list.children);
+
+  var view = "all";
+  var segBtns = Array.prototype.slice.call(document.querySelectorAll("#seg button"));
+  var nNew = MOVES.filter(function (m) { return m.new; }).length;
+  var counts = { all: MOVES.length, new: nNew, upd: MOVES.length - nNew };
+  segBtns.forEach(function (b) { b.insertAdjacentHTML("beforeend", '<span class="n">' + counts[b.dataset.v] + "</span>"); });
+  $("seg").addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b) return;
+    view = b.dataset.v; segBtns.forEach(function (x) { x.setAttribute("aria-pressed", x === b); }); apply();
+  });
+
+  function apply() {
+    var term = q.value.trim().toLowerCase(), shown = 0;
+    sorted.forEach(function (m, i) {
+      var hay = [m.name, m.effect, m.type && m.type.from, m.type && m.type.to, m.category && m.category.to].join(" ").toLowerCase();
+      var ok = (view === "all" || (view === "new") === !!m.new) && (!term || hay.indexOf(term) !== -1);
+      els[i].hidden = !ok; if (ok) shown++;
+    });
+    countEl.textContent = shown === MOVES.length ? MOVES.length + " moves" : shown + " of " + MOVES.length + " moves";
+    empty.hidden = shown > 0;
+    resetBtns[0].hidden = !q.value;
+  }
+  q.addEventListener("input", apply);
+  resetBtns.forEach(function (b) { b.addEventListener("click", function () { q.value = ""; apply(); q.focus(); }); });
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "/" || e.ctrlKey || e.metaKey || e.altKey) return;
+    var tag = (document.activeElement || {}).tagName;
+    if (tag === "INPUT" || tag === "TEXTAREA") return;
+    e.preventDefault(); q.focus();
+  });
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  window.addEventListener("scroll", function () { toTop.classList.toggle("show", window.scrollY > 900); }, { passive: true });
+  toTop.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" }); });
+  apply();
+}
+
+// ───────── load the JSON ─────────
+(async function load() {
+  const statusEl = document.getElementById("count");
+  statusEl.textContent = "Loading moves…";
+  let lastErr;
+  for (const url of DATA_URLS) {
+    try {
+      const res = await fetch(url, { cache: "no-cache" });
+      if (!res.ok) throw new Error("HTTP " + res.status + " on " + url);
+      start(await res.json());
+      return;
+    } catch (err) { lastErr = err; }
+  }
+  statusEl.textContent = "";
+  const box = document.getElementById("error");
+  box.hidden = false;
+  box.innerHTML = "<strong>Could not load the move data.</strong> Check that assets/data/move_changes.json exists and is valid JSON." +
+    "<code>" + String(lastErr ? lastErr.message : "unknown error").replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c])) + "</code>";
+})();
+</script>
+</body>
+</html>
