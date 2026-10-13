@@ -72,7 +72,7 @@
       "from": null,
       "to": 15
     },
-    "effect": "Never misses. Hits all opposing Pokémon. Sound move."
+    "effect": "Hits all opposing Pokémon."
   },
   {
     "name": "Draining Kiss",
@@ -122,7 +122,7 @@
       "from": null,
       "to": 10
     },
-    "effect": "10% chance to lower the target's Attack by 1. Contact."
+    "effect": "10% chance to lower the target's Attack by 1."
   },
   {
     "name": "Charm",
@@ -172,7 +172,7 @@
       "from": 40,
       "to": 40
     },
-    "effect": "Steals the target's held item if the user has none. Contact."
+    "effect": "Steals the target's held item if the user has none."
   },
   {
     "name": "Sweet Scent",
@@ -272,7 +272,7 @@
       "from": 30,
       "to": 30
     },
-    "effect": "No additional effect. Contact."
+    "effect": ""
   },
   {
     "name": "Strength",
@@ -297,7 +297,7 @@
       "from": 15,
       "to": 15
     },
-    "effect": "No additional effect. Contact."
+    "effect": ""
   },
   {
     "name": "Rock Smash",
@@ -322,7 +322,7 @@
       "from": 15,
       "to": 15
     },
-    "effect": "50% chance to lower the target's Defense by 1. Contact."
+    "effect": "50% chance to lower the target's Defense by 1."
   },
   {
     "name": "Twineedle",
