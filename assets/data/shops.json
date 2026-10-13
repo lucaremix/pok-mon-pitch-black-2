@@ -1225,31 +1225,31 @@
         },
         {
           "name": "Oval Stone",
-          "category": "Natural evolution items",
+          "category": "Evolution items",
           "price": 800,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/oval-stone.png"
         },
         {
           "name": "Honey",
-          "category": "Natural evolution items",
+          "category": "Evolution items",
           "price": 300,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/honey.png"
         },
         {
           "name": "Black Sludge",
-          "category": "Natural evolution items",
+          "category": "Evolution items",
           "price": 800,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/black-sludge.png"
         },
         {
           "name": "Never-Melt Ice",
-          "category": "Natural evolution items",
+          "category": "Evolution items",
           "price": 800,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/never-melt-ice.png"
         },
         {
           "name": "Prism Scale",
-          "category": "Natural evolution items",
+          "category": "Evolution items",
           "price": 800,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/prism-scale.png"
         }
@@ -1264,81 +1264,87 @@
       "items": [
         {
           "name": "Deep Sea Scale",
-          "category": "Trade & hold evolution items",
+          "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/deep-sea-scale.png"
         },
         {
           "name": "Deep Sea Tooth",
-          "category": "Trade & hold evolution items",
+          "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/deep-sea-tooth.png"
         },
         {
           "name": "Dragon Scale",
-          "category": "Trade & hold evolution items",
+          "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dragon-scale.png"
         },
         {
           "name": "Dubious Disc",
-          "category": "Trade & hold evolution items",
+          "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dubious-disc.png"
         },
         {
           "name": "Electirizer",
-          "category": "Trade & hold evolution items",
+          "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/electirizer.png"
         },
         {
           "name": "King's Rock",
-          "category": "Trade & hold evolution items",
+          "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/kings-rock.png"
         },
         {
           "name": "Magmarizer",
-          "category": "Trade & hold evolution items",
+          "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/magmarizer.png"
         },
         {
           "name": "Metal Coat",
-          "category": "Trade & hold evolution items",
+          "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/metal-coat.png"
         },
         {
           "name": "Protector",
-          "category": "Trade & hold evolution items",
+          "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/protector.png"
         },
         {
           "name": "Reaper Cloth",
-          "category": "Trade & hold evolution items",
+          "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/reaper-cloth.png"
         },
         {
           "name": "Up-Grade",
-          "category": "Trade & hold evolution items",
+          "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/up-grade.png"
         },
         {
           "name": "Razor Claw",
-          "category": "Trade & hold evolution items",
+          "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/razor-claw.png"
         },
         {
           "name": "Razor Fang",
-          "category": "Trade & hold evolution items",
+          "category": "Evolution items",
           "price": 1200,
           "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/razor-fang.png"
+        },
+        {
+          "name": "Heart Scale",
+          "category": "Heart Scales",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heart-scale.png"
         }
       ],
       "tms": []
