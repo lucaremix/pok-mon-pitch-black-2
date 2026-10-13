@@ -38,67 +38,6 @@
     ]
   },
   {
-    "pokedex_id": 75,
-    "name": "Graveler",
-    "types": [
-      "Rock",
-      "Ground"
-    ],
-    "evolutions": [
-      {
-        "into": "Golem",
-        "into_id": 76,
-        "into_types": [
-          "Rock",
-          "Fighting"
-        ],
-        "method": "Level 35",
-        "kind": "level",
-        "level": 35
-      }
-    ]
-  },
-  {
-    "pokedex_id": 77,
-    "name": "Ponyta",
-    "types": [
-      "Fire"
-    ],
-    "evolutions": [
-      {
-        "into": "Rapidash",
-        "into_id": 78,
-        "into_types": [
-          "Fire",
-          "Fairy"
-        ],
-        "method": "Level 35",
-        "kind": "level",
-        "level": 35
-      }
-    ]
-  },
-  {
-    "pokedex_id": 88,
-    "name": "Grimer",
-    "types": [
-      "Poison"
-    ],
-    "evolutions": [
-      {
-        "into": "Muk",
-        "into_id": 89,
-        "into_types": [
-          "Poison",
-          "Ground"
-        ],
-        "method": "Level 35",
-        "kind": "level",
-        "level": 35
-      }
-    ]
-  },
-  {
     "pokedex_id": 93,
     "name": "Haunter",
     "types": [
@@ -182,47 +121,6 @@
     ]
   },
   {
-    "pokedex_id": 123,
-    "name": "Scyther",
-    "types": [
-      "Bug",
-      "Fighting"
-    ],
-    "evolutions": [
-      {
-        "into": "Scizor",
-        "into_id": 212,
-        "into_types": [
-          "Bug",
-          "Steel"
-        ],
-        "method": "Level up holding Metal Coat",
-        "kind": "hold",
-        "item": "Metal Coat"
-      }
-    ]
-  },
-  {
-    "pokedex_id": 125,
-    "name": "Electabuzz",
-    "types": [
-      "Electric"
-    ],
-    "evolutions": [
-      {
-        "into": "Electivire",
-        "into_id": 466,
-        "into_types": [
-          "Electric",
-          "Fighting"
-        ],
-        "method": "Level up holding Electirizer",
-        "kind": "hold",
-        "item": "Electirizer"
-      }
-    ]
-  },
-  {
     "pokedex_id": 126,
     "name": "Magmar",
     "types": [
@@ -286,7 +184,8 @@
         ],
         "method": "Level up holding Never-Melt Ice",
         "kind": "hold",
-        "item": "Never-Melt Ice"
+        "item": "Never-Melt Ice",
+        "item_icon": "nevermeltice"
       }
     ]
   },
@@ -317,7 +216,7 @@
     ],
     "evolutions": [
       {
-        "into": "Porygon-Z",
+        "into": "PorygonZ",
         "into_id": 474,
         "into_types": [
           "Normal"
@@ -325,67 +224,6 @@
         "method": "Level up holding Dubious Disc",
         "kind": "hold",
         "item": "Dubious Disc"
-      }
-    ]
-  },
-  {
-    "pokedex_id": 299,
-    "name": "Nosepass",
-    "types": [
-      "Rock"
-    ],
-    "evolutions": [
-      {
-        "into": "Probopass",
-        "into_id": 476,
-        "into_types": [
-          "Rock",
-          "Flying"
-        ],
-        "method": "Use Thunder Stone",
-        "kind": "item",
-        "item": "Thunder Stone"
-      }
-    ]
-  },
-  {
-    "pokedex_id": 328,
-    "name": "Trapinch",
-    "types": [
-      "Ground"
-    ],
-    "evolutions": [
-      {
-        "into": "Vibrava",
-        "into_id": 329,
-        "into_types": [
-          "Ground",
-          "Dragon"
-        ],
-        "method": "Level 25",
-        "kind": "level",
-        "level": 25
-      }
-    ]
-  },
-  {
-    "pokedex_id": 329,
-    "name": "Vibrava",
-    "types": [
-      "Ground",
-      "Dragon"
-    ],
-    "evolutions": [
-      {
-        "into": "Flygon",
-        "into_id": 330,
-        "into_types": [
-          "Dragon",
-          "Bug"
-        ],
-        "method": "Level 38",
-        "kind": "level",
-        "level": 38
       }
     ]
   },
@@ -447,57 +285,6 @@
     ]
   },
   {
-    "pokedex_id": 361,
-    "name": "Snorunt",
-    "types": [
-      "Ice"
-    ],
-    "evolutions": [
-      {
-        "into": "Glalie",
-        "into_id": 362,
-        "into_types": [
-          "Ice",
-          "Rock"
-        ],
-        "method": "Use Ice Stone",
-        "kind": "item",
-        "item": "Ice Stone"
-      }
-    ]
-  },
-  {
-    "pokedex_id": 366,
-    "name": "Clamperl",
-    "types": [
-      "Water"
-    ],
-    "evolutions": [
-      {
-        "into": "Huntail",
-        "into_id": 367,
-        "into_types": [
-          "Water",
-          "Dragon"
-        ],
-        "method": "Level up holding Deep Sea Tooth",
-        "kind": "hold",
-        "item": "Deep Sea Tooth"
-      },
-      {
-        "into": "Gorebyss",
-        "into_id": 368,
-        "into_types": [
-          "Water",
-          "Fairy"
-        ],
-        "method": "Level up holding Deep Sea Scale",
-        "kind": "hold",
-        "item": "Deep Sea Scale"
-      }
-    ]
-  },
-  {
     "pokedex_id": 458,
     "name": "Mantyke",
     "types": [
@@ -538,84 +325,6 @@
     ]
   },
   {
-    "pokedex_id": 533,
-    "name": "Gurdurr",
-    "types": [
-      "Fighting"
-    ],
-    "evolutions": [
-      {
-        "into": "Conkeldurr",
-        "into_id": 534,
-        "into_types": [
-          "Fighting",
-          "Rock"
-        ],
-        "method": "Level 35",
-        "kind": "level",
-        "level": 35
-      }
-    ]
-  },
-  {
-    "pokedex_id": 574,
-    "name": "Gothita",
-    "types": [
-      "Psychic"
-    ],
-    "evolutions": [
-      {
-        "into": "Gothorita",
-        "into_id": 575,
-        "into_types": [
-          "Psychic"
-        ],
-        "method": "Level 37",
-        "kind": "level",
-        "level": 37
-      }
-    ]
-  },
-  {
-    "pokedex_id": 582,
-    "name": "Vanillite",
-    "types": [
-      "Ice"
-    ],
-    "evolutions": [
-      {
-        "into": "Vanillish",
-        "into_id": 583,
-        "into_types": [
-          "Ice"
-        ],
-        "method": "Level 25",
-        "kind": "level",
-        "level": 25
-      }
-    ]
-  },
-  {
-    "pokedex_id": 583,
-    "name": "Vanillish",
-    "types": [
-      "Ice"
-    ],
-    "evolutions": [
-      {
-        "into": "Vanilluxe",
-        "into_id": 584,
-        "into_types": [
-          "Ice",
-          "Fairy"
-        ],
-        "method": "Level 39",
-        "kind": "level",
-        "level": 39
-      }
-    ]
-  },
-  {
     "pokedex_id": 588,
     "name": "Karrablast",
     "types": [
@@ -632,84 +341,6 @@
         "method": "Level up holding Metal Coat",
         "kind": "hold",
         "item": "Metal Coat"
-      }
-    ]
-  },
-  {
-    "pokedex_id": 599,
-    "name": "Klink",
-    "types": [
-      "Steel"
-    ],
-    "evolutions": [
-      {
-        "into": "Klang",
-        "into_id": 600,
-        "into_types": [
-          "Steel"
-        ],
-        "method": "Level 23",
-        "kind": "level",
-        "level": 23
-      }
-    ]
-  },
-  {
-    "pokedex_id": 600,
-    "name": "Klang",
-    "types": [
-      "Steel"
-    ],
-    "evolutions": [
-      {
-        "into": "Klinklang",
-        "into_id": 601,
-        "into_types": [
-          "Steel",
-          "Electric"
-        ],
-        "method": "Level 38",
-        "kind": "level",
-        "level": 38
-      }
-    ]
-  },
-  {
-    "pokedex_id": 602,
-    "name": "Tynamo",
-    "types": [
-      "Electric"
-    ],
-    "evolutions": [
-      {
-        "into": "Eelektrik",
-        "into_id": 603,
-        "into_types": [
-          "Electric"
-        ],
-        "method": "Level 24",
-        "kind": "level",
-        "level": 24
-      }
-    ]
-  },
-  {
-    "pokedex_id": 603,
-    "name": "Eelektrik",
-    "types": [
-      "Electric"
-    ],
-    "evolutions": [
-      {
-        "into": "Eelektross",
-        "into_id": 604,
-        "into_types": [
-          "Electric",
-          "Water"
-        ],
-        "method": "Level 36",
-        "kind": "level",
-        "level": 36
       }
     ]
   },
@@ -750,47 +381,6 @@
         "method": "Level 27",
         "kind": "level",
         "level": 27
-      }
-    ]
-  },
-  {
-    "pokedex_id": 616,
-    "name": "Shelmet",
-    "types": [
-      "Bug"
-    ],
-    "evolutions": [
-      {
-        "into": "Accelgor",
-        "into_id": 617,
-        "into_types": [
-          "Bug",
-          "Dark"
-        ],
-        "method": "Use Dusk Stone",
-        "kind": "item",
-        "item": "Dusk Stone"
-      }
-    ]
-  },
-  {
-    "pokedex_id": 622,
-    "name": "Golett",
-    "types": [
-      "Ground",
-      "Ghost"
-    ],
-    "evolutions": [
-      {
-        "into": "Golurk",
-        "into_id": 623,
-        "into_types": [
-          "Ghost",
-          "Steel"
-        ],
-        "method": "Level 35",
-        "kind": "level",
-        "level": 35
       }
     ]
   },
