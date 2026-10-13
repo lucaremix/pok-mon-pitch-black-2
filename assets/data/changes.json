@@ -3178,7 +3178,7 @@
         "level": 61
       }
     ],
-    "evo": "Level up holding Metal Coat",
+    "evo": "Level up during the day holding Metal Coat",
     "next": {
       "name": "Scizor",
       "pokedex_id": 212,
@@ -9664,7 +9664,7 @@
           "Inner Focus",
           "Ice Body"
         ],
-        "evo": "Level up holding Never-Melt Ice",
+        "evo": "Level up at night holding Never-Melt Ice",
         "moves": [
           {
             "move": "Powder Snow",
@@ -9819,7 +9819,7 @@
           "Shell Armor",
           "Rattled"
         ],
-        "evo": "Level up holding Deep Sea Tooth",
+        "evo": "Level up at night holding Deep Sea Tooth",
         "moves": [
           {
             "move": "Clamp",
@@ -9934,7 +9934,7 @@
           "Shell Armor",
           "Rattled"
         ],
-        "evo": "Level up holding Deep Sea Scale",
+        "evo": "Level up during the day holding Deep Sea Scale",
         "moves": [
           {
             "move": "Clamp",
@@ -12183,7 +12183,7 @@
           "Static",
           "Vital Spirit"
         ],
-        "evo": "Level up holding Electirizer",
+        "evo": "Level up during the day holding Electirizer",
         "moves": [
           {
             "move": "Quick Attack",
