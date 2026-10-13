@@ -1,0 +1,352 @@
+[
+  {
+    "name": "Dazzling Gleam",
+    "new": true,
+    "type": {
+      "from": null,
+      "to": "Fairy"
+    },
+    "category": {
+      "from": null,
+      "to": "Special"
+    },
+    "power": {
+      "from": null,
+      "to": 80
+    },
+    "accuracy": {
+      "from": null,
+      "to": 100
+    },
+    "pp": {
+      "from": null,
+      "to": 10
+    },
+    "effect": "Hits all opposing Pokémon."
+  },
+  {
+    "name": "Moonblast",
+    "new": true,
+    "type": {
+      "from": null,
+      "to": "Fairy"
+    },
+    "category": {
+      "from": null,
+      "to": "Special"
+    },
+    "power": {
+      "from": null,
+      "to": 95
+    },
+    "accuracy": {
+      "from": null,
+      "to": 100
+    },
+    "pp": {
+      "from": null,
+      "to": 15
+    },
+    "effect": "30% chance to lower the target's Sp. Atk by 1."
+  },
+  {
+    "name": "Disarming Voice",
+    "new": true,
+    "type": {
+      "from": null,
+      "to": "Fairy"
+    },
+    "category": {
+      "from": null,
+      "to": "Special"
+    },
+    "power": {
+      "from": null,
+      "to": 40
+    },
+    "accuracy": {
+      "from": null,
+      "to": null
+    },
+    "pp": {
+      "from": null,
+      "to": 15
+    },
+    "effect": "Never misses. Hits all opposing Pokémon. Sound move."
+  },
+  {
+    "name": "Draining Kiss",
+    "new": true,
+    "type": {
+      "from": null,
+      "to": "Fairy"
+    },
+    "category": {
+      "from": null,
+      "to": "Special"
+    },
+    "power": {
+      "from": null,
+      "to": 50
+    },
+    "accuracy": {
+      "from": null,
+      "to": 100
+    },
+    "pp": {
+      "from": null,
+      "to": 10
+    },
+    "effect": "The user recovers 75% of the damage dealt."
+  },
+  {
+    "name": "Play Rough",
+    "new": true,
+    "type": {
+      "from": null,
+      "to": "Fairy"
+    },
+    "category": {
+      "from": null,
+      "to": "Physical"
+    },
+    "power": {
+      "from": null,
+      "to": 90
+    },
+    "accuracy": {
+      "from": null,
+      "to": 90
+    },
+    "pp": {
+      "from": null,
+      "to": 10
+    },
+    "effect": "10% chance to lower the target's Attack by 1. Contact."
+  },
+  {
+    "name": "Charm",
+    "new": false,
+    "type": {
+      "from": "Normal",
+      "to": "Fairy"
+    },
+    "category": {
+      "from": "Status",
+      "to": "Status"
+    },
+    "power": {
+      "from": null,
+      "to": null
+    },
+    "accuracy": {
+      "from": 100,
+      "to": 100
+    },
+    "pp": {
+      "from": 20,
+      "to": 20
+    },
+    "effect": "Lowers the target's Attack by 2."
+  },
+  {
+    "name": "Covet",
+    "new": false,
+    "type": {
+      "from": "Normal",
+      "to": "Fairy"
+    },
+    "category": {
+      "from": "Physical",
+      "to": "Physical"
+    },
+    "power": {
+      "from": 60,
+      "to": 60
+    },
+    "accuracy": {
+      "from": 100,
+      "to": 100
+    },
+    "pp": {
+      "from": 40,
+      "to": 40
+    },
+    "effect": "Steals the target's held item if the user has none. Contact."
+  },
+  {
+    "name": "Sweet Scent",
+    "new": false,
+    "type": {
+      "from": "Normal",
+      "to": "Fairy"
+    },
+    "category": {
+      "from": "Status",
+      "to": "Status"
+    },
+    "power": {
+      "from": null,
+      "to": null
+    },
+    "accuracy": {
+      "from": 100,
+      "to": 100
+    },
+    "pp": {
+      "from": 20,
+      "to": 20
+    },
+    "effect": "Lowers the evasion of opposing Pokémon by 1."
+  },
+  {
+    "name": "Moonlight",
+    "new": false,
+    "type": {
+      "from": "Normal",
+      "to": "Fairy"
+    },
+    "category": {
+      "from": "Status",
+      "to": "Status"
+    },
+    "power": {
+      "from": null,
+      "to": null
+    },
+    "accuracy": {
+      "from": null,
+      "to": null
+    },
+    "pp": {
+      "from": 5,
+      "to": 5
+    },
+    "effect": "Heals the user; amount depends on the weather."
+  },
+  {
+    "name": "Sweet Kiss",
+    "new": false,
+    "type": {
+      "from": "Normal",
+      "to": "Fairy"
+    },
+    "category": {
+      "from": "Status",
+      "to": "Status"
+    },
+    "power": {
+      "from": null,
+      "to": null
+    },
+    "accuracy": {
+      "from": 75,
+      "to": 75
+    },
+    "pp": {
+      "from": 10,
+      "to": 10
+    },
+    "effect": "Confuses the target."
+  },
+  {
+    "name": "Cut",
+    "new": false,
+    "type": {
+      "from": "Normal",
+      "to": "Grass"
+    },
+    "category": {
+      "from": "Physical",
+      "to": "Physical"
+    },
+    "power": {
+      "from": 50,
+      "to": 60
+    },
+    "accuracy": {
+      "from": 95,
+      "to": 100
+    },
+    "pp": {
+      "from": 30,
+      "to": 30
+    },
+    "effect": "No additional effect. Contact."
+  },
+  {
+    "name": "Strength",
+    "new": false,
+    "type": {
+      "from": "Normal",
+      "to": "Rock"
+    },
+    "category": {
+      "from": "Physical",
+      "to": "Physical"
+    },
+    "power": {
+      "from": 80,
+      "to": 85
+    },
+    "accuracy": {
+      "from": 100,
+      "to": 100
+    },
+    "pp": {
+      "from": 15,
+      "to": 15
+    },
+    "effect": "No additional effect. Contact."
+  },
+  {
+    "name": "Rock Smash",
+    "new": false,
+    "type": {
+      "from": "Fighting",
+      "to": "Fighting"
+    },
+    "category": {
+      "from": "Physical",
+      "to": "Physical"
+    },
+    "power": {
+      "from": 40,
+      "to": 60
+    },
+    "accuracy": {
+      "from": 100,
+      "to": 100
+    },
+    "pp": {
+      "from": 15,
+      "to": 15
+    },
+    "effect": "50% chance to lower the target's Defense by 1. Contact."
+  },
+  {
+    "name": "Twineedle",
+    "new": false,
+    "type": {
+      "from": "Bug",
+      "to": "Bug"
+    },
+    "category": {
+      "from": "Physical",
+      "to": "Physical"
+    },
+    "power": {
+      "from": 25,
+      "to": 40
+    },
+    "accuracy": {
+      "from": 100,
+      "to": 100
+    },
+    "pp": {
+      "from": 20,
+      "to": 20
+    },
+    "effect": "Hits twice. Each hit has a 20% chance to poison."
+  }
+]
