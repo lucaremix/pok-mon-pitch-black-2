@@ -64,7 +64,7 @@
           ]
         },
         {
-          "species": "U Slowbro",
+          "species": "Unovan Slowbro",
           "sprite": "unown-question",
           "level": 13,
           "types": ["Normal", "Bug"],
@@ -146,11 +146,11 @@
           ]
         },
         {
-          "species": "Shellos",
-          "sprite": "shellos",
+          "species": "Unovan Magcargo",
+          "sprite": "unown-question",
           "level": 20,
-          "types": ["Ground", "Poison"],
-          "ability": "Sticky Hold",
+          "types": ["Poison", "Ground"],
+          "ability": "Aftermath",
           "item": "Leftovers",
           "moves": [
             {"name": "Earth Power", "type": "Ground"},
@@ -367,7 +367,7 @@
           ]
         },
         {
-          "species": "U Heracross",
+          "species": "Unovan Heracross",
           "sprite": "unown-question",
           "level": 27,
           "types": ["Bug", "Steel"],
@@ -560,7 +560,7 @@
           ]
         },
         {
-          "species": "U Altaria",
+          "species": "Unovan Altaria",
           "sprite": "unown-question",
           "level": 36,
           "types": ["Flying", "Electric"],
@@ -767,7 +767,7 @@
           ]
         },
         {
-          "species": "U Camerupt",
+          "species": "Unovan Camerupt",
           "sprite": "unown-question",
           "level": 43,
           "types": ["Ground", "Grass"],
@@ -849,7 +849,7 @@
           ]
         },
         {
-          "species": "U Gallade",
+          "species": "Unovan Gallade",
           "sprite": "unown-question",
           "level": 52,
           "types": ["Flying", "Fighting"],
@@ -1042,7 +1042,7 @@
           ]
         },
         {
-          "species": "U Salamence",
+          "species": "Unovan Salamence",
           "sprite": "unown-question",
           "level": 61,
           "types": ["Dragon", "Poison"],
@@ -1124,7 +1124,7 @@
           ]
         },
         {
-          "species": "U Steelix",
+          "species": "Unovan Steelix",
           "sprite": "unown-question",
           "level": 64,
           "types": ["Steel", "Water"],
@@ -1429,7 +1429,7 @@
           ]
         },
         {
-          "species": "U Salamence",
+          "species": "Unovan Salamence",
           "sprite": "unown-question",
           "level": 70,
           "types": ["Dragon", "Poison"],
