@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07090d">
+<title>Wild Areas – Pokémon Pitch Black 2</title>
+<meta name="description" content="Every wild encounter of Pokémon Pitch Black 2: grass, surf, fishing, caves, events and Hidden Grottos, with levels and rates.">
+<!--
+  HOW TO EDIT THE WILD AREAS
+  Everything on this page comes from assets/data/wild_areas.json in the repo.
+  areas[]   -> one entry per location: name, section ("main" / "postgame"), tables[], grottos[] (ids)
+  tables[]  -> method ("Grass, Normal"...), encounters[{name, min, max, rate, version?}], notes[]
+               rate null = event / gift; version "B2" / "W2" = only in that version
+  grottos[] -> Hidden Grotto contents: common / uncommon / rare (+ guaranteed)
+  species{} -> sprite slug and types used for every Pokémon name
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --ink: #07090d;
+    --panel: #10141c;
+    --panel-2: #161b26;
+    --line: #232b3a;
+    --line-2: #34405a;
+    --text: #eaf0fb;
+    --muted: #8e9ab2;
+    --bolt: #2f7bff;
+    --volt: #ffcb05;
+    --display: "Anybody", "Arial Narrow", system-ui, sans-serif;
+    --body: "Barlow", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--ink); color: var(--text);
+    font-family: var(--body); font-size: 16px; line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+  }
+  button, input { font-family: inherit; }
+  :focus-visible { outline: 3px solid var(--volt); outline-offset: 2px; }
+  .wrap { width: min(1240px, 100% - 32px); margin-inline: auto; }
+
+  /* ───────── hero ───────── */
+  .hero-zone { position: relative; isolation: isolate; overflow: hidden; }
+  .hero-zone::before {
+    content: ""; position: absolute; inset: 0; z-index: -2;
+    background:
+      radial-gradient(760px 380px at 50% 18%, rgba(47,123,255,.34), transparent 70%),
+      radial-gradient(420px 260px at 88% 8%, rgba(255,203,5,.07), transparent 70%);
+  }
+  .hero-zone::after {
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background: repeating-linear-gradient(115deg, rgba(255,255,255,.04) 0 2px, transparent 2px 24px);
+    -webkit-mask-image: radial-gradient(ellipse 70% 80% at 50% 25%, #000 0%, transparent 75%);
+            mask-image: radial-gradient(ellipse 70% 80% at 50% 25%, #000 0%, transparent 75%);
+  }
+  .topbar { padding-top: 16px; }
+  .home-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 9px 16px 9px 12px; border-radius: 999px;
+    background: rgba(16,20,28,.7); border: 1px solid var(--line-2);
+    color: var(--text); text-decoration: none; font-size: 14.5px; font-weight: 600;
+    backdrop-filter: blur(8px);
+    transition: border-color .15s, background .15s;
+  }
+  .home-link:hover { border-color: var(--volt); background: rgba(22,27,38,.9); }
+  .home-link svg { width: 16px; height: 16px; }
+
+  .hero { text-align: center; padding: 6px 0 38px; }
+  .hero .logo {
+    display: block; margin: 0 auto 8px; width: min(380px, 80vw); height: auto;
+    filter: drop-shadow(0 0 26px rgba(47,123,255,.55)) drop-shadow(0 6px 14px rgba(0,0,0,.5));
+  }
+  h1 {
+    margin: 0; font-family: var(--display); font-weight: 800; font-stretch: 125%;
+    font-size: clamp(30px, 5.6vw, 54px); line-height: 1.05; letter-spacing: .005em;
+    text-shadow: 0 3px 0 rgba(0,0,0,.35), 0 0 40px rgba(47,123,255,.35);
+  }
+
+  /* ───────── toolbar ───────── */
+  .searchbar {
+    position: sticky; top: 0; z-index: 30; padding: 10px 0;
+    background: rgba(7,9,13,.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-block: 1px solid var(--line);
+  }
+  .search-row { display: flex; gap: 10px; align-items: center; }
+  .search { position: relative; flex: 1 1 auto; min-width: 0; }
+  .search svg.glass { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+  .search input {
+    width: 100%; height: 46px; padding: 0 50px 0 44px; border-radius: 12px;
+    background: var(--panel); border: 1px solid var(--line); color: var(--text);
+    font-size: 16px; font-weight: 500; -webkit-appearance: none; appearance: none;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .search input::-webkit-search-cancel-button { display: none; }
+  .search input::placeholder { color: #67738c; }
+  .search input:focus-visible { outline: none; border-color: var(--bolt); box-shadow: 0 0 0 3px rgba(47,123,255,.35); }
+  .search kbd {
+    position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+    min-width: 24px; padding: 2px 7px; text-align: center; border-radius: 6px;
+    border: 1px solid var(--line-2); background: var(--panel-2); color: var(--muted);
+    font: 600 12px var(--body); pointer-events: none;
+  }
+  .search input:focus ~ kbd, .search input:not(:placeholder-shown) ~ kbd { display: none; }
+  @media (hover: none) { .search kbd { display: none; } }
+  .reset {
+    background: transparent; border: 1px solid var(--line-2); color: var(--text);
+    padding: 0 14px; height: 46px; border-radius: 12px; font-size: 14px; font-weight: 600; cursor: pointer; flex: none;
+    transition: border-color .15s, background .15s;
+  }
+  .reset:hover { border-color: var(--volt); background: var(--panel); }
+  .reset[hidden] { display: none; }
+  .filters { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 16px; }
+  .count { color: var(--muted); font-weight: 600; font-size: 14.5px; font-variant-numeric: tabular-nums; }
+  .collapse {
+    height: 34px; padding: 0 14px; border-radius: 999px; cursor: pointer;
+    background: var(--panel); border: 1px solid var(--line); color: var(--text); font-size: 13.5px; font-weight: 600;
+    transition: border-color .15s;
+  }
+  .collapse:hover { border-color: var(--volt); }
+  .collapse[hidden] { display: none; }
+
+  /* ───────── view tabs + method chips ───────── */
+  .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding-top: 16px; }
+  .seg { display: inline-flex; padding: 3px; border-radius: 12px; background: var(--panel); border: 1px solid var(--line); }
+  .seg button {
+    height: 34px; padding: 0 14px; border: 0; border-radius: 9px; cursor: pointer;
+    background: transparent; color: var(--muted); font-size: 14px; font-weight: 600; white-space: nowrap;
+    transition: background .15s, color .15s;
+  }
+  .seg button:hover { color: var(--text); }
+  .seg button[aria-pressed="true"] { background: var(--bolt); color: #fff; }
+  .seg .n { margin-left: 6px; font-size: 12px; opacity: .75; font-variant-numeric: tabular-nums; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    --mc: #6b7a9c;
+    display: inline-flex; align-items: center; gap: 7px; height: 34px; padding: 0 13px 0 10px; border-radius: 999px; cursor: pointer;
+    background: var(--panel); border: 1px solid var(--line); color: #cdd6e8; font-size: 13.5px; font-weight: 600;
+    transition: border-color .15s, background .15s, color .15s;
+  }
+  .chip i { width: 9px; height: 9px; border-radius: 50%; background: var(--mc); }
+  .chip:hover { border-color: color-mix(in srgb, var(--mc) 70%, var(--line)); color: var(--text); }
+  .chip[aria-pressed="true"] { background: color-mix(in srgb, var(--mc) 26%, var(--panel)); border-color: var(--mc); color: #fff; }
+  .chips[hidden] { display: none; }
+  .filters { padding-top: 12px; }
+
+  /* ───────── about box ───────── */
+  .about { margin: 0 0 16px; border-radius: 14px; background: var(--panel); border: 1px solid var(--line); }
+  .about summary {
+    list-style: none; cursor: pointer; padding: 12px 16px; display: flex; align-items: center; gap: 10px;
+    font-weight: 700; font-size: 15px;
+  }
+  .about summary::-webkit-details-marker { display: none; }
+  .about summary svg { width: 18px; height: 18px; color: var(--volt); flex: none; }
+  .about summary .chev-s { margin-left: auto; color: var(--muted); transition: transform .2s; }
+  .about[open] summary .chev-s { transform: rotate(180deg); }
+  .about-body { padding: 0 18px 16px 44px; color: #c3cde2; font-size: 15px; }
+  .about-body p { margin: 10px 0 6px; }
+  .about-body ul { margin: 0; padding-left: 18px; }
+  .about-body li { margin: 3px 0; }
+
+  /* ───────── area rows ───────── */
+  main { padding: 14px 0 48px; }
+  .areas { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  .area {
+    --a: #7ac74c;
+    background: var(--panel); border-radius: 16px; overflow: hidden; scroll-margin-top: 84px;
+    border: 1px solid color-mix(in srgb, var(--a) 26%, var(--line));
+    transition: border-color .2s, box-shadow .2s;
+  }
+  .area[hidden] { display: none; }
+  .area:hover { border-color: color-mix(in srgb, var(--a) 70%, var(--line)); }
+  .area.open { border-color: color-mix(in srgb, var(--a) 80%, #fff 6%); box-shadow: 0 18px 50px rgba(0,0,0,.4); }
+  .a-head {
+    width: 100%; display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto auto; align-items: center; gap: 16px;
+    padding: 12px 18px 12px 16px; border: 0; color: inherit; text-align: left; cursor: pointer;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--a) 18%, var(--panel)), var(--panel) 60%);
+  }
+  .a-head:focus-visible { outline-offset: -3px; }
+  .a-num { font-family: var(--display); font-weight: 800; font-size: 15px; color: var(--muted); min-width: 28px; font-variant-numeric: tabular-nums; }
+  .a-id { min-width: 0; }
+  .a-name { margin: 0; font-family: var(--display); font-weight: 800; font-size: 23px; line-height: 1.1; overflow-wrap: anywhere; }
+  .a-sub { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+  .tag {
+    --mc: #6b7a9c;
+    display: inline-flex; align-items: center; gap: 6px; padding: 2px 9px 2px 7px; border-radius: 7px;
+    font-size: 12.5px; font-weight: 600; color: #dbe3f4;
+    background: color-mix(in srgb, var(--mc) 16%, #0b0e14); border: 1px solid color-mix(in srgb, var(--mc) 45%, transparent);
+  }
+  .tag i { width: 7px; height: 7px; border-radius: 50%; background: var(--mc); }
+  .tag.post { --mc: #ffcb05; color: var(--volt); }
+  .a-team { display: flex; gap: 0; }
+  .a-team img { width: 48px; height: 48px; display: block; image-rendering: pixelated; margin: -4px -3px; }
+  .lv {
+    flex: none; display: inline-flex; flex-direction: column; align-items: center; line-height: 1; padding: 7px 12px 8px; min-width: 74px;
+    border-radius: 12px; background: color-mix(in srgb, var(--a) 20%, #0b0e14); border: 1px solid color-mix(in srgb, var(--a) 50%, transparent);
+  }
+  .lv small { font: 600 10.5px var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
+  .lv b { font-family: var(--display); font-weight: 800; font-size: 20px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .chev { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); }
+  .chev svg { width: 18px; height: 18px; transition: transform .25s; }
+  .area.open .chev svg { transform: rotate(180deg); }
+
+  .a-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .32s cubic-bezier(.2,.7,.2,1); }
+  .area.open .a-panel { grid-template-rows: 1fr; }
+  .a-inner { overflow: hidden; min-height: 0; visibility: hidden; transition: visibility 0s .32s; }
+  .area.open .a-inner { visibility: visible; transition-delay: 0s; }
+  .a-body { padding: 16px 16px 20px; border-top: 1px solid var(--line); }
+  .tables { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); align-items: start; }
+
+  /* one encounter table */
+  .tbl { --mc: #6b7a9c; border-radius: 14px; overflow: hidden; background: var(--panel-2); border: 1px solid color-mix(in srgb, var(--mc) 30%, var(--line)); }
+  .tbl[hidden] { display: none; }
+  .tbl-h {
+    display: flex; align-items: center; gap: 9px; padding: 9px 14px;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--mc) 30%, #0b0e14), transparent 80%);
+    border-bottom: 1px solid color-mix(in srgb, var(--mc) 30%, var(--line));
+  }
+  .tbl-h .m-ico { width: 26px; height: 26px; display: grid; place-items: center; border-radius: 8px; background: color-mix(in srgb, var(--mc) 40%, #0b0e14); flex: none; }
+  .tbl-h .m-ico svg { width: 16px; height: 16px; color: #fff; }
+  .tbl-h h3 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 16.5px; line-height: 1.15; }
+  .tbl-h h3 span { color: var(--muted); font-family: var(--body); font-weight: 600; font-size: 14px; }
+  .rows { list-style: none; margin: 0; padding: 4px 0; }
+  .row {
+    display: grid; grid-template-columns: 44px minmax(0, 1fr) auto 76px; align-items: center; gap: 10px;
+    padding: 3px 14px 3px 8px; min-height: 46px;
+  }
+  .row + .row { border-top: 1px solid rgba(255,255,255,.04); }
+  .row.hit { background: rgba(255,203,5,.1); box-shadow: inset 3px 0 0 var(--volt); }
+  .r-spr { width: 44px; height: 44px; display: grid; place-items: center; }
+  .r-spr img { width: 44px; height: 44px; display: block; image-rendering: pixelated; }
+  .r-id { min-width: 0; }
+  .r-name { font-weight: 700; font-size: 15px; line-height: 1.2; overflow-wrap: anywhere; }
+  .r-types { display: flex; gap: 3px; margin-top: 3px; align-items: center; }
+  .r-types img { width: 18px; height: 18px; display: block; }
+  .tfb { display: inline-block; padding: 0 6px; border-radius: 4px; font: 700 9.5px/16px var(--body); letter-spacing: .04em; text-transform: uppercase; color: #fff; background: var(--tc, #6b7a9c); }
+  .ver { display: inline-block; margin-left: 6px; padding: 0 6px; border-radius: 5px; font: 700 10.5px/17px var(--body); vertical-align: 1px; letter-spacing: .03em; }
+  .ver.b2 { background: #23262e; color: #fff; border: 1px solid #4a505e; }
+  .ver.w2 { background: #e9edf5; color: #0a0d13; }
+  .r-lv { font-family: var(--display); font-weight: 700; font-size: 14.5px; color: #dbe3f4; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .r-lv small { font: 600 11px var(--body); color: var(--muted); margin-right: 3px; }
+  .r-rate { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+  .r-rate b { font-family: var(--display); font-weight: 800; font-size: 15px; font-variant-numeric: tabular-nums; line-height: 1; }
+  .bar { width: 100%; height: 5px; border-radius: 3px; background: rgba(255,255,255,.08); overflow: hidden; }
+  .bar i { display: block; height: 100%; border-radius: 3px; background: var(--mc); }
+  .evt { padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 700; color: var(--volt); background: rgba(255,203,5,.1); border: 1px solid rgba(255,203,5,.4); white-space: nowrap; }
+  .tbl-notes { margin: 0; padding: 8px 14px 10px; font-size: 13.5px; color: #c3cde2; border-top: 1px solid var(--line); }
+
+  /* grotto link block inside an area */
+  .grotto-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 14px; padding: 10px 14px; border-radius: 12px; background: var(--panel-2); border: 1px dashed var(--line-2); font-size: 14.5px; color: #c3cde2; }
+  .grotto-links b { color: var(--text); }
+  .glink {
+    display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px; cursor: pointer;
+    background: rgba(122,199,76,.12); border: 1px solid rgba(122,199,76,.5); color: #d9f5c8; font: 600 13.5px var(--body);
+  }
+  .glink:hover { background: rgba(122,199,76,.25); color: #fff; }
+
+  /* ───────── grottos view ───────── */
+  .grottos { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); }
+  .grotto { border-radius: 16px; overflow: hidden; background: var(--panel); border: 1px solid rgba(122,199,76,.3); scroll-margin-top: 84px; }
+  .grotto[hidden] { display: none; }
+  .grotto.flash { animation: flash 1.6s ease-out; }
+  @keyframes flash { 0%, 30% { box-shadow: 0 0 0 3px var(--volt); } 100% { box-shadow: 0 0 0 0 transparent; } }
+  .g-head { padding: 13px 16px; background: linear-gradient(90deg, rgba(122,199,76,.22), transparent 80%); border-bottom: 1px solid var(--line); }
+  .g-head h3 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 20px; line-height: 1.15; }
+  .g-head p { margin: 4px 0 0; color: var(--muted); font-size: 13.5px; }
+  .g-head a { color: inherit; }
+  .g-body { padding: 12px 16px 16px; display: grid; gap: 12px; }
+  .g-notes { margin: 0; padding: 8px 12px; border-radius: 10px; font-size: 14px; color: #cdd6e8; background: var(--panel-2); border-left: 3px solid var(--volt); }
+  .g-notes p { margin: 2px 0; }
+  .tier h4 { margin: 0 0 6px; font: 700 11.5px var(--body); letter-spacing: .09em; text-transform: uppercase; color: var(--tc); }
+  .tier ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .gmon {
+    display: inline-flex; align-items: center; gap: 4px; padding: 0 10px 0 0; height: 40px; border-radius: 10px;
+    background: var(--panel-2); border: 1px solid color-mix(in srgb, var(--tc) 35%, var(--line)); font-size: 14px; font-weight: 600;
+  }
+  .gmon img { width: 40px; height: 40px; image-rendering: pixelated; display: block; }
+  .gmon.hit { border-color: var(--volt); background: rgba(255,203,5,.12); }
+  .gmon .r-types { margin: 0 0 0 4px; }
+
+  @media (max-width: 900px) { .a-team { display: none; } .a-head { grid-template-columns: auto minmax(0, 1fr) auto auto; } }
+  @media (max-width: 560px) {
+    .a-head { grid-template-columns: minmax(0, 1fr) auto auto; gap: 10px; padding: 12px; }
+    .a-num { display: none; }
+    .a-name { font-size: 20px; }
+    .lv { min-width: 0; padding: 5px 9px 6px; }
+    .lv b { font-size: 16px; }
+    .a-body { padding: 12px 10px 16px; }
+    .tables, .grottos { grid-template-columns: 1fr; }
+    .row { grid-template-columns: 40px minmax(0, 1fr) auto 58px; gap: 8px; padding-right: 10px; }
+    .seg { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+    .seg button { padding: 0 6px; }
+    .credits { flex-direction: column; gap: 6px; }
+    .credits .rule { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .a-panel, .chev svg, .to-top, .a-inner { transition: none; }
+    .grotto.flash { animation: none; }
+  }
+
+  .ghint { margin-left: 2px; padding: 2px 10px; border-radius: 999px; cursor: pointer; font: 600 13.5px var(--body);
+    background: rgba(122,199,76,.12); border: 1px solid rgba(122,199,76,.5); color: #d9f5c8; }
+  .ghint:hover { background: rgba(122,199,76,.25); color: #fff; }
+
+  .empty { text-align: center; color: var(--muted); padding: 70px 0 30px; font-size: 17px; }
+  .empty strong { display: block; color: var(--text); font-size: 20px; margin-bottom: 4px; }
+  .empty .reset { margin-top: 16px; height: 42px; }
+  .empty[hidden] { display: none; }
+  .error { margin: 24px 0; padding: 16px 18px; border-radius: 12px; background: #2a1216; border: 1px solid #7a2a35; color: #ffd3d8; }
+  .error code { display: block; margin-top: 8px; white-space: pre-wrap; font-size: 13.5px; color: #fff; }
+
+  /* ───────── footer ───────── */
+  .site-footer {
+    padding: 34px 0 44px; text-align: center; border-top: 1px solid var(--line);
+    background: linear-gradient(180deg, rgba(47,123,255,.12), transparent 80%);
+  }
+  .credits {
+    margin: 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+    gap: 8px 18px; color: var(--muted); font-size: 14.5px;
+  }
+  .credits .game { color: var(--volt); font-family: var(--display); font-weight: 800; font-stretch: 112%; letter-spacing: .01em; font-size: 15.5px; }
+  .credits strong { color: var(--text); font-weight: 700; }
+  .credits .rule { width: 1px; height: 16px; background: var(--line-2); }
+
+  .to-top {
+    position: fixed; right: 18px; bottom: 18px; z-index: 40; width: 48px; height: 48px; border-radius: 50%;
+    display: grid; place-items: center; border: 0; cursor: pointer;
+    background: var(--volt); color: #0a0d13; box-shadow: 0 10px 28px rgba(0,0,0,.5);
+    opacity: 0; visibility: hidden; transform: translateY(8px);
+    transition: opacity .2s, transform .2s, visibility .2s;
+  }
+  .to-top.show { opacity: 1; visibility: visible; transform: none; }
+  .to-top svg { width: 20px; height: 20px; }
+
+
+  .error[hidden], .areas[hidden], .grottos[hidden], .about[hidden] { display: none; }
+</style>
+</head>
+<body>
+
+<div class="hero-zone">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="home-link" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>
+        Home
+      </a>
+    </div>
+    <header class="hero">
+      <img class="logo" id="logo" src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/logofull.png" alt="Pokémon Pitch Black 2" width="1774" height="887" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='assets/images/logofull.png'}">
+      <h1>Wild Areas</h1>
+    </header>
+  </div>
+</div>
+
+<div class="searchbar">
+  <div class="wrap search-row">
+    <div class="search">
+      <svg class="glass" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search an area or a Pokémon" aria-label="Search wild areas" autocomplete="off" spellcheck="false">
+      <kbd aria-hidden="true">/</kbd>
+    </div>
+    <button class="reset" id="reset" type="button" hidden>Clear</button>
+  </div>
+</div>
+
+<section class="wrap tools" aria-label="Filters">
+  <div class="seg" id="seg" role="group" aria-label="Section">
+    <button type="button" data-s="all" aria-pressed="true">All</button>
+    <button type="button" data-s="main" aria-pressed="false">Main story</button>
+    <button type="button" data-s="postgame" aria-pressed="false">Postgame</button>
+    <button type="button" data-s="grottos" aria-pressed="false">Hidden Grottos</button>
+  </div>
+  <div class="chips" id="methods" role="group" aria-label="Encounter method"></div>
+</section>
+
+<section class="wrap filters" aria-label="Status">
+  <span class="count" id="count" role="status" aria-live="polite"></span>
+  <button class="collapse" id="collapse" type="button" hidden>Collapse all</button>
+</section>
+
+<main class="wrap">
+  <div id="error" class="error" hidden></div>
+  <details class="about" id="about" hidden>
+    <summary>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+      How encounters work &amp; Nuzlocke notes
+      <svg class="chev-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+    </summary>
+    <div class="about-body" id="aboutBody"></div>
+  </details>
+  <ol class="areas" id="list"></ol>
+  <ul class="grottos" id="glist" hidden></ul>
+  <div class="empty" id="empty" hidden>
+    <strong>Nothing matches your search.</strong>
+    Try another area or Pokémon name.
+    <div><button class="reset" id="reset2" type="button">Clear filters</button></div>
+  </div>
+  <noscript><p class="empty">Turn on JavaScript to see the wild areas.</p></noscript>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="credits">
+      <span class="game">Pokémon Pitch Black 2</span>
+      <span class="rule" aria-hidden="true"></span>
+      <span>Pokémon &copy; Nintendo / Game Freak</span>
+      <span class="rule" aria-hidden="true"></span>
+      <span>created by <strong>lucaremix</strong></span>
+    </p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 15 7-7 7 7"/></svg>
+</button>
+
+<script>
+// Data lives in assets/data/wild_areas.json (same repo): edit that file, not this page.
+const DATA_URLS = [
+  "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/data/wild_areas.json",
+  "assets/data/wild_areas.json"
+];
+
+function start(DB) {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var list = $("list"), glist = $("glist"), empty = $("empty"), countEl = $("count"), q = $("q");
+  var resetBtns = [$("reset"), $("reset2")], collapseBtn = $("collapse"), toTop = $("toTop"), chipsEl = $("methods"), aboutEl = $("about");
+
+  var TYPE_COLORS = {
+    Normal: "#a8a77a", Fire: "#ee8130", Water: "#6390f0", Electric: "#f7d02c", Grass: "#7ac74c",
+    Ice: "#96d9d6", Fighting: "#c22e28", Poison: "#a33ea1", Ground: "#e2bf65", Flying: "#a98ff3",
+    Psychic: "#f95587", Bug: "#a6b91a", Rock: "#b6a136", Ghost: "#735797", Dragon: "#6f35fc",
+    Dark: "#705746", Steel: "#b7b7ce", Fairy: "#d685ad"
+  };
+  var TYPE_ICONS = {};
+  ["Normal","Fighting","Flying","Poison","Ground","Rock","Bug","Ghost","Fire","Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Steel","Fairy","Sound"]
+    .forEach(function (t) { TYPE_ICONS[t] = "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/typinglogos/" + t.toLowerCase() + ".svg"; });
+
+  // encounter methods → filter group, colour, icon
+  var ICON = {
+    grass: '<path d="M4 20c1-5 1-9 0-13M8 20c0-6 1-10 4-14M12 20c0-5 2-9 6-12M16 20c1-3 2-6 4-8"/>',
+    surf: '<path d="M2 15c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2M2 20c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2M12 10c0-4 3-6 6-6"/>',
+    fish: '<path d="M6 3v9a5 5 0 0 0 10 0M16 12l2-2M6 3h3"/><circle cx="11" cy="19" r="2"/>',
+    cave: '<path d="M3 20 9 6l4 6 3-4 5 12z"/><path d="M10 20c0-2 1-4 2-4s2 2 2 4"/>',
+    other: '<rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 12h16M12 4v16"/>',
+    event: '<path d="m12 3 2.6 5.5 6 .8-4.4 4.2 1 6L12 16.6 6.8 19.5l1-6L3.4 9.3l6-.8z"/>'
+  };
+  var GROUPS = [
+    { id: "grass", label: "Grass", color: "#7ac74c", test: /^(Grass|Swamps)/ },
+    { id: "surf", label: "Surf", color: "#6390f0", test: /^Surf/ },
+    { id: "fish", label: "Fishing", color: "#4fb3c8", test: /^Fish/ },
+    { id: "cave", label: "Cave & buildings", color: "#b6a136", test: /^(Cave|Sand|Floor|Rooms|Sewer|Bridge)/ },
+    { id: "event", label: "Events & gifts", color: "#ffcb05", test: /^(Special|Roof)/ }
+  ];
+  function groupOf(method) {
+    for (var i = 0; i < GROUPS.length; i++) if (GROUPS[i].test.test(method)) return GROUPS[i];
+    return { id: "cave", label: "Other", color: "#8e9ab2" };
+  }
+  var CHEV = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
+  var svg = function (k) { return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICON[k] + "</svg>"; };
+  var PLACEHOLDER = "data:image/svg+xml;utf8," + encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 96 96"><circle cx="48" cy="48" r="26" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="5"/><path d="M22 48h52" stroke="#fff" stroke-opacity=".4" stroke-width="5"/><circle cx="48" cy="48" r="8" fill="#161b26" stroke="#fff" stroke-opacity=".4" stroke-width="5"/></svg>');
+
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
+  var norm = function (s) { return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9?!♂♀]+/g, " ").trim(); };
+
+  // ── data ──
+  DB = DB || {};
+  var META = DB.meta || {};
+  var URLS = Object.assign({ pokemon: "https://play.pokemonshowdown.com/sprites/gen5/{sprite}.png" }, META.urls || {});
+  var SPECIES = DB.species || {};
+  var AREAS = DB.areas || [];
+  var GROTTOS = DB.grottos || [];
+  var GROTTO_BY_ID = {};
+  GROTTOS.forEach(function (g) { GROTTO_BY_ID[g.id] = g; });
+  var info = function (name) { return SPECIES[name] || { sprite: norm(name).replace(/ /g, ""), types: [] }; };
+  var spriteURL = function (name) { return URLS.pokemon.replace("{sprite}", encodeURIComponent(info(name).sprite)); };
+  function sprite(name, size) {
+    return '<img src="' + esc(spriteURL(name)) + '" alt="" width="' + size + '" height="' + size + '" loading="lazy" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER + '\'">';
+  }
+  function typeIcons(name) {
+    return (info(name).types || []).map(function (t) {
+      return TYPE_ICONS[t]
+        ? '<img src="' + TYPE_ICONS[t] + '" alt="' + esc(t) + '" title="' + esc(t) + '" width="18" height="18" loading="lazy">'
+        : '<span class="tfb" style="--tc:' + (TYPE_COLORS[t] || "#6b7a9c") + '">' + esc(t) + "</span>";
+    }).join("");
+  }
+  var lvText = function (a, b) { return a === b ? String(a) : a + "–" + b; };
+
+  // pre-compute per area
+  AREAS.forEach(function (a, i) {
+    a._i = i;
+    var lo = Infinity, hi = -Infinity, seen = {}, first = [], counts = {}, groups = {};
+    (a.tables || []).forEach(function (t) {
+      t._g = groupOf(t.method);
+      groups[t._g.id] = true;
+      (t.encounters || []).forEach(function (e) {
+        if (t._g.id !== "event") { lo = Math.min(lo, e.min); hi = Math.max(hi, e.max); }
+        counts[t._g.id] = (counts[t._g.id] || 0) + 1;
+        if (!seen[e.name]) { seen[e.name] = 1; first.push(e.name); }
+      });
+    });
+    if (lo === Infinity) (a.tables || []).forEach(function (t) { (t.encounters || []).forEach(function (e) { lo = Math.min(lo, e.min); hi = Math.max(hi, e.max); }); });
+    a._lo = lo; a._hi = hi; a._names = first; a._groups = groups;
+    var top = Object.keys(counts).sort(function (x, y) { return counts[y] - counts[x]; })[0];
+    a._accent = (GROUPS.filter(function (g) { return g.id === top; })[0] || {}).color || "#7ac74c";
+    a._hay = norm(a.name);
+    a._mons = first.map(norm);
+  });
+
+  // ── about box ──
+  (function () {
+    var lines = (DB.intro || []).filter(function (l) { return l.trim(); });
+    if (!lines.length) { aboutEl.hidden = true; return; }
+    var html = "", open = 0;
+    lines.forEach(function (l) {
+      var m = l.match(/^(\s*)-\s+(.*)$/);
+      if (m) {
+        var depth = m[1].length > 2 ? 2 : 1;
+        while (open < depth) { html += "<ul>"; open++; }
+        while (open > depth) { html += "</ul>"; open--; }
+        html += "<li>" + esc(m[2]) + "</li>";
+      } else {
+        while (open) { html += "</ul>"; open--; }
+        html += "<p>" + esc(l.trim()) + "</p>";
+      }
+    });
+    while (open) { html += "</ul>"; open--; }
+    $("aboutBody").innerHTML = html;
+  })();
+
+  // ── method chips ──
+  var activeGroups = new Set();
+  chipsEl.innerHTML = GROUPS.map(function (g) {
+    return '<button type="button" class="chip" data-g="' + g.id + '" aria-pressed="false" style="--mc:' + g.color + '"><i></i>' + g.label + "</button>";
+  }).join("");
+  chipsEl.addEventListener("click", function (e) {
+    var b = e.target.closest(".chip"); if (!b) return;
+    var g = b.dataset.g;
+    if (activeGroups.has(g)) activeGroups.delete(g); else activeGroups.add(g);
+    b.setAttribute("aria-pressed", activeGroups.has(g));
+    apply();
+  });
+
+  // ── area rows ──
+  var num2 = function (n) { return String(n).padStart(2, "0"); };
+  function tableHTML(t, query) {
+    var g = t._g, enc = t.encounters || [];
+    var label = t.method.split(",").map(function (s) { return s.trim(); });
+    var title = esc(label[0]) + (label.length > 1 ? ' <span>· ' + esc(label.slice(1).join(" · ")) + "</span>" : "");
+    var rows = enc.map(function (e) {
+      var hit = query && norm(e.name).indexOf(query) !== -1;
+      var ver = e.version ? '<span class="ver ' + e.version.toLowerCase() + '" title="Only in Pokémon ' + (e.version === "B2" ? "Black 2" : "White 2") + '">' + esc(e.version) + "</span>" : "";
+      var rate = e.rate == null
+        ? '<span class="evt">' + (/Gift/i.test(t.method) ? "Gift" : "Event") + "</span>"
+        : "<b>" + e.rate + '%</b><span class="bar"><i style="width:' + Math.min(100, e.rate) + '%"></i></span>';
+      return '<li class="row' + (hit ? " hit" : "") + '">' +
+        '<span class="r-spr">' + sprite(e.name, 44) + "</span>" +
+        '<span class="r-id"><span class="r-name">' + esc(e.name) + ver + '</span><span class="r-types">' + typeIcons(e.name) + "</span></span>" +
+        '<span class="r-lv"><small>Lv</small>' + lvText(e.min, e.max) + "</span>" +
+        '<span class="r-rate">' + rate + "</span></li>";
+    }).join("");
+    var hidden = activeGroups.size && !activeGroups.has(g.id);
+    return '<section class="tbl" data-g="' + g.id + '" style="--mc:' + g.color + '"' + (hidden ? " hidden" : "") + ">" +
+      '<header class="tbl-h"><span class="m-ico">' + svg(ICON[g.id] ? g.id : "other") + "</span><h3>" + title + "</h3></header>" +
+      '<ul class="rows">' + rows + "</ul>" +
+      ((t.notes || []).length ? '<p class="tbl-notes">' + t.notes.map(esc).join("<br>") + "</p>" : "") + "</section>";
+  }
+  function bodyHTML(a, query) {
+    var html = '<div class="tables">' + (a.tables || []).map(function (t) { return tableHTML(t, query); }).join("") + "</div>";
+    if ((a.grottos || []).length) {
+      html += '<div class="grotto-links"><b>Hidden Grotto</b> here — see what it can hold:' +
+        a.grottos.map(function (id) { var g = GROTTO_BY_ID[id]; return g ? '<button type="button" class="glink" data-goto="' + esc(id) + '">' + esc(g.name) + " →</button>" : ""; }).join("") + "</div>";
+    }
+    return html;
+  }
+  function areaHTML(a) {
+    var pid = "p-" + a.id;
+    var tags = (a.section === "postgame" ? '<span class="tag post">Postgame</span>' : "") +
+      GROUPS.filter(function (g) { return a._groups[g.id]; }).map(function (g) { return '<span class="tag" style="--mc:' + g.color + '"><i></i>' + g.label + "</span>"; }).join("") +
+      ((a.grottos || []).length ? '<span class="tag" style="--mc:#7ac74c"><i></i>Hidden Grotto</span>' : "");
+    return '<li class="area" id="' + esc(a.id) + '" data-i="' + a._i + '" style="--a:' + a._accent + '">' +
+      '<button class="a-head" type="button" aria-expanded="false" aria-controls="' + pid + '">' +
+        '<span class="a-num">' + num2(a._i + 1) + "</span>" +
+        '<span class="a-id"><h2 class="a-name">' + esc(a.name) + '</h2><span class="a-sub">' + tags + "</span></span>" +
+        '<span class="a-team" aria-hidden="true">' + a._names.slice(0, 6).map(function (n) { return sprite(n, 48); }).join("") + "</span>" +
+        '<span class="lv"><small>Levels</small><b>' + (a._lo === Infinity ? "—" : lvText(a._lo, a._hi)) + "</b></span>" +
+        '<span class="chev">' + CHEV + "</span>" +
+      "</button>" +
+      '<div class="a-panel" id="' + pid + '" role="region"><div class="a-inner"><div class="a-body"></div></div></div></li>';
+  }
+  list.innerHTML = AREAS.map(areaHTML).join("");
+  var rowEls = Array.prototype.slice.call(list.children);
+
+  var openSet = new Set();
+  function setOpen(li, open, query) {
+    var a = AREAS[+li.dataset.i];
+    if (open) {
+      li.querySelector(".a-body").innerHTML = bodyHTML(a, query);
+      openSet.add(a.id);
+    } else openSet.delete(a.id);
+    li.classList.toggle("open", open);
+    li.querySelector(".a-head").setAttribute("aria-expanded", open);
+    collapseBtn.hidden = openSet.size === 0;
+  }
+  list.addEventListener("click", function (e) {
+    var go = e.target.closest(".glink");
+    if (go) { showGrotto(go.dataset.goto); return; }
+    var head = e.target.closest(".a-head"); if (!head) return;
+    var li = head.parentNode;
+    setOpen(li, !li.classList.contains("open"), currentQuery);
+  });
+  collapseBtn.addEventListener("click", function () {
+    rowEls.forEach(function (li) { if (li.classList.contains("open")) setOpen(li, false); });
+    autoOpened = false;
+  });
+
+  // ── grottos view ──
+  var TIERS = [["guaranteed", "Guaranteed", "#ffcb05"], ["common", "Common", "#7ac74c"], ["uncommon", "Uncommon", "#6390f0"], ["rare", "Rare", "#f95587"]];
+  function grottoHTML(g) {
+    var where = AREAS.filter(function (a) { return (a.grottos || []).indexOf(g.id) !== -1; });
+    var tiers = TIERS.map(function (t) {
+      var mons = g[t[0]] || [];
+      if (!mons.length) return "";
+      return '<div class="tier" style="--tc:' + t[2] + '"><h4>' + t[1] + "</h4><ul>" + mons.map(function (m) {
+        var name = typeof m === "string" ? m : m.name, lv = typeof m === "string" ? "" : " · Lv " + m.level;
+        return '<li class="gmon" data-n="' + esc(norm(name)) + '">' + sprite(name, 40) + esc(name) + esc(lv) + '<span class="r-types">' + typeIcons(name) + "</span></li>";
+      }).join("") + "</ul></div>";
+    }).join("");
+    return '<li class="grotto" id="' + esc(g.id) + '">' +
+      '<header class="g-head"><h3>' + esc(g.name) + "</h3>" +
+      (where.length ? "<p>Found in: " + where.map(function (a) { return '<a href="#' + esc(a.id) + '" data-area="' + esc(a.id) + '">' + esc(a.name) + "</a>"; }).join(", ") + "</p>" : "") +
+      "</header>" +
+      '<div class="g-body">' + ((g.notes || []).length ? '<div class="g-notes">' + g.notes.map(function (n) { return "<p>" + esc(n) + "</p>"; }).join("") + "</div>" : "") + tiers + "</div></li>";
+  }
+  glist.innerHTML = GROTTOS.map(grottoHTML).join("");
+  var grottoEls = Array.prototype.slice.call(glist.children);
+  GROTTOS.forEach(function (g, i) {
+    g._hay = norm(g.name);
+    g._mons = TIERS.reduce(function (acc, t) { return acc.concat((g[t[0]] || []).map(function (m) { return norm(typeof m === "string" ? m : m.name); })); }, []);
+    g._el = grottoEls[i];
+  });
+  glist.addEventListener("click", function (e) {
+    var a = e.target.closest("a[data-area]"); if (!a) return;
+    e.preventDefault();
+    setView(currentSection === "grottos" ? "all" : currentSection);
+    var li = $(a.dataset.area);
+    if (li) { li.hidden = false; if (!li.classList.contains("open")) setOpen(li, true, currentQuery); li.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" }); }
+  });
+  function showGrotto(id) {
+    setView("grottos");
+    var el = $(id); if (!el) return;
+    el.hidden = false;
+    el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+  }
+
+  // ── section tabs ──
+  var currentSection = "all", currentQuery = "", autoOpened = false;
+  var segBtns = Array.prototype.slice.call(document.querySelectorAll("#seg button"));
+  var cnt = { all: AREAS.length, main: 0, postgame: 0, grottos: GROTTOS.length };
+  AREAS.forEach(function (a) { cnt[a.section] = (cnt[a.section] || 0) + 1; });
+  segBtns.forEach(function (b) { b.insertAdjacentHTML("beforeend", '<span class="n">' + (cnt[b.dataset.s] || 0) + "</span>"); });
+  function setView(s) {
+    currentSection = s;
+    segBtns.forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.s === s); });
+    apply();
+  }
+  $("seg").addEventListener("click", function (e) { var b = e.target.closest("button"); if (b) setView(b.dataset.s); });
+
+  // ── filtering ──
+  function apply() {
+    var query = norm(q.value), grottoView = currentSection === "grottos";
+    currentQuery = query;
+    list.hidden = grottoView; glist.hidden = !grottoView; chipsEl.hidden = grottoView; aboutEl.hidden = grottoView || !(DB.intro || []).length;
+    var shown = 0;
+    if (grottoView) {
+      GROTTOS.forEach(function (g) {
+        var monHit = query && g._mons.some(function (m) { return m.indexOf(query) !== -1; });
+        var ok = !query || g._hay.indexOf(query) !== -1 || monHit;
+        g._el.hidden = !ok; if (ok) shown++;
+        Array.prototype.forEach.call(g._el.querySelectorAll(".gmon"), function (m) { m.classList.toggle("hit", !!query && m.dataset.n.indexOf(query) !== -1); });
+      });
+      countEl.textContent = shown + (shown === 1 ? " grotto" : " grottos");
+    } else {
+      var monMatches = 0;
+      AREAS.forEach(function (a, i) {
+        var li = rowEls[i];
+        var okSec = currentSection === "all" || a.section === currentSection;
+        var okGroup = !activeGroups.size || Array.from(activeGroups).some(function (g) { return a._groups[g]; });
+        var nameHit = !query || a._hay.indexOf(query) !== -1;
+        var monHit = !!query && a._mons.some(function (m) { return m.indexOf(query) !== -1; });
+        var ok = okSec && okGroup && (nameHit || monHit);
+        li.hidden = !ok;
+        if (ok) { shown++; if (monHit && !nameHit) monMatches++; }
+        // re-render open bodies so highlights and method filters stay in sync
+        var autoOpen = ok && monHit && !nameHit;
+        if (autoOpen && !li.classList.contains("open")) { setOpen(li, true, query); li.dataset.auto = "1"; }
+        else if (li.dataset.auto && (!autoOpen) ) { delete li.dataset.auto; setOpen(li, false); }
+        else if (li.classList.contains("open")) li.querySelector(".a-body").innerHTML = bodyHTML(a, query);
+      });
+      var gHits = !query ? 0 : GROTTOS.filter(function (g) { return g._mons.some(function (m) { return m.indexOf(query) !== -1; }); }).length;
+      countEl.innerHTML = shown + (shown === 1 ? " area" : " areas") + (query && monMatches ? " · Pokémon found in " + monMatches : "") +
+        (gHits ? ' · <button type="button" class="ghint" id="ghint">also in ' + gHits + " Hidden Grotto" + (gHits > 1 ? "s" : "") + " →</button>" : "");
+      if (gHits) $("ghint").onclick = function () { setView("grottos"); };
+    }
+    empty.hidden = shown > 0 || (!grottoView && !!document.getElementById("ghint"));
+    resetBtns.forEach(function (b) { b.hidden = !q.value && !activeGroups.size; });
+    resetBtns[1].hidden = false;
+  }
+  var t;
+  q.addEventListener("input", function () { clearTimeout(t); t = setTimeout(apply, 120); });
+  resetBtns.forEach(function (b) {
+    b.addEventListener("click", function () {
+      q.value = ""; activeGroups.clear();
+      Array.prototype.forEach.call(chipsEl.children, function (c) { c.setAttribute("aria-pressed", "false"); });
+      apply(); q.focus();
+    });
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "/" || e.ctrlKey || e.metaKey || e.altKey) return;
+    var tag = (document.activeElement || {}).tagName;
+    if (tag === "INPUT" || tag === "TEXTAREA") return;
+    e.preventDefault(); q.focus();
+  });
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  window.addEventListener("scroll", function () { toTop.classList.toggle("show", window.scrollY > 900); }, { passive: true });
+  toTop.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" }); });
+
+  // deep link: wild_areas.html#route-19 or #grotto-route-5
+  var hash = decodeURIComponent(location.hash.slice(1));
+  apply();
+  if (hash && GROTTO_BY_ID[hash]) showGrotto(hash);
+  else if (hash && $(hash) && $(hash).classList.contains("area")) { setOpen($(hash), true, ""); $(hash).scrollIntoView(); }
+}
+
+// ───────── load the JSON ─────────
+(async function load() {
+  const statusEl = document.getElementById("count");
+  statusEl.textContent = "Loading wild areas…";
+  let lastErr;
+  for (const url of DATA_URLS) {
+    try {
+      const res = await fetch(url, { cache: "no-cache" });
+      if (!res.ok) throw new Error("HTTP " + res.status + " on " + url);
+      const json = await res.json();
+      start(json);
+      return;
+    } catch (err) { lastErr = err; }
+  }
+  statusEl.textContent = "";
+  const box = document.getElementById("error");
+  box.hidden = false;
+  box.innerHTML = "<strong>Could not load the wild areas data.</strong> Check that assets/data/wild_areas.json exists and is valid JSON." +
+    "<code>" + String(lastErr ? lastErr.message : "unknown error").replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c])) + "</code>";
+})();
+</script>
+</body>
+</html>
