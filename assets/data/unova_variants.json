@@ -942,6 +942,61 @@
     ]
   },
   {
+  "name": "Unovan Magcargo",
+  "pokedex_id": 219,
+  "type1": "Poison",
+  "type2": "Ground",
+  "bst": 460,
+  "abilities": ["Aftermath", "Stench"],
+  "stats": {"hp": 75, "atk": 50, "def": 80, "spa": 110, "spd": 80, "spe": 65},
+  "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+  "preevo": [
+    {
+      "name": "Slugma",
+      "pokedex_id": 218,
+      "type1": "Fire",
+      "abilities": ["Magma Armor", "Flame Body"],
+      "evo": "Level up at night holding Black Sludge",
+      "moves": [
+        {"move": "Yawn", "level": 1},
+        {"move": "Smog", "level": 1},
+        {"move": "Ember", "level": 5},
+        {"move": "Rock Throw", "level": 10},
+        {"move": "Harden", "level": 14},
+        {"move": "Recover", "level": 19},
+        {"move": "Flame Burst", "level": 23},
+        {"move": "Ancient Power", "level": 28},
+        {"move": "Amnesia", "level": 32},
+        {"move": "Lava Plume", "level": 37},
+        {"move": "Rock Slide", "level": 41},
+        {"move": "Body Slam", "level": 46},
+        {"move": "Flamethrower", "level": 50},
+        {"move": "Earth Power", "level": 55}
+      ]
+    }
+  ],
+  "moves": [
+    {"move": "Acid Armor", "level": 1},
+    {"move": "Mud-Slap", "level": 1},
+    {"move": "Yawn", "level": 1},
+    {"move": "Smog", "level": 1},
+    {"move": "Acid", "level": 5},
+    {"move": "Mud Shot", "level": 10},
+    {"move": "Harden", "level": 14},
+    {"move": "Recover", "level": 19},
+    {"move": "Clear Smog", "level": 23},
+    {"move": "Mud Bomb", "level": 28},
+    {"move": "Amnesia", "level": 32},
+    {"move": "Venoshock", "level": 36},
+    {"move": "Toxic Spikes", "level": 40},
+    {"move": "Sludge Bomb", "level": 44},
+    {"move": "Earth Power", "level": 49},
+    {"move": "Toxic", "level": 54},
+    {"move": "Sludge Wave", "level": 59},
+    {"move": "Stealth Rock", "level": 64}
+  ]
+},
+  {
     "name": "Unovan Steelix",
     "pokedex_id": 208,
     "type1": "Steel",
