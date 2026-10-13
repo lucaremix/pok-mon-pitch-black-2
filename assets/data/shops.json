@@ -1,0 +1,2059 @@
+{
+  "meta": {
+    "note": "Every Poké Mart has the standard stock of its tier (first cashier) plus the special stock listed under shops (second cashier). Max 20 different items per shop.",
+    "iconSource": "PokeAPI item sprites: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/{item-slug}.png  (TMs: tm-{type}.png)",
+    "shopImage": "assets/images/shops/{id}.png in the repo (add the pictures there)"
+  },
+  "standardStock": [
+    {
+      "tier": 0,
+      "label": "Stock No Badges",
+      "items": [
+        {
+          "name": "Poké Ball",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"
+        },
+        {
+          "name": "Potion",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/potion.png"
+        }
+      ]
+    },
+    {
+      "tier": 1,
+      "label": "Stock 1+ Badges",
+      "items": [
+        {
+          "name": "Poké Ball",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"
+        },
+        {
+          "name": "Great Ball",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png"
+        },
+        {
+          "name": "Potion",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/potion.png"
+        },
+        {
+          "name": "Super Potion",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/super-potion.png"
+        },
+        {
+          "name": "Antidote",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/antidote.png"
+        },
+        {
+          "name": "Paralyze Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/paralyze-heal.png"
+        },
+        {
+          "name": "Awakening",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/awakening.png"
+        },
+        {
+          "name": "Burn Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/burn-heal.png"
+        },
+        {
+          "name": "Ice Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ice-heal.png"
+        },
+        {
+          "name": "Escape Rope",
+          "price": 250,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/escape-rope.png"
+        },
+        {
+          "name": "Repel",
+          "price": 150,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/repel.png"
+        }
+      ]
+    },
+    {
+      "tier": 2,
+      "label": "Stock 3+ Badges",
+      "items": [
+        {
+          "name": "Poké Ball",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"
+        },
+        {
+          "name": "Great Ball",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png"
+        },
+        {
+          "name": "Potion",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/potion.png"
+        },
+        {
+          "name": "Super Potion",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/super-potion.png"
+        },
+        {
+          "name": "Hyper Potion",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/hyper-potion.png"
+        },
+        {
+          "name": "Revive",
+          "price": 750,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/revive.png"
+        },
+        {
+          "name": "Antidote",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/antidote.png"
+        },
+        {
+          "name": "Paralyze Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/paralyze-heal.png"
+        },
+        {
+          "name": "Awakening",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/awakening.png"
+        },
+        {
+          "name": "Burn Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/burn-heal.png"
+        },
+        {
+          "name": "Ice Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ice-heal.png"
+        },
+        {
+          "name": "Escape Rope",
+          "price": 250,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/escape-rope.png"
+        },
+        {
+          "name": "Repel",
+          "price": 150,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/repel.png"
+        },
+        {
+          "name": "Super Repel",
+          "price": 250,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/super-repel.png"
+        }
+      ]
+    },
+    {
+      "tier": 3,
+      "label": "Stock 5+ Badges",
+      "items": [
+        {
+          "name": "Poké Ball",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"
+        },
+        {
+          "name": "Great Ball",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png"
+        },
+        {
+          "name": "Ultra Ball",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png"
+        },
+        {
+          "name": "Potion",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/potion.png"
+        },
+        {
+          "name": "Super Potion",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/super-potion.png"
+        },
+        {
+          "name": "Hyper Potion",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/hyper-potion.png"
+        },
+        {
+          "name": "Revive",
+          "price": 750,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/revive.png"
+        },
+        {
+          "name": "Antidote",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/antidote.png"
+        },
+        {
+          "name": "Paralyze Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/paralyze-heal.png"
+        },
+        {
+          "name": "Awakening",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/awakening.png"
+        },
+        {
+          "name": "Burn Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/burn-heal.png"
+        },
+        {
+          "name": "Ice Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ice-heal.png"
+        },
+        {
+          "name": "Full Heal",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/full-heal.png"
+        },
+        {
+          "name": "Escape Rope",
+          "price": 250,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/escape-rope.png"
+        },
+        {
+          "name": "Repel",
+          "price": 150,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/repel.png"
+        },
+        {
+          "name": "Super Repel",
+          "price": 250,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/super-repel.png"
+        },
+        {
+          "name": "Max Repel",
+          "price": 350,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/max-repel.png"
+        }
+      ]
+    },
+    {
+      "tier": 4,
+      "label": "Stock 7+ Badges",
+      "items": [
+        {
+          "name": "Poké Ball",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"
+        },
+        {
+          "name": "Great Ball",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png"
+        },
+        {
+          "name": "Ultra Ball",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png"
+        },
+        {
+          "name": "Potion",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/potion.png"
+        },
+        {
+          "name": "Super Potion",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/super-potion.png"
+        },
+        {
+          "name": "Hyper Potion",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/hyper-potion.png"
+        },
+        {
+          "name": "Max Potion",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/max-potion.png"
+        },
+        {
+          "name": "Revive",
+          "price": 750,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/revive.png"
+        },
+        {
+          "name": "Antidote",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/antidote.png"
+        },
+        {
+          "name": "Paralyze Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/paralyze-heal.png"
+        },
+        {
+          "name": "Awakening",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/awakening.png"
+        },
+        {
+          "name": "Burn Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/burn-heal.png"
+        },
+        {
+          "name": "Ice Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ice-heal.png"
+        },
+        {
+          "name": "Full Heal",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/full-heal.png"
+        },
+        {
+          "name": "Escape Rope",
+          "price": 250,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/escape-rope.png"
+        },
+        {
+          "name": "Repel",
+          "price": 150,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/repel.png"
+        },
+        {
+          "name": "Super Repel",
+          "price": 250,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/super-repel.png"
+        },
+        {
+          "name": "Max Repel",
+          "price": 350,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/max-repel.png"
+        }
+      ]
+    },
+    {
+      "tier": 5,
+      "label": "Stock 8+ Badges",
+      "items": [
+        {
+          "name": "Poké Ball",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"
+        },
+        {
+          "name": "Great Ball",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png"
+        },
+        {
+          "name": "Ultra Ball",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png"
+        },
+        {
+          "name": "Potion",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/potion.png"
+        },
+        {
+          "name": "Super Potion",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/super-potion.png"
+        },
+        {
+          "name": "Hyper Potion",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/hyper-potion.png"
+        },
+        {
+          "name": "Max Potion",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/max-potion.png"
+        },
+        {
+          "name": "Full Restore",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/full-restore.png"
+        },
+        {
+          "name": "Revive",
+          "price": 750,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/revive.png"
+        },
+        {
+          "name": "Antidote",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/antidote.png"
+        },
+        {
+          "name": "Paralyze Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/paralyze-heal.png"
+        },
+        {
+          "name": "Awakening",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/awakening.png"
+        },
+        {
+          "name": "Burn Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/burn-heal.png"
+        },
+        {
+          "name": "Ice Heal",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ice-heal.png"
+        },
+        {
+          "name": "Full Heal",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/full-heal.png"
+        },
+        {
+          "name": "Escape Rope",
+          "price": 250,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/escape-rope.png"
+        },
+        {
+          "name": "Repel",
+          "price": 150,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/repel.png"
+        },
+        {
+          "name": "Super Repel",
+          "price": 250,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/super-repel.png"
+        },
+        {
+          "name": "Max Repel",
+          "price": 350,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/max-repel.png"
+        }
+      ]
+    }
+  ],
+  "shops": [
+    {
+      "id": "aspertia-city-pokemon-center",
+      "city": "Aspertia City",
+      "shop": "Pokémon Center",
+      "image": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/shops/aspertia-city-pokemon-center.png",
+      "items": [
+        {
+          "name": "Oran Berry",
+          "category": "Basic & status berries",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/oran-berry.png"
+        },
+        {
+          "name": "Leppa Berry",
+          "category": "Basic & status berries",
+          "price": 200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/leppa-berry.png"
+        },
+        {
+          "name": "Cheri Berry",
+          "category": "Basic & status berries",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/cheri-berry.png"
+        },
+        {
+          "name": "Chesto Berry",
+          "category": "Basic & status berries",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/chesto-berry.png"
+        },
+        {
+          "name": "Pecha Berry",
+          "category": "Basic & status berries",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/pecha-berry.png"
+        },
+        {
+          "name": "Rawst Berry",
+          "category": "Basic & status berries",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/rawst-berry.png"
+        },
+        {
+          "name": "Aspear Berry",
+          "category": "Basic & status berries",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/aspear-berry.png"
+        },
+        {
+          "name": "Persim Berry",
+          "category": "Basic & status berries",
+          "price": 100,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/persim-berry.png"
+        },
+        {
+          "name": "Everstone",
+          "category": "Utility",
+          "price": 200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/everstone.png"
+        },
+        {
+          "name": "Soothe Bell",
+          "category": "Utility",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/soothe-bell.png"
+        },
+        {
+          "name": "Amulet Coin",
+          "category": "Utility",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/amulet-coin.png"
+        }
+      ],
+      "tms": [
+        {
+          "tm": "TM49",
+          "name": "Echoed Voice",
+          "type": "Normal",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM54",
+          "name": "False Swipe",
+          "type": "Normal",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM70",
+          "name": "Flash",
+          "type": "Normal",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM76",
+          "name": "Struggle Bug",
+          "type": "Bug",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-bug.png"
+        },
+        {
+          "tm": "TM83",
+          "name": "Work Up",
+          "type": "Normal",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM94",
+          "name": "Rock Smash",
+          "type": "Fighting",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fighting.png"
+        }
+      ]
+    },
+    {
+      "id": "floccesy-town-pokemon-center",
+      "city": "Floccesy Town",
+      "shop": "Pokémon Center",
+      "image": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/shops/floccesy-town-pokemon-center.png",
+      "items": [
+        {
+          "name": "Sitrus Berry",
+          "category": "HP berries",
+          "price": 250,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sitrus-berry.png"
+        },
+        {
+          "name": "Enigma Berry",
+          "category": "HP berries",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/enigma-berry.png"
+        },
+        {
+          "name": "Figy Berry",
+          "category": "HP berries",
+          "price": 150,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/figy-berry.png"
+        },
+        {
+          "name": "Wiki Berry",
+          "category": "HP berries",
+          "price": 150,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/wiki-berry.png"
+        },
+        {
+          "name": "Mago Berry",
+          "category": "HP berries",
+          "price": 150,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mago-berry.png"
+        },
+        {
+          "name": "Aguav Berry",
+          "category": "HP berries",
+          "price": 150,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/aguav-berry.png"
+        },
+        {
+          "name": "Iapapa Berry",
+          "category": "HP berries",
+          "price": 150,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/iapapa-berry.png"
+        },
+        {
+          "name": "Light Ball",
+          "category": "Signature items",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/light-ball.png"
+        },
+        {
+          "name": "Stick",
+          "category": "Signature items",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/stick.png"
+        },
+        {
+          "name": "Thick Club",
+          "category": "Signature items",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/thick-club.png"
+        }
+      ],
+      "tms": [
+        {
+          "tm": "TM23",
+          "name": "Smack Down",
+          "type": "Rock",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-rock.png"
+        },
+        {
+          "tm": "TM43",
+          "name": "Flame Charge",
+          "type": "Fire",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fire.png"
+        },
+        {
+          "tm": "TM46",
+          "name": "Thief",
+          "type": "Dark",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-dark.png"
+        },
+        {
+          "tm": "TM48",
+          "name": "Round",
+          "type": "Normal",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM57",
+          "name": "Charge Beam",
+          "type": "Electric",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-electric.png"
+        },
+        {
+          "tm": "TM66",
+          "name": "Payback",
+          "type": "Dark",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-dark.png"
+        },
+        {
+          "tm": "TM88",
+          "name": "Pluck",
+          "type": "Flying",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-flying.png"
+        }
+      ]
+    },
+    {
+      "id": "virbank-city-pokemon-center",
+      "city": "Virbank City",
+      "shop": "Pokémon Center",
+      "image": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/shops/virbank-city-pokemon-center.png",
+      "items": [
+        {
+          "name": "Silk Scarf",
+          "category": "Type boosters I",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/silk-scarf.png"
+        },
+        {
+          "name": "Charcoal",
+          "category": "Type boosters I",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/charcoal.png"
+        },
+        {
+          "name": "Mystic Water",
+          "category": "Type boosters I",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mystic-water.png"
+        },
+        {
+          "name": "Miracle Seed",
+          "category": "Type boosters I",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/miracle-seed.png"
+        },
+        {
+          "name": "Magnet",
+          "category": "Type boosters I",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/magnet.png"
+        },
+        {
+          "name": "Sharp Beak",
+          "category": "Type boosters I",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sharp-beak.png"
+        },
+        {
+          "name": "Silver Powder",
+          "category": "Type boosters I",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/silver-powder.png"
+        },
+        {
+          "name": "Poison Barb",
+          "category": "Type boosters I",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poison-barb.png"
+        }
+      ],
+      "tms": [
+        {
+          "tm": "TM09",
+          "name": "Venoshock",
+          "type": "Poison",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-poison.png"
+        },
+        {
+          "tm": "TM10",
+          "name": "Hidden Power",
+          "type": "Normal",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM39",
+          "name": "Rock Tomb",
+          "type": "Rock",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-rock.png"
+        },
+        {
+          "tm": "TM40",
+          "name": "Aerial Ace",
+          "type": "Flying",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-flying.png"
+        },
+        {
+          "tm": "TM59",
+          "name": "Incinerate",
+          "type": "Fire",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fire.png"
+        },
+        {
+          "tm": "TM62",
+          "name": "Acrobatics",
+          "type": "Flying",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-flying.png"
+        },
+        {
+          "tm": "TM78",
+          "name": "Bulldoze",
+          "type": "Ground",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-ground.png"
+        },
+        {
+          "tm": "TM79",
+          "name": "Frost Breath",
+          "type": "Ice",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-ice.png"
+        },
+        {
+          "tm": "TM95",
+          "name": "Snarl",
+          "type": "Dark",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-dark.png"
+        }
+      ]
+    },
+    {
+      "id": "castelia-city-pokemon-center",
+      "city": "Castelia City",
+      "shop": "Pokémon Center",
+      "image": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/shops/castelia-city-pokemon-center.png",
+      "items": [
+        {
+          "name": "Hard Stone",
+          "category": "Type boosters II",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/hard-stone.png"
+        },
+        {
+          "name": "Soft Sand",
+          "category": "Type boosters II",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/soft-sand.png"
+        },
+        {
+          "name": "Black Belt",
+          "category": "Type boosters II",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/black-belt.png"
+        },
+        {
+          "name": "Twisted Spoon",
+          "category": "Type boosters II",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/twisted-spoon.png"
+        },
+        {
+          "name": "Spell Tag",
+          "category": "Type boosters II",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/spell-tag.png"
+        },
+        {
+          "name": "Black Glasses",
+          "category": "Type boosters II",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/black-glasses.png"
+        },
+        {
+          "name": "Dragon Fang",
+          "category": "Type boosters II",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dragon-fang.png"
+        },
+        {
+          "name": "Bright Powder",
+          "category": "Accuracy, evasion & critical hits",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/bright-powder.png"
+        },
+        {
+          "name": "Scope Lens",
+          "category": "Accuracy, evasion & critical hits",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/scope-lens.png"
+        },
+        {
+          "name": "Wide Lens",
+          "category": "Accuracy, evasion & critical hits",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/wide-lens.png"
+        },
+        {
+          "name": "Zoom Lens",
+          "category": "Accuracy, evasion & critical hits",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/zoom-lens.png"
+        }
+      ],
+      "tms": [
+        {
+          "tm": "TM41",
+          "name": "Torment",
+          "type": "Dark",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-dark.png"
+        },
+        {
+          "tm": "TM45",
+          "name": "Attract",
+          "type": "Normal",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM47",
+          "name": "Low Sweep",
+          "type": "Fighting",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fighting.png"
+        },
+        {
+          "tm": "TM58",
+          "name": "Sky Drop",
+          "type": "Flying",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-flying.png"
+        },
+        {
+          "tm": "TM63",
+          "name": "Embargo",
+          "type": "Dark",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-dark.png"
+        },
+        {
+          "tm": "TM82",
+          "name": "Dragon Tail",
+          "type": "Dragon",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-dragon.png"
+        }
+      ]
+    },
+    {
+      "id": "nimbasa-city-pokemon-center",
+      "city": "Nimbasa City",
+      "shop": "Pokémon Center",
+      "image": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/shops/nimbasa-city-pokemon-center.png",
+      "items": [
+        {
+          "name": "Damp Rock",
+          "category": "Weather & screen extenders",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/damp-rock.png"
+        },
+        {
+          "name": "Heat Rock",
+          "category": "Weather & screen extenders",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heat-rock.png"
+        },
+        {
+          "name": "Icy Rock",
+          "category": "Weather & screen extenders",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/icy-rock.png"
+        },
+        {
+          "name": "Smooth Rock",
+          "category": "Weather & screen extenders",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/smooth-rock.png"
+        },
+        {
+          "name": "Light Clay",
+          "category": "Weather & screen extenders",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/light-clay.png"
+        },
+        {
+          "name": "Quick Claw",
+          "category": "Speed & weight",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/quick-claw.png"
+        },
+        {
+          "name": "Lagging Tail",
+          "category": "Speed & weight",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/lagging-tail.png"
+        },
+        {
+          "name": "Iron Ball",
+          "category": "Speed & weight",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/iron-ball.png"
+        },
+        {
+          "name": "Float Stone",
+          "category": "Speed & weight",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/float-stone.png"
+        }
+      ],
+      "tms": [
+        {
+          "tm": "TM07",
+          "name": "Hail",
+          "type": "Ice",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-ice.png"
+        },
+        {
+          "tm": "TM11",
+          "name": "Sunny Day",
+          "type": "Fire",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fire.png"
+        },
+        {
+          "tm": "TM16",
+          "name": "Light Screen",
+          "type": "Psychic",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-psychic.png"
+        },
+        {
+          "tm": "TM18",
+          "name": "Rain Dance",
+          "type": "Water",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-water.png"
+        },
+        {
+          "tm": "TM20",
+          "name": "Safeguard",
+          "type": "Normal",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM32",
+          "name": "Double Team",
+          "type": "Normal",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM33",
+          "name": "Reflect",
+          "type": "Psychic",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-psychic.png"
+        },
+        {
+          "tm": "TM37",
+          "name": "Sandstorm",
+          "type": "Rock",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-rock.png"
+        }
+      ]
+    },
+    {
+      "id": "driftveil-city-pokemon-center",
+      "city": "Driftveil City",
+      "shop": "Pokémon Center",
+      "image": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/shops/driftveil-city-pokemon-center.png",
+      "items": [
+        {
+          "name": "Mental Herb",
+          "category": "Herbs",
+          "price": 400,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mental-herb.png"
+        },
+        {
+          "name": "Power Herb",
+          "category": "Herbs",
+          "price": 400,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/power-herb.png"
+        },
+        {
+          "name": "White Herb",
+          "category": "Herbs",
+          "price": 400,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/white-herb.png"
+        },
+        {
+          "name": "Flame Orb",
+          "category": "Status orbs",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/flame-orb.png"
+        },
+        {
+          "name": "Toxic Orb",
+          "category": "Status orbs",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/toxic-orb.png"
+        },
+        {
+          "name": "Absorb Bulb",
+          "category": "Situational",
+          "price": 400,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/absorb-bulb.png"
+        },
+        {
+          "name": "Cell Battery",
+          "category": "Situational",
+          "price": 400,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/cell-battery.png"
+        },
+        {
+          "name": "Destiny Knot",
+          "category": "Situational",
+          "price": 400,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/destiny-knot.png"
+        },
+        {
+          "name": "Grip Claw",
+          "category": "Situational",
+          "price": 400,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/grip-claw.png"
+        },
+        {
+          "name": "Sticky Barb",
+          "category": "Situational",
+          "price": 400,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sticky-barb.png"
+        }
+      ],
+      "tms": [
+        {
+          "tm": "TM05",
+          "name": "Roar",
+          "type": "Normal",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM19",
+          "name": "Telekinesis",
+          "type": "Psychic",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-psychic.png"
+        },
+        {
+          "tm": "TM44",
+          "name": "Rest",
+          "type": "Psychic",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-psychic.png"
+        },
+        {
+          "tm": "TM51",
+          "name": "Ally Switch",
+          "type": "Psychic",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-psychic.png"
+        },
+        {
+          "tm": "TM56",
+          "name": "Fling",
+          "type": "Dark",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-dark.png"
+        },
+        {
+          "tm": "TM60",
+          "name": "Quash",
+          "type": "Dark",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-dark.png"
+        },
+        {
+          "tm": "TM77",
+          "name": "Psych Up",
+          "type": "Normal",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        }
+      ]
+    },
+    {
+      "id": "driftveil-city-herb-shop",
+      "city": "Driftveil City",
+      "shop": "Herb Shop",
+      "image": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/shops/driftveil-city-herb-shop.png",
+      "items": [
+        {
+          "name": "Dawn Stone",
+          "category": "Evolution stones",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dawn-stone.png"
+        },
+        {
+          "name": "Dusk Stone",
+          "category": "Evolution stones",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dusk-stone.png"
+        },
+        {
+          "name": "Fire Stone",
+          "category": "Evolution stones",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/fire-stone.png"
+        },
+        {
+          "name": "Leaf Stone",
+          "category": "Evolution stones",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
+        },
+        {
+          "name": "Moon Stone",
+          "category": "Evolution stones",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/moon-stone.png"
+        },
+        {
+          "name": "Shiny Stone",
+          "category": "Evolution stones",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/shiny-stone.png"
+        },
+        {
+          "name": "Sun Stone",
+          "category": "Evolution stones",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sun-stone.png"
+        },
+        {
+          "name": "Thunder Stone",
+          "category": "Evolution stones",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/thunder-stone.png"
+        },
+        {
+          "name": "Water Stone",
+          "category": "Evolution stones",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/water-stone.png"
+        },
+        {
+          "name": "Oval Stone",
+          "category": "Natural evolution items",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/oval-stone.png"
+        },
+        {
+          "name": "Honey",
+          "category": "Natural evolution items",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/honey.png"
+        },
+        {
+          "name": "Black Sludge",
+          "category": "Natural evolution items",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/black-sludge.png"
+        },
+        {
+          "name": "Never-Melt Ice",
+          "category": "Natural evolution items",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/never-melt-ice.png"
+        },
+        {
+          "name": "Prism Scale",
+          "category": "Natural evolution items",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/prism-scale.png"
+        }
+      ],
+      "tms": []
+    },
+    {
+      "id": "driftveil-city-incense-shop",
+      "city": "Driftveil City",
+      "shop": "Incense Shop",
+      "image": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/shops/driftveil-city-incense-shop.png",
+      "items": [
+        {
+          "name": "Deep Sea Scale",
+          "category": "Trade & hold evolution items",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/deep-sea-scale.png"
+        },
+        {
+          "name": "Deep Sea Tooth",
+          "category": "Trade & hold evolution items",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/deep-sea-tooth.png"
+        },
+        {
+          "name": "Dragon Scale",
+          "category": "Trade & hold evolution items",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dragon-scale.png"
+        },
+        {
+          "name": "Dubious Disc",
+          "category": "Trade & hold evolution items",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dubious-disc.png"
+        },
+        {
+          "name": "Electirizer",
+          "category": "Trade & hold evolution items",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/electirizer.png"
+        },
+        {
+          "name": "King's Rock",
+          "category": "Trade & hold evolution items",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/kings-rock.png"
+        },
+        {
+          "name": "Magmarizer",
+          "category": "Trade & hold evolution items",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/magmarizer.png"
+        },
+        {
+          "name": "Metal Coat",
+          "category": "Trade & hold evolution items",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/metal-coat.png"
+        },
+        {
+          "name": "Protector",
+          "category": "Trade & hold evolution items",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/protector.png"
+        },
+        {
+          "name": "Reaper Cloth",
+          "category": "Trade & hold evolution items",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/reaper-cloth.png"
+        },
+        {
+          "name": "Up-Grade",
+          "category": "Trade & hold evolution items",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/up-grade.png"
+        },
+        {
+          "name": "Razor Claw",
+          "category": "Trade & hold evolution items",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/razor-claw.png"
+        },
+        {
+          "name": "Razor Fang",
+          "category": "Trade & hold evolution items",
+          "price": 1200,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/razor-fang.png"
+        }
+      ],
+      "tms": []
+    },
+    {
+      "id": "mistralton-city-pokemon-center",
+      "city": "Mistralton City",
+      "shop": "Pokémon Center",
+      "image": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/shops/mistralton-city-pokemon-center.png",
+      "items": [
+        {
+          "name": "Occa Berry",
+          "category": "Type-resist berries I",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/occa-berry.png"
+        },
+        {
+          "name": "Passho Berry",
+          "category": "Type-resist berries I",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/passho-berry.png"
+        },
+        {
+          "name": "Wacan Berry",
+          "category": "Type-resist berries I",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/wacan-berry.png"
+        },
+        {
+          "name": "Rindo Berry",
+          "category": "Type-resist berries I",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/rindo-berry.png"
+        },
+        {
+          "name": "Yache Berry",
+          "category": "Type-resist berries I",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/yache-berry.png"
+        },
+        {
+          "name": "Chople Berry",
+          "category": "Type-resist berries I",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/chople-berry.png"
+        },
+        {
+          "name": "Kebia Berry",
+          "category": "Type-resist berries I",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/kebia-berry.png"
+        },
+        {
+          "name": "Shuca Berry",
+          "category": "Type-resist berries I",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/shuca-berry.png"
+        },
+        {
+          "name": "Coba Berry",
+          "category": "Type-resist berries I",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/coba-berry.png"
+        }
+      ],
+      "tms": [
+        {
+          "tm": "TM21",
+          "name": "Frustration",
+          "type": "Normal",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM27",
+          "name": "Return",
+          "type": "Normal",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM42",
+          "name": "Facade",
+          "type": "Normal",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM65",
+          "name": "Shadow Claw",
+          "type": "Ghost",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-ghost.png"
+        },
+        {
+          "tm": "TM67",
+          "name": "Retaliate",
+          "type": "Normal",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM72",
+          "name": "Volt Switch",
+          "type": "Electric",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-electric.png"
+        },
+        {
+          "tm": "TM80",
+          "name": "Rock Slide",
+          "type": "Rock",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-rock.png"
+        },
+        {
+          "tm": "TM89",
+          "name": "U-turn",
+          "type": "Bug",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-bug.png"
+        }
+      ]
+    },
+    {
+      "id": "lentimas-town-pokemon-center",
+      "city": "Lentimas Town",
+      "shop": "Pokémon Center",
+      "image": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/shops/lentimas-town-pokemon-center.png",
+      "items": [
+        {
+          "name": "Payapa Berry",
+          "category": "Type-resist berries II",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/payapa-berry.png"
+        },
+        {
+          "name": "Tanga Berry",
+          "category": "Type-resist berries II",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tanga-berry.png"
+        },
+        {
+          "name": "Charti Berry",
+          "category": "Type-resist berries II",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/charti-berry.png"
+        },
+        {
+          "name": "Kasib Berry",
+          "category": "Type-resist berries II",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/kasib-berry.png"
+        },
+        {
+          "name": "Haban Berry",
+          "category": "Type-resist berries II",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/haban-berry.png"
+        },
+        {
+          "name": "Colbur Berry",
+          "category": "Type-resist berries II",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/colbur-berry.png"
+        },
+        {
+          "name": "Babiri Berry",
+          "category": "Type-resist berries II",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/babiri-berry.png"
+        },
+        {
+          "name": "Chilan Berry",
+          "category": "Type-resist berries II",
+          "price": 300,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/chilan-berry.png"
+        },
+        {
+          "name": "Jaboca Berry",
+          "category": "Retaliation berries",
+          "price": 400,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/jaboca-berry.png"
+        },
+        {
+          "name": "Rowap Berry",
+          "category": "Retaliation berries",
+          "price": 400,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/rowap-berry.png"
+        }
+      ],
+      "tms": [
+        {
+          "tm": "TM02",
+          "name": "Dragon Claw",
+          "type": "Dragon",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-dragon.png"
+        },
+        {
+          "tm": "TM03",
+          "name": "Psyshock",
+          "type": "Psychic",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-psychic.png"
+        },
+        {
+          "tm": "TM28",
+          "name": "Dig",
+          "type": "Ground",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-ground.png"
+        },
+        {
+          "tm": "TM31",
+          "name": "Brick Break",
+          "type": "Fighting",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fighting.png"
+        },
+        {
+          "tm": "TM55",
+          "name": "Scald",
+          "type": "Water",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-water.png"
+        },
+        {
+          "tm": "TM81",
+          "name": "X-Scissor",
+          "type": "Bug",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-bug.png"
+        },
+        {
+          "tm": "TM84",
+          "name": "Poison Jab",
+          "type": "Poison",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-poison.png"
+        }
+      ]
+    },
+    {
+      "id": "undella-town-pokemon-center",
+      "city": "Undella Town",
+      "shop": "Pokémon Center",
+      "image": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/shops/undella-town-pokemon-center.png",
+      "items": [
+        {
+          "name": "Eject Button",
+          "category": "Switching",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/eject-button.png"
+        },
+        {
+          "name": "Red Card",
+          "category": "Switching",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/red-card.png"
+        },
+        {
+          "name": "Shed Shell",
+          "category": "Switching",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/shed-shell.png"
+        },
+        {
+          "name": "Air Balloon",
+          "category": "Defensive & recovery",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/air-balloon.png"
+        },
+        {
+          "name": "Rocky Helmet",
+          "category": "Defensive & recovery",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/rocky-helmet.png"
+        },
+        {
+          "name": "Eviolite",
+          "category": "Defensive & recovery",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/eviolite.png"
+        },
+        {
+          "name": "Focus Band",
+          "category": "Defensive & recovery",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/focus-band.png"
+        },
+        {
+          "name": "Big Root",
+          "category": "Defensive & recovery",
+          "price": 500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/big-root.png"
+        }
+      ],
+      "tms": [
+        {
+          "tm": "TM06",
+          "name": "Toxic",
+          "type": "Poison",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-poison.png"
+        },
+        {
+          "tm": "TM12",
+          "name": "Taunt",
+          "type": "Dark",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-dark.png"
+        },
+        {
+          "tm": "TM17",
+          "name": "Protect",
+          "type": "Normal",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM61",
+          "name": "Will-O-Wisp",
+          "type": "Fire",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fire.png"
+        },
+        {
+          "tm": "TM73",
+          "name": "Thunder Wave",
+          "type": "Electric",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-electric.png"
+        },
+        {
+          "tm": "TM74",
+          "name": "Gyro Ball",
+          "type": "Steel",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-steel.png"
+        },
+        {
+          "tm": "TM86",
+          "name": "Grass Knot",
+          "type": "Grass",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-grass.png"
+        },
+        {
+          "tm": "TM87",
+          "name": "Swagger",
+          "type": "Normal",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM90",
+          "name": "Substitute",
+          "type": "Normal",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        }
+      ]
+    },
+    {
+      "id": "lacunosa-town-pokemon-center",
+      "city": "Lacunosa Town",
+      "shop": "Pokémon Center",
+      "image": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/shops/lacunosa-town-pokemon-center.png",
+      "items": [
+        {
+          "name": "Liechi Berry",
+          "category": "Pinch berries",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/liechi-berry.png"
+        },
+        {
+          "name": "Ganlon Berry",
+          "category": "Pinch berries",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ganlon-berry.png"
+        },
+        {
+          "name": "Salac Berry",
+          "category": "Pinch berries",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/salac-berry.png"
+        },
+        {
+          "name": "Petaya Berry",
+          "category": "Pinch berries",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/petaya-berry.png"
+        },
+        {
+          "name": "Apicot Berry",
+          "category": "Pinch berries",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/apicot-berry.png"
+        },
+        {
+          "name": "Lansat Berry",
+          "category": "Pinch berries",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/lansat-berry.png"
+        },
+        {
+          "name": "Starf Berry",
+          "category": "Pinch berries",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/starf-berry.png"
+        },
+        {
+          "name": "Micle Berry",
+          "category": "Pinch berries",
+          "price": 600,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/micle-berry.png"
+        }
+      ],
+      "tms": [
+        {
+          "tm": "TM01",
+          "name": "Hone Claws",
+          "type": "Dark",
+          "price": 2000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-dark.png"
+        },
+        {
+          "tm": "TM04",
+          "name": "Calm Mind",
+          "type": "Psychic",
+          "price": 2000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-psychic.png"
+        },
+        {
+          "tm": "TM08",
+          "name": "Bulk Up",
+          "type": "Fighting",
+          "price": 2000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fighting.png"
+        },
+        {
+          "tm": "TM30",
+          "name": "Shadow Ball",
+          "type": "Ghost",
+          "price": 2000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-ghost.png"
+        },
+        {
+          "tm": "TM69",
+          "name": "Rock Polish",
+          "type": "Rock",
+          "price": 2000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-rock.png"
+        },
+        {
+          "tm": "TM85",
+          "name": "Dream Eater",
+          "type": "Psychic",
+          "price": 2000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-psychic.png"
+        },
+        {
+          "tm": "TM91",
+          "name": "Flash Cannon",
+          "type": "Steel",
+          "price": 2000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-steel.png"
+        },
+        {
+          "tm": "TM93",
+          "name": "Wild Charge",
+          "type": "Electric",
+          "price": 2000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-electric.png"
+        }
+      ]
+    },
+    {
+      "id": "opelucid-city-pokemon-center",
+      "city": "Opelucid City",
+      "shop": "Pokémon Center",
+      "image": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/shops/opelucid-city-pokemon-center.png",
+      "items": [
+        {
+          "name": "Muscle Band",
+          "category": "Damage boosters",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/muscle-band.png"
+        },
+        {
+          "name": "Wise Glasses",
+          "category": "Damage boosters",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/wise-glasses.png"
+        },
+        {
+          "name": "Metronome",
+          "category": "Damage boosters",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/metronome.png"
+        },
+        {
+          "name": "Expert Belt",
+          "category": "Damage boosters",
+          "price": 1000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/expert-belt.png"
+        },
+        {
+          "name": "Shell Bell",
+          "category": "Damage boosters",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/shell-bell.png"
+        },
+        {
+          "name": "Lum Berry",
+          "category": "Top berries",
+          "price": 400,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/lum-berry.png"
+        },
+        {
+          "name": "Custap Berry",
+          "category": "Top berries",
+          "price": 800,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/custap-berry.png"
+        }
+      ],
+      "tms": [
+        {
+          "tm": "TM13",
+          "name": "Ice Beam",
+          "type": "Ice",
+          "price": 2500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-ice.png"
+        },
+        {
+          "tm": "TM24",
+          "name": "Thunderbolt",
+          "type": "Electric",
+          "price": 2500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-electric.png"
+        },
+        {
+          "tm": "TM26",
+          "name": "Earthquake",
+          "type": "Ground",
+          "price": 2500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-ground.png"
+        },
+        {
+          "tm": "TM29",
+          "name": "Psychic",
+          "type": "Psychic",
+          "price": 2500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-psychic.png"
+        },
+        {
+          "tm": "TM34",
+          "name": "Sludge Wave",
+          "type": "Poison",
+          "price": 2500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-poison.png"
+        },
+        {
+          "tm": "TM35",
+          "name": "Flamethrower",
+          "type": "Fire",
+          "price": 2500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fire.png"
+        },
+        {
+          "tm": "TM36",
+          "name": "Sludge Bomb",
+          "type": "Poison",
+          "price": 2500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-poison.png"
+        },
+        {
+          "tm": "TM53",
+          "name": "Energy Ball",
+          "type": "Grass",
+          "price": 2500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-grass.png"
+        },
+        {
+          "tm": "TM75",
+          "name": "Swords Dance",
+          "type": "Normal",
+          "price": 2500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM92",
+          "name": "Trick Room",
+          "type": "Psychic",
+          "price": 2500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-psychic.png"
+        }
+      ]
+    },
+    {
+      "id": "humilau-city-pokemon-center",
+      "city": "Humilau City",
+      "shop": "Pokémon Center",
+      "image": "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/shops/humilau-city-pokemon-center.png",
+      "items": [
+        {
+          "name": "Choice Band",
+          "category": "Competitive items",
+          "price": 2000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/choice-band.png"
+        },
+        {
+          "name": "Choice Scarf",
+          "category": "Competitive items",
+          "price": 2000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/choice-scarf.png"
+        },
+        {
+          "name": "Choice Specs",
+          "category": "Competitive items",
+          "price": 2000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/choice-specs.png"
+        },
+        {
+          "name": "Life Orb",
+          "category": "Competitive items",
+          "price": 2000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/life-orb.png"
+        },
+        {
+          "name": "Leftovers",
+          "category": "Competitive items",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/leftovers.png"
+        },
+        {
+          "name": "Focus Sash",
+          "category": "Competitive items",
+          "price": 1500,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/focus-sash.png"
+        }
+      ],
+      "tms": [
+        {
+          "tm": "TM14",
+          "name": "Blizzard",
+          "type": "Ice",
+          "price": 3000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-ice.png"
+        },
+        {
+          "tm": "TM15",
+          "name": "Hyper Beam",
+          "type": "Normal",
+          "price": 3000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM22",
+          "name": "Solar Beam",
+          "type": "Grass",
+          "price": 3000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-grass.png"
+        },
+        {
+          "tm": "TM25",
+          "name": "Thunder",
+          "type": "Electric",
+          "price": 3000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-electric.png"
+        },
+        {
+          "tm": "TM38",
+          "name": "Fire Blast",
+          "type": "Fire",
+          "price": 3000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fire.png"
+        },
+        {
+          "tm": "TM50",
+          "name": "Overheat",
+          "type": "Fire",
+          "price": 3000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fire.png"
+        },
+        {
+          "tm": "TM52",
+          "name": "Focus Blast",
+          "type": "Fighting",
+          "price": 3000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fighting.png"
+        },
+        {
+          "tm": "TM64",
+          "name": "Explosion",
+          "type": "Normal",
+          "price": 3000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM68",
+          "name": "Giga Impact",
+          "type": "Normal",
+          "price": 3000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png"
+        },
+        {
+          "tm": "TM71",
+          "name": "Stone Edge",
+          "type": "Rock",
+          "price": 3000,
+          "icon": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-rock.png"
+        }
+      ]
+    }
+  ]
+}
