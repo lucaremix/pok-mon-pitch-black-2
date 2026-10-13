@@ -71,7 +71,7 @@
     margin: 0 0 16px; font-family: var(--display); font-weight: 800; font-stretch: 115%;
     font-size: 15px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted);
   }
-  .grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .card {
     --c1: #2f7bff; --c2: #ffcb05;
     position: relative; display: flex; flex-direction: column; height: 100%; overflow: hidden;
@@ -140,6 +140,7 @@
   .credits .rule { width: 1px; height: 16px; background: var(--line-2); }
   .credits a { color: inherit; }
 
+  @media (max-width: 960px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 520px) {
     .hero { padding: 32px 0 30px; }
     .lead { font-size: 16.5px; }
@@ -257,6 +258,24 @@
           <p class="desc">What every Poké Mart sells: TMs, battle items, berries and evolution items, with prices.</p>
           <div class="chips"><span class="chip">TMs</span><span class="chip">Held items</span><span class="chip">Berries</span><span class="chip">Evolution items</span></div>
           <div class="go">Go shopping <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="card" href="move_changes.html" style="--c1:#d685ad;--c2:#7ac74c">
+        <div class="stage">
+          <span class="num">06</span>
+          <div class="sprites">
+            <img data-box="56" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-fairy.png" alt="" loading="lazy" onload="fit(this)" onerror="this.src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png'">
+            <img data-box="96" src="https://play.pokemonshowdown.com/sprites/gen5ani/clefable.gif" alt="" loading="lazy" onload="fit(this)">
+            <img data-box="56" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-grass.png" alt="" loading="lazy" onload="fit(this)">
+          </div>
+        </div>
+        <div class="body">
+          <h3 class="name">Move Changes</h3>
+          <p class="desc">Brand-new Fairy moves, moves that changed type and rebalanced power, accuracy and PP.</p>
+          <div class="chips"><span class="chip">New Fairy moves</span><span class="chip">Type changes</span><span class="chip">Power &amp; accuracy</span></div>
+          <div class="go">See the moves <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
         </div>
       </a>
     </li>
