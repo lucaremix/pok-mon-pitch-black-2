@@ -284,6 +284,8 @@
     color: var(--muted); font-size: 12.5px; font-weight: 600; text-align: center;
   }
   .evo-arrow svg { width: 36px; height: 14px; color: var(--volt); transform: rotate(90deg); }
+  .evo-arrow .how { max-width: 150px; }
+  .evo-arrow .how svg { width: 15px; height: 15px; transform: none; color: currentColor; }
 
   .moves-wrap {
     position: relative; height: 212px; border-radius: 14px; overflow: hidden;
@@ -387,6 +389,7 @@
   .how.hold { --k: #b47cff; }
   .how img { width: 24px; height: 24px; flex: none; image-rendering: pixelated; }
   .how svg { width: 15px; height: 15px; flex: none; }
+  .how.other { --k: #8e9ab2; padding-left: 10px; }
   .how small { display: block; font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
   .evo-err { color: var(--muted); font-size: 14.5px; }
   @media (max-width: 560px) {
@@ -589,6 +592,27 @@ function abilityURL(name) {
 const CHEVRON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
 const ARROW = '<svg viewBox="0 0 36 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h30M26 2l6 5-6 5"/></svg>';
 
+
+// ───────── evolution method pill: "Level 35" / "Use Sun Stone" / "Level up holding Metal Coat" ─────────
+// Item icons come from Showdown; ITEM_FILES fixes the few whose file name differs from the item name.
+const ITEM_FILES = { "Deep Sea Scale": "deepseascale", "Deep Sea Tooth": "deepseatooth", "Never-Melt Ice": "nevermeltice" };
+const ITEM_ICON = (n, file) => "https://play.pokemonshowdown.com/sprites/itemicons/" +
+  (file || ITEM_FILES[n] || String(n).toLowerCase().replace(/['’.]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")) + ".png";
+const LEVEL_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+function parseMethod(text) {
+  const t = String(text || "").trim();
+  let m;
+  if ((m = t.match(/holding (?:an? )?(.+?)\.?$/i))) return { kind: "hold", item: m[1] };
+  if ((m = t.match(/^Use (?:an? )?(.+?)\.?$/i))) return { kind: "item", item: m[1] };
+  if (/^Level \d+/i.test(t)) return { kind: "level" };
+  return { kind: "other" };
+}
+function methodPill(text, itemFile) {
+  const m = parseMethod(text);
+  const icon = m.item ? '<img src="' + esc(ITEM_ICON(m.item, itemFile)) + '" alt="" width="24" height="24" loading="lazy" onerror="this.remove()">' : (m.kind === "level" ? LEVEL_ICON : "");
+  return '<span class="how ' + m.kind + '">' + icon + "<span>" + esc(text) + "</span></span>";
+}
+
 function abilityLink(a) {
   return '<a class="ability" href="' + abilityURL(a) + '" target="_blank" rel="noopener noreferrer" title="' + esc(a) + ' on Bulbapedia">' +
     DIAMOND + esc(a) + "</a>";
@@ -606,10 +630,16 @@ function chainOf(p) {
     name: e.name, id: e.pokedex_id, sprite: e.sprite, types: [e.type1, e.type2].filter(Boolean),
     abilities: e.abilities || [], moves: e.moves || [], evo: e.evo || ""
   }));
-  return pre.concat([{
+  const self = [{
     name: p.name, id: p.pokedex_id, sprite: p.sprite, types: [p.type1, p.type2].filter(Boolean),
-    abilities: p.abilities, moves: p.moves || [], evo: ""
-  }]);
+    abilities: p.abilities, moves: p.moves || [], evo: p.evo || "", self: true
+  }];
+  // optional "next": the Pokémon it now evolves into (shown after it, same box)
+  const next = p.next ? [{
+    name: p.next.name, id: p.next.pokedex_id, sprite: p.next.sprite, types: [p.next.type1, p.next.type2].filter(Boolean),
+    abilities: p.next.abilities || [], moves: p.next.moves || [], evo: ""
+  }] : [];
+  return pre.concat(self, next);
 }
 
 function moveURL(name) {
@@ -643,20 +673,20 @@ function evoNodeHTML(n, k, active) {
 }
 
 function detailHTML(p, key) {
-  const chain = chainOf(p), last = chain.length - 1;
+  const chain = chainOf(p), last = chain.length - 1, me = chain.findIndex((n) => n.self);
   let evo = "";
   if (chain.length > 1) {
     evo = '<section class="d-sec"><h3>Evolution line</h3><div class="evo">';
     chain.forEach((n, k) => {
-      evo += evoNodeHTML(n, k, k === last);
-      if (k < last) evo += '<div class="evo-arrow">' + ARROW + "<span>" + esc(n.evo || "Evolves") + "</span></div>";
+      evo += evoNodeHTML(n, k, k === me);
+      if (k < last) evo += '<div class="evo-arrow">' + ARROW + methodPill(n.evo || "Evolves") + "</div>";
     });
     evo += "</div></section>";
   }
-  const [c1] = colorsOf(chain[last].types);
+  const [c1] = colorsOf(chain[me].types);
   return '<div class="detail" id="detail-' + key + '">' + evo +
-    '<section class="d-sec"><h3>Level-up moves<span class="who">' + esc(chain[last].name) + '</span><span class="count">' + chain[last].moves.length + " moves</span></h3>" +
-    '<div class="moves-wrap" style="--c1:' + c1 + '">' + movesHTML(chain[last].moves) + "</div></section></div>";
+    '<section class="d-sec"><h3>Level-up moves<span class="who">' + esc(chain[me].name) + '</span><span class="count">' + chain[me].moves.length + " moves</span></h3>" +
+    '<div class="moves-wrap" style="--c1:' + c1 + '">' + movesHTML(chain[me].moves) + "</div></section></div>";
 }
 
 function cardHTML(p, i) {
@@ -670,7 +700,7 @@ function cardHTML(p, i) {
   }).join("");
   const abilities = p.abilities.map((a) => abilityLink(a)).join("");
   const id = String(p.pokedex_id).padStart(3, "0");
-  const more = (p.preevo && p.preevo.length) || (p.moves && p.moves.length);
+  const more = (p.preevo && p.preevo.length) || p.next || (p.moves && p.moves.length);
   const toggle = more
     ? '<button class="expander" type="button" aria-expanded="false" aria-controls="detail-' + i + '">Evolution &amp; moves' + CHEVRON + "</button>"
     : "";
@@ -745,7 +775,7 @@ function apply() {
   DATA.forEach((p, i) => {
     const types = [p.type1, p.type2];
     const okType = [...selected].every((t) => types.includes(t));
-    const extra = [...(p.preevo || []).map((e) => e.name), ...(p.moves || []).map((m) => m.move)].join(" ");
+    const extra = [...(p.preevo || []).map((e) => e.name + " " + (e.evo || "")), p.next ? p.next.name : "", p.evo || "", ...(p.moves || []).map((m) => m.move)].join(" ");
     const hay = (p.name + " " + p.abilities.join(" ") + " " + extra + " " + p.pokedex_id + " " + String(p.pokedex_id).padStart(3, "0")).toLowerCase();
     const ok = okType && (!term || hay.includes(term));
     cards[i].hidden = !ok;
@@ -898,10 +928,6 @@ const EVO_URLS = [
   "https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/data/evo_changes.json",
   "assets/data/evo_changes.json"
 ];
-const ITEM_ICON = (n) => "https://play.pokemonshowdown.com/sprites/itemicons/" + String(n).toLowerCase().replace(/['’.]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") + ".png";
-const HOW_ICON = {
-  level: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>'
-};
 const EVO_ARROW = '<svg class="arr" viewBox="0 0 44 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h38M34 2l6 5-6 5"/></svg>';
 
 function evoMonHTML(name, id, types, cls) {
@@ -912,9 +938,7 @@ function evoMonHTML(name, id, types, cls) {
     types.map((t) => '<img src="' + (TYPE_ICONS[t] || "") + '" alt="' + esc(t) + '" title="' + esc(t) + '" width="18" height="18" loading="lazy">').join("") + "</span></span></div>";
 }
 function howHTML(e) {
-  const kind = e.kind || (e.level ? "level" : "hold");
-  const icon = e.item ? '<img src="' + esc(ITEM_ICON(e.item)) + '" alt="" width="24" height="24" loading="lazy" onerror="this.remove()">' : (HOW_ICON[kind] || "");
-  return '<div class="ec-how">' + EVO_ARROW + '<span class="how ' + kind + '">' + icon + "<span>" + esc(e.method) + "</span></span></div>";
+  return '<div class="ec-how">' + EVO_ARROW + methodPill(e.method, e.item_icon) + "</div>";
 }
 
 (async function loadEvo() {
@@ -932,33 +956,30 @@ function howHTML(e) {
     gridEl.outerHTML = '<p class="evo-err">Could not load assets/data/evo_changes.json (' + esc(lastErr ? lastErr.message : "invalid data") + ").</p>";
     return;
   }
-  list = list.slice().sort((a, b) => a.pokedex_id - b.pokedex_id);
-  gridEl.innerHTML = list.map((p) => {
+  // one box per evolution (Eevee gets four boxes)
+  const rows = [];
+  list.slice().sort((a, b) => a.pokedex_id - b.pokedex_id || 0).forEach((p) =>
+    (p.evolutions || []).forEach((e) => rows.push({ p, e })));
+  gridEl.innerHTML = rows.map(({ p, e }) => {
     const types = p.types || [];
-    return '<li class="evo-card" style="--c1:' + (TYPE_COLORS[types[0]] || "#6b7a9c") + '">' + (p.evolutions || []).map((e) =>
-      '<div class="evo-row">' + evoMonHTML(p.name, p.pokedex_id, types, "from") + howHTML(e) + evoMonHTML(e.into, e.into_id, e.into_types || [], "to") + "</div>").join("") + "</li>";
+    return '<li class="evo-card" style="--c1:' + (TYPE_COLORS[types[0]] || "#6b7a9c") + '"><div class="evo-row">' +
+      evoMonHTML(p.name, p.pokedex_id, types, "from") + howHTML(e) + evoMonHTML(e.into, e.into_id, e.into_types || [], "to") + "</div></li>";
   }).join("");
   const cardsEl = Array.from(gridEl.children);
-  const total = list.reduce((n, p) => n + (p.evolutions || []).length, 0);
+  const total = rows.length;
 
   window.evoFilter = function (term, types) {
-    let shown = 0, rows = 0;
-    list.forEach((p, i) => {
-      const card = cardsEl[i], rowEls = card.querySelectorAll(".evo-row");
-      let any = false;
-      (p.evolutions || []).forEach((e, k) => {
-        const allTypes = (p.types || []).concat(e.into_types || []);
-        const okType = types.every((t) => allTypes.includes(t));
-        const hay = [p.name, p.pokedex_id, String(p.pokedex_id).padStart(3, "0"), e.into, e.into_id, String(e.into_id).padStart(3, "0"), e.method, e.item || ""].join(" ").toLowerCase();
-        const ok = okType && (!term || hay.includes(term));
-        rowEls[k].hidden = !ok;
-        if (ok) { any = true; rows++; }
-      });
-      card.hidden = !any;
-      if (any) shown++;
+    let shown = 0;
+    rows.forEach(({ p, e }, i) => {
+      const allTypes = (p.types || []).concat(e.into_types || []);
+      const okType = types.every((t) => allTypes.includes(t));
+      const hay = [p.name, p.pokedex_id, String(p.pokedex_id).padStart(3, "0"), e.into, e.into_id, String(e.into_id).padStart(3, "0"), e.method, e.item || ""].join(" ").toLowerCase();
+      const ok = okType && (!term || hay.includes(term));
+      cardsEl[i].hidden = !ok;
+      if (ok) shown++;
     });
     sec.hidden = shown === 0;
-    countEl.textContent = rows === total ? total + " evolutions" : rows + " of " + total + " evolutions";
+    countEl.textContent = shown === total ? total + " evolutions" : shown + " of " + total + " evolutions";
     return shown;
   };
   if (window.applyChanges) window.applyChanges();
