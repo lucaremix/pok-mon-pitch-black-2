@@ -59,48 +59,6 @@
     ]
   },
   {
-    "pokedex_id": 111,
-    "name": "Rhyhorn",
-    "types": [
-      "Ground",
-      "Rock"
-    ],
-    "evolutions": [
-      {
-        "into": "Rhydon",
-        "into_id": 112,
-        "into_types": [
-          "Ground",
-          "Rock"
-        ],
-        "method": "Level 22",
-        "kind": "level",
-        "level": 22
-      }
-    ]
-  },
-  {
-    "pokedex_id": 112,
-    "name": "Rhydon",
-    "types": [
-      "Ground",
-      "Rock"
-    ],
-    "evolutions": [
-      {
-        "into": "Rhyperior",
-        "into_id": 464,
-        "into_types": [
-          "Ground",
-          "Rock"
-        ],
-        "method": "Level 35",
-        "kind": "level",
-        "level": 35
-      }
-    ]
-  },
-  {
     "pokedex_id": 117,
     "name": "Seadra",
     "types": [
@@ -114,9 +72,10 @@
           "Water",
           "Dragon"
         ],
-        "method": "Level up holding Dragon Scale",
+        "method": "Level up at night holding Dragon Scale",
         "kind": "hold",
-        "item": "Dragon Scale"
+        "item": "Dragon Scale",
+        "time": "night"
       }
     ]
   },
@@ -133,9 +92,10 @@
         "into_types": [
           "Fire"
         ],
-        "method": "Level up holding Magmarizer",
+        "method": "Level up during the day holding Magmarizer",
         "kind": "hold",
-        "item": "Magmarizer"
+        "item": "Magmarizer",
+        "time": "day"
       }
     ]
   },
@@ -182,10 +142,11 @@
         "into_types": [
           "Ice"
         ],
-        "method": "Level up holding Never-Melt Ice",
+        "method": "Level up during the day holding Never-Melt Ice",
         "kind": "hold",
         "item": "Never-Melt Ice",
-        "item_icon": "nevermeltice"
+        "item_icon": "nevermeltice",
+        "time": "day"
       }
     ]
   },
@@ -202,9 +163,10 @@
         "into_types": [
           "Normal"
         ],
-        "method": "Level up holding Up-Grade",
+        "method": "Level up during the day holding Up-Grade",
         "kind": "hold",
-        "item": "Up-Grade"
+        "item": "Up-Grade",
+        "time": "day"
       }
     ]
   },
@@ -221,9 +183,10 @@
         "into_types": [
           "Normal"
         ],
-        "method": "Level up holding Dubious Disc",
+        "method": "Level up at night holding Dubious Disc",
         "kind": "hold",
-        "item": "Dubious Disc"
+        "item": "Dubious Disc",
+        "time": "night"
       }
     ]
   },
@@ -240,9 +203,10 @@
         "into_types": [
           "Water"
         ],
-        "method": "Level up holding Prism Scale",
+        "method": "Level up during the day holding Prism Scale",
         "kind": "hold",
-        "item": "Prism Scale"
+        "item": "Prism Scale",
+        "time": "day"
       }
     ]
   },
@@ -278,9 +242,10 @@
         "into_types": [
           "Ghost"
         ],
-        "method": "Level up holding Reaper's Cloth",
+        "method": "Level up at night holding Reaper's Cloth",
         "kind": "hold",
-        "item": "Reaper's Cloth"
+        "item": "Reaper's Cloth",
+        "time": "night"
       }
     ]
   },
@@ -338,9 +303,10 @@
           "Bug",
           "Steel"
         ],
-        "method": "Level up holding Metal Coat",
+        "method": "Level up during the day holding Metal Coat",
         "kind": "hold",
-        "item": "Metal Coat"
+        "item": "Metal Coat",
+        "time": "day"
       }
     ]
   },
