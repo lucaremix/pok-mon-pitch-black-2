@@ -284,6 +284,20 @@
     color: var(--muted); font-size: 12.5px; font-weight: 600; text-align: center;
   }
   .evo-arrow svg { width: 36px; height: 14px; color: var(--volt); transform: rotate(90deg); }
+  .evo-arrow .how { max-width: 150px; }
+  .evo-arrow .how svg { width: 15px; height: 15px; transform: none; color: currentColor; }
+  .how {
+    --k: #4a82e8;
+    display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px 4px 6px; border-radius: 10px; text-align: center;
+    font-size: 12.5px; font-weight: 700; line-height: 1.2; color: #fff;
+    background: color-mix(in srgb, var(--k) 22%, #0b0e14); border: 1px solid color-mix(in srgb, var(--k) 60%, transparent);
+  }
+  .how.level { --k: #38c6ff; }
+  .how.item { --k: #ffcb05; }
+  .how.hold { --k: #b47cff; }
+  .how img { width: 24px; height: 24px; flex: none; image-rendering: pixelated; }
+  .how svg { width: 15px; height: 15px; flex: none; }
+  .how.other { --k: #8e9ab2; padding-left: 10px; }
 
   .moves-wrap {
     position: relative; height: 212px; border-radius: 14px; overflow: hidden;
@@ -533,6 +547,27 @@ function abilityURL(name) {
 const CHEVRON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
 const ARROW = '<svg viewBox="0 0 36 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7h30M26 2l6 5-6 5"/></svg>';
 
+
+// ───────── evolution method pill: "Level 35" / "Use Sun Stone" / "Level up holding Metal Coat" ─────────
+// Item icons come from Showdown; ITEM_FILES fixes the few whose file name differs from the item name.
+const ITEM_FILES = { "Deep Sea Scale": "deepseascale", "Deep Sea Tooth": "deepseatooth", "Never-Melt Ice": "nevermeltice" };
+const ITEM_ICON = (n, file) => "https://play.pokemonshowdown.com/sprites/itemicons/" +
+  (file || ITEM_FILES[n] || String(n).toLowerCase().replace(/['’.]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")) + ".png";
+const LEVEL_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+function parseMethod(text) {
+  const t = String(text || "").trim();
+  let m;
+  if ((m = t.match(/holding (?:an? )?(.+?)\.?$/i))) return { kind: "hold", item: m[1] };
+  if ((m = t.match(/^Use (?:an? )?(.+?)\.?$/i))) return { kind: "item", item: m[1] };
+  if (/^Level \d+/i.test(t)) return { kind: "level" };
+  return { kind: "other" };
+}
+function methodPill(text, itemFile) {
+  const m = parseMethod(text);
+  const icon = m.item ? '<img src="' + esc(ITEM_ICON(m.item, itemFile)) + '" alt="" width="24" height="24" loading="lazy" onerror="this.remove()">' : (m.kind === "level" ? LEVEL_ICON : "");
+  return '<span class="how ' + m.kind + '">' + icon + "<span>" + esc(text) + "</span></span>";
+}
+
 function abilityLink(a) {
   return '<a class="ability" href="' + abilityURL(a) + '" target="_blank" rel="noopener noreferrer" title="' + esc(a) + ' on Bulbapedia">' +
     DIAMOND + esc(a) + "</a>";
@@ -593,7 +628,7 @@ function detailHTML(p, key) {
     evo = '<section class="d-sec"><h3>Evolution line</h3><div class="evo">';
     chain.forEach((n, k) => {
       evo += evoNodeHTML(n, k, k === last);
-      if (k < last) evo += '<div class="evo-arrow">' + ARROW + "<span>" + esc(n.evo || "Evolves") + "</span></div>";
+      if (k < last) evo += '<div class="evo-arrow">' + ARROW + methodPill(n.evo || "Evolves") + "</div>";
     });
     evo += "</div></section>";
   }
