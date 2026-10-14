@@ -249,7 +249,7 @@
         "level": 10
       },
       {
-        "move": "Bullet Punch",
+        "move": "Magnet Bomb",
         "level": 12
       },
       {
@@ -271,10 +271,6 @@
       {
         "move": "Pursuit",
         "level": 22
-      },
-      {
-        "move": "Magnet Bomb",
-        "level": 23
       },
       {
         "move": "Metal Sound",
@@ -891,6 +887,10 @@
         "level": 43
       },
       {
+        "move": "Stone Edge",
+        "level": 51
+      },
+      {
         "move": "Megahorn",
         "level": 58
       }
@@ -1114,6 +1114,10 @@
             "level": 11
           },
           {
+            "move": "Mega Drain",
+            "level": 14
+          },
+          {
             "move": "Fury Cutter",
             "level": 17
           },
@@ -1206,12 +1210,12 @@
         "level": 37
       },
       {
-        "move": "Nightmare",
-        "level": 51
+        "move": "Seed Bomb",
+        "level": 43
       },
       {
-        "move": "Megahorn",
-        "level": 52
+        "move": "Nightmare",
+        "level": 51
       },
       {
         "move": "Rage Powder",
@@ -1286,6 +1290,10 @@
             "level": 25
           },
           {
+            "move": "Poison Fang",
+            "level": 27
+          },
+          {
             "move": "Sleep Powder",
             "level": 29
           },
@@ -1296,10 +1304,6 @@
           {
             "move": "Zen Headbutt",
             "level": 37
-          },
-          {
-            "move": "Poison Fang",
-            "level": 41
           },
           {
             "move": "Psychic",
@@ -2040,7 +2044,7 @@
             "level": 29
           },
           {
-            "move": "Inferno",
+            "move": "Blaze Kick",
             "level": 33
           },
           {
@@ -2116,7 +2120,7 @@
         "level": 29
       },
       {
-        "move": "Inferno",
+        "move": "Blaze Kick",
         "level": 33
       },
       {
@@ -2134,10 +2138,6 @@
       {
         "move": "Play Rough",
         "level": 40
-      },
-      {
-        "move": "Blaze Kick",
-        "level": 44
       },
       {
         "move": "Bounce",
@@ -3302,7 +3302,7 @@
         "level": 61
       }
     ],
-    "evo": "Level up during the day holding Metal Coat",
+    "evo": "Use Metal Coat",
     "next": {
       "name": "Scizor",
       "pokedex_id": 212,
@@ -3751,6 +3751,10 @@
       {
         "move": "Safeguard",
         "level": 53
+      },
+      {
+        "move": "Draco Meteor",
+        "level": 59
       },
       {
         "move": "Dragon Dance",
@@ -5524,10 +5528,6 @@
         "level": 32
       },
       {
-        "move": "Earth Power",
-        "level": 33
-      },
-      {
         "move": "Sky Uppercut",
         "level": 37
       },
@@ -5553,7 +5553,7 @@
       },
       {
         "move": "Hammer Arm",
-        "level": 67
+        "level": 55
       }
     ]
   },
@@ -5873,10 +5873,6 @@
       {
         "move": "Reflect",
         "level": 36
-      },
-      {
-        "move": "Earthquake",
-        "level": 38
       },
       {
         "move": "Crunch",
@@ -6223,7 +6219,7 @@
             "level": 28
           },
           {
-            "move": "Dragon Pulse",
+            "move": "Dragon Rush",
             "level": 33
           },
           {
@@ -6291,11 +6287,11 @@
         "level": 28
       },
       {
-        "move": "Dragon Pulse",
-        "level": 33
+        "move": "Dragon Claw",
+        "level": 42
       },
       {
-        "move": "Dragon Claw",
+        "move": "Crunch",
         "level": 44
       },
       {
@@ -6498,16 +6494,16 @@
         "level": 17
       },
       {
-        "move": "Dazzling Gleam",
-        "level": 17
-      },
-      {
         "move": "Morning Sun",
         "level": 20
       },
       {
         "move": "Mega Drain",
         "level": 24
+      },
+      {
+        "move": "Dazzling Gleam",
+        "level": 27
       },
       {
         "move": "Whirlwind",
@@ -6862,7 +6858,7 @@
     "type2": "Grass",
     "bst": 490,
     "abilities": [
-      "Honey Gather"
+      "Gluttony"
     ],
     "stats": {
       "hp": 70,
@@ -7151,6 +7147,10 @@
             "level": 9
           },
           {
+            "move": "Mud-Slap",
+            "level": 13
+          },
+          {
             "move": "Fury Swipes",
             "level": 14
           },
@@ -7161,10 +7161,6 @@
           {
             "move": "False Swipe",
             "level": 25
-          },
-          {
-            "move": "Mud-Slap",
-            "level": 31
           },
           {
             "move": "Metal Claw",
@@ -8381,7 +8377,7 @@
             "level": 24
           },
           {
-            "move": "Zen Headbutt",
+            "move": "Extrasensory",
             "level": 26
           },
           {
@@ -8469,7 +8465,7 @@
         "level": 24
       },
       {
-        "move": "Zen Headbutt",
+        "move": "Extrasensory",
         "level": 26
       },
       {
@@ -8491,10 +8487,6 @@
       {
         "move": "Psyshock",
         "level": 42
-      },
-      {
-        "move": "Earthquake",
-        "level": 43
       },
       {
         "move": "Payback",
@@ -9086,12 +9078,12 @@
         "level": 13
       },
       {
-        "move": "Embargo",
-        "level": 21
+        "move": "Ancient Power",
+        "level": 17
       },
       {
-        "move": "Ancient Power",
-        "level": 25
+        "move": "Embargo",
+        "level": 21
       },
       {
         "move": "Foul Play",
@@ -9111,7 +9103,7 @@
       },
       {
         "move": "Power Gem",
-        "level": 41
+        "level": 38
       },
       {
         "move": "Explosion",
@@ -9878,10 +9870,6 @@
         "level": 36
       },
       {
-        "move": "Avalanche",
-        "level": 38
-      },
-      {
         "move": "Night Slash",
         "level": 41
       },
@@ -9938,7 +9926,7 @@
           "Inner Focus",
           "Ice Body"
         ],
-        "evo": "Level up at night holding Never-Melt Ice",
+        "evo": "Use Never-Melt Ice",
         "moves": [
           {
             "move": "Powder Snow",
@@ -10089,7 +10077,7 @@
           "Shell Armor",
           "Rattled"
         ],
-        "evo": "Level up at night holding Deep Sea Tooth",
+        "evo": "Use Deep Sea Tooth",
         "moves": [
           {
             "move": "Clamp",
@@ -10156,10 +10144,6 @@
         "level": 28
       },
       {
-        "move": "Dragon Claw",
-        "level": 30
-      },
-      {
         "move": "Baton Pass",
         "level": 33
       },
@@ -10170,6 +10154,10 @@
       {
         "move": "Dragon Pulse",
         "level": 39
+      },
+      {
+        "move": "Dragon Rush",
+        "level": 40
       },
       {
         "move": "Crunch",
@@ -10212,7 +10200,7 @@
           "Shell Armor",
           "Rattled"
         ],
-        "evo": "Level up during the day holding Deep Sea Scale",
+        "evo": "Use Deep Sea Scale",
         "moves": [
           {
             "move": "Clamp",
@@ -10259,10 +10247,6 @@
         "level": 10
       },
       {
-        "move": "Dazzling Gleam",
-        "level": 14
-      },
-      {
         "move": "Water Pulse",
         "level": 15
       },
@@ -10273,6 +10257,10 @@
       {
         "move": "Aqua Ring",
         "level": 24
+      },
+      {
+        "move": "Dazzling Gleam",
+        "level": 26
       },
       {
         "move": "Captivate",
@@ -10559,7 +10547,7 @@
     "type2": "",
     "bst": 500,
     "abilities": [
-      "Wonder Guard"
+      "Pressure"
     ],
     "stats": {
       "hp": 80,
@@ -10636,7 +10624,7 @@
     "type2": "Fighting",
     "bst": 500,
     "abilities": [
-      "Wonder Guard"
+      "Pressure"
     ],
     "stats": {
       "hp": 60,
@@ -10729,7 +10717,7 @@
     "type2": "Steel",
     "bst": 500,
     "abilities": [
-      "Wonder Guard"
+      "Pressure"
     ],
     "stats": {
       "hp": 80,
@@ -10830,7 +10818,7 @@
     "type2": "Electric",
     "bst": 500,
     "abilities": [
-      "Wonder Guard"
+      "Pressure"
     ],
     "stats": {
       "hp": 80,
@@ -12201,7 +12189,7 @@
         "level": 28
       },
       {
-        "move": "Shadow Claw",
+        "move": "Shadow Ball",
         "level": 33
       },
       {
@@ -12493,7 +12481,7 @@
           "Static",
           "Vital Spirit"
         ],
-        "evo": "Level up during the day holding Electirizer",
+        "evo": "Use Electirizer",
         "moves": [
           {
             "move": "Quick Attack",
@@ -13322,6 +13310,10 @@
             "level": 6
           },
           {
+            "move": "Gust",
+            "level": 9
+          },
+          {
             "move": "Double Team",
             "level": 11
           },
@@ -13334,8 +13326,16 @@
             "level": 17
           },
           {
+            "move": "Struggle Bug",
+            "level": 19
+          },
+          {
             "move": "Supersonic",
             "level": 22
+          },
+          {
+            "move": "Air Cutter",
+            "level": 25
           },
           {
             "move": "Uproar",
@@ -15018,6 +15018,10 @@
         "level": 42
       },
       {
+        "move": "Double-Edge",
+        "level": 45
+      },
+      {
         "move": "Last Resort",
         "level": 51
       },
@@ -15174,7 +15178,7 @@
         "level": 23
       },
       {
-        "move": "Zen Headbutt",
+        "move": "Psyshock",
         "level": 30
       },
       {
@@ -15560,16 +15564,16 @@
         "level": 15
       },
       {
-        "move": "Dazzling Gleam",
-        "level": 16
-      },
-      {
         "move": "Secret Power",
         "level": 20
       },
       {
         "move": "Entrainment",
         "level": 25
+      },
+      {
+        "move": "Dazzling Gleam",
+        "level": 26
       },
       {
         "move": "Moonblast",
@@ -16267,16 +16271,16 @@
         "level": 13
       },
       {
-        "move": "Waterfall",
-        "level": 16
-      },
-      {
         "move": "Low Sweep",
         "level": 17
       },
       {
         "move": "Counter",
         "level": 21
+      },
+      {
+        "move": "Waterfall",
+        "level": 24
       },
       {
         "move": "Karate Chop",
@@ -16446,7 +16450,7 @@
       },
       {
         "move": "Dazzling Gleam",
-        "level": 14
+        "level": 26
       },
       {
         "move": "Quiver Dance",
@@ -16752,10 +16756,6 @@
       {
         "move": "Superpower",
         "level": 47
-      },
-      {
-        "move": "Overheat",
-        "level": 54
       }
     ]
   },
@@ -16841,10 +16841,6 @@
       },
       {
         "move": "Petal Dance",
-        "level": 38
-      },
-      {
-        "move": "Earthquake",
         "level": 38
       },
       {
@@ -17291,7 +17287,7 @@
             "level": 25
           },
           {
-            "move": "Sludge Bomb",
+            "move": "Poison Jab",
             "level": 29
           },
           {
@@ -17363,7 +17359,7 @@
         "level": 23
       },
       {
-        "move": "Sludge Bomb",
+        "move": "Poison Jab",
         "level": 29
       },
       {
@@ -17373,10 +17369,6 @@
       {
         "move": "Take Down",
         "level": 36
-      },
-      {
-        "move": "Poison Jab",
-        "level": 37
       },
       {
         "move": "Iron Head",
@@ -17576,15 +17568,15 @@
         "level": 49
       },
       {
+        "move": "Night Daze",
+        "level": 50
+      },
+      {
         "move": "Nasty Plot",
         "level": 54
       },
       {
         "move": "Imprison",
-        "level": 59
-      },
-      {
-        "move": "Night Daze",
         "level": 59
       }
     ]
@@ -18551,15 +18543,15 @@
         "level": 37
       },
       {
-        "move": "Moonblast",
-        "level": 38
-      },
-      {
         "move": "Brine",
         "level": 41
       },
       {
         "move": "Safeguard",
+        "level": 45
+      },
+      {
+        "move": "Aqua Tail",
         "level": 45
       },
       {
@@ -18573,10 +18565,6 @@
       {
         "move": "Healing Wish",
         "level": 57
-      },
-      {
-        "move": "Hydro Pump",
-        "level": 61
       }
     ]
   },
@@ -18844,10 +18832,6 @@
         "level": 60
       },
       {
-        "move": "Thunderbolt",
-        "level": 60
-      },
-      {
         "move": "Zap Cannon",
         "level": 66
       },
@@ -19089,7 +19073,7 @@
           "Rivalry",
           "Mold Breaker"
         ],
-        "evo": "Level 38",
+        "evo": "Level 28",
         "moves": [
           {
             "move": "Scratch",
@@ -19165,7 +19149,7 @@
           "Rivalry",
           "Mold Breaker"
         ],
-        "evo": "Level 48",
+        "evo": "Level 42",
         "moves": [
           {
             "move": "Scratch",
@@ -19304,7 +19288,7 @@
         "level": 36
       },
       {
-        "move": "Dragon Pulse",
+        "move": "Dragon Rush",
         "level": 42
       },
       {
@@ -19604,16 +19588,16 @@
         "level": 37
       },
       {
-        "move": "Bounce",
-        "level": 38
-      },
-      {
         "move": "Slash",
         "level": 41
       },
       {
         "move": "Confuse Ray",
         "level": 45
+      },
+      {
+        "move": "Hurricane",
+        "level": 47
       },
       {
         "move": "Recover",
@@ -20279,10 +20263,6 @@
         "level": 38
       },
       {
-        "move": "Dragon Rush",
-        "level": 42
-      },
-      {
         "move": "Double Hit",
         "level": 42
       },
@@ -20295,16 +20275,12 @@
         "level": 48
       },
       {
-        "move": "Gunk Shot",
-        "level": 53
-      },
-      {
         "move": "Scary Face",
         "level": 55
       },
       {
         "move": "Draco Meteor",
-        "level": 64
+        "level": 56
       },
       {
         "move": "Hyper Voice",
