@@ -1,5 +1,409 @@
 [
   {
+    "name": "Ampharos",
+    "pokedex_id": 181,
+    "type1": "Electric",
+    "type2": "Dragon",
+    "bst": 500,
+    "abilities": [
+      "Static",
+      "Plus"
+    ],
+    "stats": {
+      "hp": 90,
+      "atk": 75,
+      "def": 75,
+      "spa": 115,
+      "spd": 90,
+      "spe": 55
+    },
+    "preevo": [
+      {
+        "name": "Mareep",
+        "pokedex_id": 179,
+        "type1": "Electric",
+        "abilities": [
+          "Static",
+          "Plus"
+        ],
+        "evo": "Level 15",
+        "moves": [
+          {
+            "move": "Growl",
+            "level": 1
+          },
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Thunder Wave",
+            "level": 4
+          },
+          {
+            "move": "Thunder Shock",
+            "level": 8
+          },
+          {
+            "move": "Cotton Spore",
+            "level": 11
+          },
+          {
+            "move": "Charge",
+            "level": 15
+          },
+          {
+            "move": "Take Down",
+            "level": 18
+          },
+          {
+            "move": "Electro Ball",
+            "level": 22
+          },
+          {
+            "move": "Confuse Ray",
+            "level": 25
+          },
+          {
+            "move": "Power Gem",
+            "level": 29
+          },
+          {
+            "move": "Cotton Guard",
+            "level": 32
+          },
+          {
+            "move": "Discharge",
+            "level": 32
+          },
+          {
+            "move": "Signal Beam",
+            "level": 39
+          },
+          {
+            "move": "Light Screen",
+            "level": 43
+          },
+          {
+            "move": "Thunder",
+            "level": 46
+          }
+        ]
+      },
+      {
+        "name": "Flaaffy",
+        "pokedex_id": 180,
+        "type1": "Electric",
+        "abilities": [
+          "Static",
+          "Plus"
+        ],
+        "evo": "Level 30",
+        "moves": [
+          {
+            "move": "Growl",
+            "level": 1
+          },
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Thunder Shock",
+            "level": 1
+          },
+          {
+            "move": "Thunder Wave",
+            "level": 4
+          },
+          {
+            "move": "Cotton Spore",
+            "level": 11
+          },
+          {
+            "move": "Charge",
+            "level": 16
+          },
+          {
+            "move": "Take Down",
+            "level": 20
+          },
+          {
+            "move": "Electro Ball",
+            "level": 25
+          },
+          {
+            "move": "Confuse Ray",
+            "level": 29
+          },
+          {
+            "move": "Power Gem",
+            "level": 34
+          },
+          {
+            "move": "Cotton Guard",
+            "level": 36
+          },
+          {
+            "move": "Discharge",
+            "level": 38
+          },
+          {
+            "move": "Signal Beam",
+            "level": 47
+          },
+          {
+            "move": "Light Screen",
+            "level": 52
+          },
+          {
+            "move": "Thunder",
+            "level": 56
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Fire Punch",
+        "level": 1
+      },
+      {
+        "move": "Growl",
+        "level": 1
+      },
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Thunder Shock",
+        "level": 1
+      },
+      {
+        "move": "Thunder Wave",
+        "level": 1
+      },
+      {
+        "move": "Cotton Spore",
+        "level": 11
+      },
+      {
+        "move": "Charge",
+        "level": 16
+      },
+      {
+        "move": "Take Down",
+        "level": 20
+      },
+      {
+        "move": "Electro Ball",
+        "level": 25
+      },
+      {
+        "move": "Confuse Ray",
+        "level": 29
+      },
+      {
+        "move": "Dragon Breath",
+        "level": 30
+      },
+      {
+        "move": "Dragon Pulse",
+        "level": 34
+      },
+      {
+        "move": "Power Gem",
+        "level": 38
+      },
+      {
+        "move": "Cotton Guard",
+        "level": 40
+      },
+      {
+        "move": "Discharge",
+        "level": 42
+      },
+      {
+        "move": "Thunderbolt",
+        "level": 47
+      },
+      {
+        "move": "Signal Beam",
+        "level": 51
+      },
+      {
+        "move": "Draco Meteor",
+        "level": 55
+      },
+      {
+        "move": "Light Screen",
+        "level": 57
+      },
+      {
+        "move": "Thunder",
+        "level": 62
+      }
+    ]
+  },
+  {
+    "name": "Mismagius",
+    "pokedex_id": 429,
+    "type1": "Ghost",
+    "type2": "Fairy",
+    "bst": 495,
+    "abilities": [
+      "Levitate"
+    ],
+    "stats": {
+      "hp": 60,
+      "atk": 60,
+      "def": 60,
+      "spa": 105,
+      "spd": 105,
+      "spe": 105
+    },
+    "preevo": [
+      {
+        "name": "Misdreavus",
+        "pokedex_id": 200,
+        "type1": "Ghost",
+        "abilities": [
+          "Levitate"
+        ],
+        "evo": "Use Dusk Stone",
+        "moves": [
+          {
+            "move": "Growl",
+            "level": 1
+          },
+          {
+            "move": "Psywave",
+            "level": 1
+          },
+          {
+            "move": "Spite",
+            "level": 5
+          },
+          {
+            "move": "Astonish",
+            "level": 10
+          },
+          {
+            "move": "Confuse Ray",
+            "level": 14
+          },
+          {
+            "move": "Mean Look",
+            "level": 19
+          },
+          {
+            "move": "Hex",
+            "level": 23
+          },
+          {
+            "move": "Psybeam",
+            "level": 28
+          },
+          {
+            "move": "Pain Split",
+            "level": 32
+          },
+          {
+            "move": "Payback",
+            "level": 37
+          },
+          {
+            "move": "Shadow Ball",
+            "level": 41
+          },
+          {
+            "move": "Perish Song",
+            "level": 46
+          },
+          {
+            "move": "Grudge",
+            "level": 50
+          },
+          {
+            "move": "Power Gem",
+            "level": 55
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Lucky Chant",
+        "level": 1
+      },
+      {
+        "move": "Magical Leaf",
+        "level": 1
+      },
+      {
+        "move": "Disarming Voice",
+        "level": 1
+      },
+      {
+        "move": "Astonish",
+        "level": 1
+      },
+      {
+        "move": "Spite",
+        "level": 5
+      },
+      {
+        "move": "Confuse Ray",
+        "level": 14
+      },
+      {
+        "move": "Draining Kiss",
+        "level": 18
+      },
+      {
+        "move": "Mean Look",
+        "level": 19
+      },
+      {
+        "move": "Hex",
+        "level": 23
+      },
+      {
+        "move": "Psybeam",
+        "level": 28
+      },
+      {
+        "move": "Dazzling Gleam",
+        "level": 30
+      },
+      {
+        "move": "Pain Split",
+        "level": 32
+      },
+      {
+        "move": "Nasty Plot",
+        "level": 37
+      },
+      {
+        "move": "Shadow Ball",
+        "level": 41
+      },
+      {
+        "move": "Moonblast",
+        "level": 46
+      },
+      {
+        "move": "Perish Song",
+        "level": 50
+      },
+      {
+        "move": "Power Gem",
+        "level": 55
+      }
+    ]
+  },
+  {
     "name": "Charizard",
     "pokedex_id": 6,
     "type1": "Fire",
