@@ -6,7 +6,6 @@
 <meta name="theme-color" content="#07090d">
 <title>Pokémon Pitch Black 2 – Wiki</title>
 <meta name="description" content="The official wiki of Pokémon Pitch Black 2: Pokémon changes, Unova variants, every challenge and all wild areas of the game.">
-<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Barlow:wght@400;500;600;700&display=swap">
@@ -140,6 +139,120 @@
   .credits .rule { width: 1px; height: 16px; background: var(--line-2); }
   .credits a { color: inherit; }
 
+
+  /* ───────── about the game ───────── */
+  .about { padding: 6px 0 40px; }
+  .sec-title.mt { margin-top: 8px; }
+  .px { image-rendering: pixelated; display: block; }
+
+  .base {
+    position: relative; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: 24px;
+    padding: 28px 32px; border-radius: 22px; margin-bottom: 18px;
+    background:
+      radial-gradient(420px 260px at 85% 60%, rgba(47,123,255,.35), transparent 70%),
+      radial-gradient(300px 200px at 70% 20%, rgba(150,217,214,.18), transparent 70%),
+      linear-gradient(120deg, #0d1424, #10141c 60%);
+    border: 1px solid #2a3c66;
+  }
+  .base::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: repeating-linear-gradient(115deg, rgba(255,255,255,.03) 0 2px, transparent 2px 22px);
+  }
+  .eyebrow { margin: 0 0 6px; font: 700 12px var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--volt); }
+  .base h2 { margin: 0 0 10px; font-family: var(--display); font-weight: 800; font-stretch: 118%; font-size: clamp(28px, 4vw, 44px); line-height: 1.02; }
+  .base p { margin: 0; color: #c3cde2; font-size: 16.5px; max-width: 520px; }
+  .base-art { position: relative; z-index: 1; display: flex; align-items: flex-end; justify-content: center; gap: 4px; min-height: 190px; }
+  .base-art::before {
+    content: ""; position: absolute; left: 50%; bottom: 8px; width: 78%; height: 26px; transform: translateX(-50%);
+    background: radial-gradient(closest-side, rgba(0,0,0,.6), transparent);
+  }
+  .base-art img { position: relative; }
+  .base-art .big { width: 190px; height: auto; filter: drop-shadow(0 0 22px rgba(150,217,214,.35)); }
+  .base-art .side { width: 120px; height: auto; opacity: .9; }
+
+  .stats3 { display: grid; gap: 16px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 18px; }
+  .stat-card {
+    --c: #2f7bff;
+    position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; min-height: 210px;
+    padding: 20px 22px; border-radius: 20px; color: inherit; text-decoration: none;
+    background: radial-gradient(260px 180px at 85% 85%, color-mix(in srgb, var(--c) 30%, transparent), transparent 70%), var(--panel);
+    border: 1px solid color-mix(in srgb, var(--c) 40%, var(--line));
+    transition: transform .2s, border-color .2s;
+  }
+  a.stat-card:hover { transform: translateY(-3px); border-color: var(--c); }
+  .stat-card .num { position: static; font-family: var(--display); font-weight: 800; font-stretch: 120%; font-size: 64px; line-height: .9; color: #fff; text-shadow: 0 0 30px color-mix(in srgb, var(--c) 60%, transparent); }
+  .stat-card .lbl { font-family: var(--display); font-weight: 800; font-size: 20px; line-height: 1.15; }
+  .stat-card .sub { color: var(--muted); font-size: 14px; margin-top: 4px; }
+  .stat-card .art { position: absolute; right: 12px; bottom: 10px; display: flex; align-items: flex-end; gap: 0; }
+  .stat-card .art img { width: 84px; height: auto; margin-left: -18px; }
+  .stat-card .art img:first-child { margin-left: 0; }
+  .stat-card .txt { position: relative; z-index: 1; max-width: 60%; }
+
+  .feats { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .feat {
+    --c: #2f7bff;
+    display: flex; flex-direction: column; overflow: hidden; border-radius: 18px; background: var(--panel);
+    border: 1px solid color-mix(in srgb, var(--c) 35%, var(--line));
+  }
+  .f-art {
+    position: relative; height: 130px; display: grid; place-items: center; overflow: hidden;
+    background: radial-gradient(160px 100px at 50% 75%, color-mix(in srgb, var(--c) 40%, transparent), transparent 75%), color-mix(in srgb, var(--c) 10%, #0b0e14);
+    border-bottom: 1px solid var(--line);
+  }
+  .f-body { padding: 14px 16px 16px; }
+  .f-body h3 { margin: 0 0 4px; font-family: var(--display); font-weight: 800; font-size: 18px; line-height: 1.15; }
+  .f-body p { margin: 0; color: #c3cde2; font-size: 14px; }
+
+  /* fairy */
+  .fairy-art { display: flex; align-items: flex-end; gap: 0; }
+  .fairy-art img.mon { width: 80px; }
+  .fairy-art img.ico { position: absolute; top: 12px; right: 14px; width: 36px; height: 36px; filter: drop-shadow(0 0 10px rgba(214,133,173,.8)); }
+  .sparkle { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: #ffd6ec; box-shadow: 0 0 10px #ff9ccf; animation: twinkle 2.4s ease-in-out infinite; }
+  .sparkle.s1 { top: 22px; left: 22%; } .sparkle.s2 { top: 56px; left: 14%; animation-delay: .8s; } .sparkle.s3 { top: 30px; right: 34%; animation-delay: 1.5s; }
+  @keyframes twinkle { 0%, 100% { opacity: .15; transform: scale(.6); } 50% { opacity: 1; transform: scale(1.2); } }
+
+  /* following */
+  .walk { position: relative; width: 100%; height: 100%; }
+  .walk .path { position: absolute; left: 10%; right: 10%; bottom: 26px; height: 2px; background: repeating-linear-gradient(90deg, rgba(255,255,255,.25) 0 6px, transparent 6px 14px); }
+  .walk img { position: absolute; bottom: 22px; width: 64px; animation: stroll 6s ease-in-out infinite alternate; }
+  @keyframes stroll { from { left: 8%; } to { left: calc(92% - 64px); } }
+
+  /* battle box */
+  .bbox { width: 86%; padding: 9px 11px; border-radius: 10px; background: #f4f1e6; color: #1d2230; box-shadow: 0 6px 18px rgba(0,0,0,.45); font: 700 13px var(--body); }
+  .bbox .row1 { display: flex; align-items: center; gap: 6px; }
+  .bbox .row1 b { flex: 1; font-size: 14px; }
+  .bbox .row1 img { width: 20px; height: 20px; }
+  .bbox .hp { display: flex; align-items: center; gap: 6px; margin-top: 6px; font-size: 10px; }
+  .bbox .hp span { flex: 1; height: 7px; border-radius: 4px; background: #c8cbd3; overflow: hidden; }
+  .bbox .hp i { display: block; width: 68%; height: 100%; background: linear-gradient(90deg, #36c86b, #63e08d); }
+
+  /* ev / iv */
+  .eviv { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 10px; width: 86%; }
+  .eviv .vit { display: grid; grid-template-columns: repeat(2, 30px); gap: 2px; }
+  .eviv .vit img { width: 30px; height: 30px; }
+  .eviv ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+  .eviv li { display: grid; grid-template-columns: 26px 1fr; align-items: center; gap: 6px; font: 700 10px var(--body); color: var(--muted); }
+  .eviv li span { height: 6px; border-radius: 3px; background: rgba(255,255,255,.08); overflow: hidden; }
+  .eviv li i { display: block; height: 100%; border-radius: 3px; background: linear-gradient(90deg, #4a82e8, #38c6ff); }
+  .eviv li i.max { background: linear-gradient(90deg, #ffb300, #ffcb05); }
+
+  /* pc */
+  .pc { display: grid; grid-template-columns: repeat(4, 30px); gap: 5px; padding: 10px; border-radius: 10px; background: rgba(122,199,76,.12); border: 1px solid rgba(122,199,76,.45); }
+  .pc img { width: 30px; height: 30px; }
+  .pc .cell { width: 30px; height: 30px; border-radius: 6px; background: rgba(255,255,255,.06); display: grid; place-items: center; }
+
+  @media (max-width: 1100px) { .feats { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 860px) {
+    .base { grid-template-columns: 1fr; padding: 22px; }
+    .stats3 { grid-template-columns: 1fr; }
+    .feats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 520px) {
+    .feats { grid-template-columns: 1fr; }
+    .base-art .big { width: 150px; } .base-art .side { width: 96px; }
+    .stat-card .num { font-size: 54px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .sparkle, .walk img { animation: none; } .walk img { left: 40%; } }
   @media (max-width: 960px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 520px) {
     .hero { padding: 32px 0 30px; }
@@ -167,6 +280,88 @@
     <p class="lead">Everything you need to beat Unova again: reworked Pokémon, brand-new regional variants, every boss battle with its level cap and where to catch everything.</p>
   </header>
 </div>
+
+
+<section class="wrap about" aria-labelledby="aboutTitle">
+  <h2 class="sec-title" id="aboutTitle">About the game</h2>
+
+  <div class="base">
+    <div style="position:relative;z-index:1">
+      <p class="eyebrow">Based on Pokémon Black 2</p>
+      <h2>Unova, reforged.</h2>
+      <p>Pitch Black 2 is built on Pokémon Black 2: same region and story, rebuilt with new types, reworked Pokémon, harder battles and quality-of-life features you will not want to play without.</p>
+    </div>
+    <div class="base-art" aria-hidden="true">
+      <img class="px side" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/644.gif" alt="" loading="lazy">
+      <img class="px big" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/646-black.gif" alt="" loading="lazy">
+    </div>
+  </div>
+
+  <div class="stats3">
+    <a class="stat-card" href="changes.html" style="--c:#ee8130">
+      <div class="txt"><div class="num" id="nReworked">123</div></div>
+      <div class="txt"><div class="lbl">Reworked Pokémon</div><div class="sub">New types, abilities, stats and movesets</div></div>
+      <div class="art" aria-hidden="true">
+        <img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/130.gif" alt="" loading="lazy"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif" alt="" loading="lazy">
+      </div>
+    </a>
+    <a class="stat-card" href="unova_variants.html" style="--c:#a6b91a">
+      <div class="txt"><div class="num">8</div></div>
+      <div class="txt"><div class="lbl">New regional variants</div><div class="sub">Unovan forms of familiar Pokémon</div></div>
+      <div class="art" aria-hidden="true">
+        <img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/80.gif" alt="" loading="lazy"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/201-question.gif" alt="" loading="lazy">
+      </div>
+    </a>
+    <a class="stat-card" href="challenges.html" style="--c:#c22e28">
+      <div class="txt"><div class="num" style="font-size:44px">Harder</div></div>
+      <div class="txt"><div class="lbl">Increased trainer difficulty</div><div class="sub">Full teams, held items, smarter movesets</div></div>
+      <div class="art" aria-hidden="true">
+        <img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/635.gif" alt="" loading="lazy"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/248.gif" alt="" loading="lazy">
+      </div>
+    </a>
+  </div>
+
+  <h2 class="sec-title mt">Features</h2>
+  <ul class="feats">
+    <li class="feat" style="--c:#d685ad">
+      <div class="f-art fairy-art" aria-hidden="true">
+        <i class="sparkle s1"></i><i class="sparkle s2"></i><i class="sparkle s3"></i>
+        <img class="px mon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/36.gif" alt="" loading="lazy"><img class="px mon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/282.gif" alt="" loading="lazy">
+        <img class="ico" src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/typinglogos/fairy.svg" alt="" loading="lazy">
+      </div>
+      <div class="f-body"><h3>Fairy type</h3><p>The Fairy type joins Unova, with new Fairy moves and retyped Pokémon.</p></div>
+    </li>
+    <li class="feat" style="--c:#f7d02c">
+      <div class="f-art" aria-hidden="true"><div class="walk"><span class="path"></span><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif" alt="" loading="lazy"></div></div>
+      <div class="f-body"><h3>Following Pokémon</h3><p>Your lead Pokémon walks behind you in the overworld.</p></div>
+    </li>
+    <li class="feat" style="--c:#ee8130">
+      <div class="f-art" aria-hidden="true">
+        <div class="bbox"><div class="row1"><b>Charizard</b><img src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/typinglogos/fire.svg" alt=""><img src="https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/images/typinglogos/dragon.svg" alt=""><span>Lv50</span></div>
+          <div class="hp">HP<span><i></i></span></div></div>
+      </div>
+      <div class="f-body"><h3>Types shown in battle</h3><p>See both Pokémon's types right on the battle screen.</p></div>
+    </li>
+    <li class="feat" style="--c:#38c6ff">
+      <div class="f-art" aria-hidden="true">
+        <div class="eviv">
+          <div class="vit"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/hp-up.png" alt=""><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/protein.png" alt=""><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/carbos.png" alt=""><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/power-weight.png" alt=""></div>
+          <ul><li>HP<span><i class="max" style="width:100%"></i></span></li><li>ATK<span><i style="width:72%"></i></span></li><li>DEF<span><i style="width:40%"></i></span></li><li>SPE<span><i class="max" style="width:100%"></i></span></li></ul>
+        </div>
+      </div>
+      <div class="f-body"><h3>EVs &amp; IVs from the Bag</h3><p>Check every Pokémon's EVs and IVs with a key item.</p></div>
+    </li>
+    <li class="feat" style="--c:#7ac74c">
+      <div class="f-art" aria-hidden="true">
+        <div class="pc">
+          <img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt=""><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png" alt=""><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png" alt=""><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png" alt="">
+          <span class="cell"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt=""></span><span class="cell"></span><span class="cell"><img class="px" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png" alt=""></span><span class="cell"></span>
+        </div>
+      </div>
+      <div class="f-body"><h3>PC from the Bag</h3><p>Open your PC boxes anywhere, no Pokémon Center needed.</p></div>
+    </li>
+  </ul>
+</section>
 
 <main class="wrap">
   <h2 class="sec-title">Explore</h2>
@@ -303,6 +498,14 @@
     img.style.height = Math.round(h * k) + "px";
     img.style.imageRendering = k > 1 ? "pixelated" : "auto";
   }
+  // keep the "reworked Pokémon" number in sync with changes.json
+  (function () {
+    var el = document.getElementById("nReworked"); if (!el || !window.fetch) return;
+    ["https://raw.githubusercontent.com/lucaremix/pokemon-pitch-black-2/main/assets/data/changes.json", "assets/data/changes.json"]
+      .reduce(function (p, url) { return p.catch(function () { return fetch(url).then(function (r) { if (!r.ok) throw 0; return r.json(); }); }); }, Promise.reject())
+      .then(function (d) { var n = Array.isArray(d) ? d.length : (d.pokemon || []).length; if (n) el.textContent = n; })
+      .catch(function () {});
+  })();
 </script>
 </body>
 </html>
