@@ -303,6 +303,27 @@
     ]
   },
   {
+    "pokedex_id": 112,
+    "name": "Rhydon",
+    "types": [
+      "Ground",
+      "Rock"
+    ],
+    "evolutions": [
+      {
+        "into": "Escavalier",
+        "into_id": 464,
+        "into_types": [
+          "Ground",
+          "Rock"
+        ],
+        "method": "Use Protector",
+        "kind": "item",
+        "item": "Protector"
+      }
+    ]
+  },
+  {
     "pokedex_id": 605,
     "name": "Elgyem",
     "types": [
