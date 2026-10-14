@@ -345,8 +345,8 @@
     background: radial-gradient(circle at 50% 45%, rgba(255,255,255,.22), transparent 62%), color-mix(in srgb, var(--tc) 34%, #0a0d13);
     box-shadow: 0 0 0 1px color-mix(in srgb, var(--tc) 60%, transparent), 0 4px 16px color-mix(in srgb, var(--tc) 40%, transparent);
   }
-  .tm-disc img { width: 34px; height: 34px; display: block; image-rendering: pixelated; transition: transform .45s cubic-bezier(.2,.7,.2,1); }
-  .tm-sec.open .tm-disc img { transform: rotate(-14deg) scale(1.12); }
+  .tm-disc img { width: 30px; height: 30px; display: block; image-rendering: pixelated; transition: transform .45s cubic-bezier(.2,.7,.2,1); }
+  .tm-sec.open .tm-disc img { transform: translateY(-3px); }
   .tm-title { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; min-width: 0; }
   .tm-title b { font-family: var(--display); font-weight: 800; font-size: 18px; letter-spacing: .01em; line-height: 1.15; }
   .tm-sub { flex-basis: 100%; color: var(--muted); font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }
@@ -408,7 +408,7 @@
     background: color-mix(in srgb, var(--mc) 55%, #0a0d13); border: 1px solid color-mix(in srgb, var(--mc) 70%, transparent);
     text-shadow: 0 1px 1px rgba(0,0,0,.45);
   }
-  .tm-no img { width: 24px; height: 24px; flex: none; display: block; margin: -3px -1px; image-rendering: pixelated; }
+  .tm-no img { width: 30px; height: 30px; flex: none; display: block; margin: -6px -3px -6px -4px; image-rendering: pixelated; }
   .tm-no small { font-family: var(--body); font-weight: 600; font-size: 10.5px; opacity: .85; margin-right: -2px; }
   .tm.hm .tm-no { background: linear-gradient(135deg, color-mix(in srgb, var(--volt) 80%, #000), color-mix(in srgb, var(--mc) 55%, #0a0d13)); border-color: var(--volt); }
   .tm .mname { flex: 1; min-width: 0; overflow-wrap: normal; word-break: normal; line-height: 1.2; }
@@ -427,7 +427,6 @@
   @media (max-width: 520px) {
     .tm-toggle { gap: 10px; padding: 10px 12px 10px 10px; }
     .tm-disc { width: 40px; height: 40px; }
-    .tm-disc img { width: 30px; height: 30px; }
     .tms { grid-template-columns: 1fr; }
     .tm-filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
     .tm-filters::-webkit-scrollbar { display: none; }
@@ -815,7 +814,7 @@ function tmItemsHTML(list, filter) {
       (tmMatches(t, filter) ? "" : " hidden") + ' style="--i:' + i + '">' +
       '<a class="tm' + (t.hm ? " hm" : "") + '" style="--mc:' + c + '" href="' + moveURL(t.move) + '" target="_blank" rel="noopener noreferrer" ' +
         'title="' + esc(t.id + " " + t.move + " · " + t.type + " · " + t.cat + (t.isNew ? " · new in Pitch Black 2" : "")) + '">' +
-        '<span class="tm-no"><img src="' + TM_ICON(t.type) + '" alt="" width="24" height="24" loading="lazy" onerror="this.onerror=null;this.src=TM_FALLBACK"><small>' + (t.hm ? "HM" : "TM") + "</small>" + num + "</span>" +
+        '<span class="tm-no"><img src="' + TM_ICON(t.type) + '" alt="" width="30" height="30" loading="lazy" onerror="this.onerror=null;this.src=TM_FALLBACK"><small>' + (t.hm ? "HM" : "TM") + "</small>" + num + "</span>" +
         '<span class="mname">' + esc(t.move) + "</span>" +
         (t.isNew ? '<span class="new" aria-label="New"></span>' : "") + (CAT_ICONS[t.cat] || "") +
       "</a></li>";
@@ -834,7 +833,7 @@ function tmSectionHTML(node, key, open) {
       (CAT_ICONS[k] || (k === "new" ? STAR : "")) + label + ' <span class="n">' + counts[k] + "</span></button>").join("");
   return '<section class="d-sec tm-sec' + (open ? " open" : "") + '" style="--tc:' + c1 + '">' +
     '<h3 class="tm-h"><button class="tm-toggle" type="button" aria-expanded="' + !!open + '" aria-controls="tm-' + key + '">' +
-      '<span class="tm-disc" aria-hidden="true"><img src="' + TM_ICON(node.types[0]) + '" alt="" width="34" height="34" onerror="this.onerror=null;this.src=TM_FALLBACK"></span>' +
+      '<span class="tm-disc" aria-hidden="true"><img src="' + TM_ICON(node.types[0]) + '" alt="" width="30" height="30" onerror="this.onerror=null;this.src=TM_FALLBACK"></span>' +
       '<span class="tm-title"><b>TMs &amp; HMs</b><span class="who">' + esc(node.name) + "</span>" +
         '<span class="tm-sub">' + nTM + " TM" + (nTM === 1 ? "" : "s") + (nHM ? " · " + nHM + " HM" + (nHM === 1 ? "" : "s") : "") + "</span></span>" +
       '<span class="tm-new-n"' + (nNew ? "" : " hidden") + ">" + nNew + " new</span>" +
