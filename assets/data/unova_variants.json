@@ -867,79 +867,21 @@
       }
     ],
     "moves": [
-      {
-        "move": "Leer",
-        "level": 1
-      },
-      {
-        "move": "Bite",
-        "level": 1
-      },
-      {
-        "move": "Poison Sting",
-        "level": 1
-      },
-      {
-        "move": "Rage",
-        "level": 1
-      },
-      {
-        "move": "Dragon Rage",
-        "level": 7
-      },
-      {
-        "move": "Acid",
-        "level": 12
-      },
-      {
-        "move": "Headbutt",
-        "level": 17
-      },
-      {
-        "move": "Dragon Breath",
-        "level": 22
-      },
-      {
-        "move": "Poison Fang",
-        "level": 27
-      },
-      {
-        "move": "Crunch",
-        "level": 32
-      },
-      {
-        "move": "Toxic",
-        "level": 37
-      },
-      {
-        "move": "Dragon Claw",
-        "level": 42
-      },
-      {
-        "move": "Venoshock",
-        "level": 47
-      },
-      {
-        "move": "Dragon Dance",
-        "level": 52
-      },
-      {
-        "move": "Poison Jab",
-        "level": 55
-      },
-      {
-        "move": "Dragon Rush",
-        "level": 60
-      },
-      {
-        "move": "Gunk Shot",
-        "level": 65
-      },
-      {
-        "move": "Outrage",
-        "level": 70
-      }
-    ]
+  { "move": "Leer", "level": 1 },
+  { "move": "Bite", "level": 1 },
+  { "move": "Poison Sting", "level": 1 },
+  { "move": "Rage", "level": 1 },
+  { "move": "Poison Fang", "level": 40 },
+  { "move": "Dragon Claw", "level": 42 },
+  { "move": "Cross Poison", "level": 45 },
+  { "move": "Crunch", "level": 48 },
+  { "move": "Dragon Dance", "level": 51 },
+  { "move": "Poison Jab", "level": 54 },
+  { "move": "Toxic", "level": 57 },
+  { "move": "Dragon Rush", "level": 60 },
+  { "move": "Gunk Shot", "level": 65 },
+  { "move": "Outrage", "level": 70 }
+]
   },
   {
   "name": "Unovan Magcargo",
