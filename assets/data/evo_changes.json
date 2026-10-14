@@ -72,10 +72,9 @@
           "Water",
           "Dragon"
         ],
-        "method": "Level up at night holding Dragon Scale",
-        "kind": "hold",
-        "item": "Dragon Scale",
-        "time": "night"
+        "method": "Use Dragon Scale",
+        "kind": "item",
+        "item": "Dragon Scale"
       }
     ]
   },
@@ -92,10 +91,9 @@
         "into_types": [
           "Fire"
         ],
-        "method": "Level up during the day holding Magmarizer",
-        "kind": "hold",
-        "item": "Magmarizer",
-        "time": "day"
+        "method": "Use Magmarizer",
+        "kind": "item",
+        "item": "Magmarizer"
       }
     ]
   },
@@ -142,11 +140,10 @@
         "into_types": [
           "Ice"
         ],
-        "method": "Level up during the day holding Never-Melt Ice",
-        "kind": "hold",
+        "method": "Use Never-Melt Ice",
+        "kind": "item",
         "item": "Never-Melt Ice",
-        "item_icon": "nevermeltice",
-        "time": "day"
+        "item_icon": "nevermeltice"
       }
     ]
   },
@@ -163,10 +160,9 @@
         "into_types": [
           "Normal"
         ],
-        "method": "Level up during the day holding Up-Grade",
-        "kind": "hold",
-        "item": "Up-Grade",
-        "time": "day"
+        "method": "Use Up-Grade",
+        "kind": "item",
+        "item": "Up-Grade"
       }
     ]
   },
@@ -183,10 +179,9 @@
         "into_types": [
           "Normal"
         ],
-        "method": "Level up at night holding Dubious Disc",
-        "kind": "hold",
-        "item": "Dubious Disc",
-        "time": "night"
+        "method": "Use Dubious Disc",
+        "kind": "item",
+        "item": "Dubious Disc"
       }
     ]
   },
@@ -203,10 +198,9 @@
         "into_types": [
           "Water"
         ],
-        "method": "Level up during the day holding Prism Scale",
-        "kind": "hold",
-        "item": "Prism Scale",
-        "time": "day"
+        "method": "Use Prism Scale",
+        "kind": "item",
+        "item": "Prism Scale"
       }
     ]
   },
@@ -242,10 +236,9 @@
         "into_types": [
           "Ghost"
         ],
-        "method": "Level up at night holding Reaper's Cloth",
-        "kind": "hold",
-        "item": "Reaper's Cloth",
-        "time": "night"
+        "method": "Use Reaper's Cloth",
+        "kind": "item",
+        "item": "Reaper's Cloth"
       }
     ]
   },
@@ -303,10 +296,9 @@
           "Bug",
           "Steel"
         ],
-        "method": "Level up during the day holding Metal Coat",
-        "kind": "hold",
-        "item": "Metal Coat",
-        "time": "day"
+        "method": "Use Metal Coat",
+        "kind": "item",
+        "item": "Metal Coat"
       }
     ]
   },
