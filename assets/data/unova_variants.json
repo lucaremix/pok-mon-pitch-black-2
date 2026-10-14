@@ -28,7 +28,7 @@
           "Own Tempo",
           "Gluttony"
         ],
-        "evo": "Level up during the day holding Honey",
+        "evo": "Use Honey",
         "moves": [
           {
             "move": "Curse",
@@ -574,7 +574,7 @@
           },
           {
             "move": "Aerial Ace",
-            "level": 30
+            "level": 28
           }
         ]
       }
@@ -956,7 +956,7 @@
       "pokedex_id": 218,
       "type1": "Fire",
       "abilities": ["Magma Armor", "Flame Body"],
-      "evo": "Level up at night holding Black Sludge",
+      "evo": "Use Black Sludge",
       "moves": [
         {"move": "Yawn", "level": 1},
         {"move": "Smog", "level": 1},
