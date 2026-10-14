@@ -6,7 +6,7 @@
     "type2": "Bug",
     "bst": 490,
     "abilities": [
-      "Honey Gather",
+      "Swarm",
       "Gluttony"
     ],
     "stats": {
@@ -123,8 +123,12 @@
         "level": 36
       },
       {
-        "move": "Defense Curl",
+        "move": "Zen Headbutt",
         "level": 37
+      },
+      {
+        "move": "X-Scissor",
+        "level": 42
       },
       {
         "move": "Hone Claws",
@@ -232,10 +236,6 @@
     ],
     "moves": [
       {
-        "move": "Pluck",
-        "level": 1
-      },
-      {
         "move": "Peck",
         "level": 1
       },
@@ -249,7 +249,7 @@
       },
       {
         "move": "Astonish",
-        "level": 5
+        "level": 1
       },
       {
         "move": "Thunder Shock",
@@ -264,7 +264,7 @@
         "level": 18
       },
       {
-        "move": "Wing Attack",
+        "move": "Air Cutter",
         "level": 21
       },
       {
@@ -272,44 +272,44 @@
         "level": 24
       },
       {
+        "move": "Shock Wave",
+        "level": 26
+      },
+      {
         "move": "Charge",
         "level": 28
       },
       {
-        "move": "Take Down",
+        "move": "Air Slash",
         "level": 32
       },
       {
-        "move": "Shock Wave",
-        "level": 35
+        "move": "Thunderbolt",
+        "level": 36
       },
       {
         "move": "Tailwind",
         "level": 39
       },
       {
-        "move": "Air Slash",
-        "level": 43
+        "move": "Discharge",
+        "level": 44
       },
       {
         "move": "Cotton Guard",
         "level": 47
       },
       {
-        "move": "Discharge",
-        "level": 52
-      },
-      {
         "move": "Rain Dance",
-        "level": 58
-      },
-      {
-        "move": "Thunder",
-        "level": 64
+        "level": 50
       },
       {
         "move": "Hurricane",
-        "level": 70
+        "level": 55
+      },
+      {
+        "move": "Thunder",
+        "level": 62
       }
     ]
   },
@@ -413,7 +413,7 @@
         "level": 8
       },
       {
-        "move": "Magnitude",
+        "move": "Mud Shot",
         "level": 12
       },
       {
@@ -421,7 +421,7 @@
         "level": 15
       },
       {
-        "move": "Bulldoze",
+        "move": "Mud Bomb",
         "level": 19
       },
       {
@@ -433,28 +433,24 @@
         "level": 26
       },
       {
-        "move": "Seed Bomb",
+        "move": "Magical Leaf",
         "level": 29
-      },
-      {
-        "move": "Take Down",
-        "level": 31
       },
       {
         "move": "Earth Power",
         "level": 33
       },
       {
-        "move": "Ingrain",
+        "move": "Giga Drain",
         "level": 37
       },
       {
-        "move": "Giga Drain",
-        "level": 41
+        "move": "Ingrain",
+        "level": 40
       },
       {
-        "move": "Earthquake",
-        "level": 46
+        "move": "Energy Ball",
+        "level": 43
       },
       {
         "move": "Synthesis",
@@ -589,64 +585,52 @@
         "level": 1
       },
       {
-        "move": "Double Team",
-        "level": 1
-      },
-      {
         "move": "Wing Attack",
         "level": 1
       },
       {
-        "move": "Fury Cutter",
-        "level": 10
+        "move": "Low Kick",
+        "level": 1
       },
       {
-        "move": "Detect",
-        "level": 14
-      },
-      {
-        "move": "Aerial Ace",
-        "level": 18
+        "move": "Low Sweep",
+        "level": 22
       },
       {
         "move": "Slash",
-        "level": 23
+        "level": 25
       },
       {
         "move": "Agility",
-        "level": 27
-      },
-      {
-        "move": "Air Cutter",
-        "level": 31
+        "level": 28
       },
       {
         "move": "Brick Break",
-        "level": 35
+        "level": 31
       },
       {
         "move": "Acrobatics",
-        "level": 40
+        "level": 34
       },
       {
         "move": "Swords Dance",
-        "level": 44
+        "level": 38
       },
       {
-        "move": "Air Slash",
-        "level": 47
-      },
-      {
-        "move": "Close Combat",
-        "level": 52
+        "move": "Sky Uppercut",
+        "level": 42
       },
       {
         "move": "Psycho Cut",
-        "level": 58
+        "level": 46
+      },
+      {
+        "move": "Close Combat",
+        "level": 50
       },
       {
         "move": "Brave Bird",
-        "level": 64
+        "level": 56
       }
     ]
   },
@@ -698,6 +682,10 @@
       {
         "move": "Aerial Ace",
         "level": 13
+      },
+      {
+        "move": "Bug Bite",
+        "level": 15
       },
       {
         "move": "Slash",
@@ -784,12 +772,20 @@
             "level": 5
           },
           {
+            "move": "Dragon Rage",
+            "level": 8
+          },
+          {
             "move": "Leer",
             "level": 10
           },
           {
             "move": "Headbutt",
             "level": 16
+          },
+          {
+            "move": "Dragon Breath",
+            "level": 17
           },
           {
             "move": "Focus Energy",
@@ -832,12 +828,20 @@
             "level": 5
           },
           {
+            "move": "Dragon Rage",
+            "level": 8
+          },
+          {
             "move": "Leer",
             "level": 10
           },
           {
             "move": "Headbutt",
             "level": 16
+          },
+          {
+            "move": "Dragon Breath",
+            "level": 17
           },
           {
             "move": "Focus Energy",
@@ -852,10 +856,6 @@
             "level": 30
           },
           {
-            "move": "Dragon Breath",
-            "level": 32
-          },
-          {
             "move": "Scary Face",
             "level": 43
           },
@@ -867,77 +867,228 @@
       }
     ],
     "moves": [
-  { "move": "Leer", "level": 1 },
-  { "move": "Bite", "level": 1 },
-  { "move": "Poison Sting", "level": 1 },
-  { "move": "Rage", "level": 1 },
-  { "move": "Poison Fang", "level": 40 },
-  { "move": "Dragon Claw", "level": 42 },
-  { "move": "Cross Poison", "level": 45 },
-  { "move": "Crunch", "level": 48 },
-  { "move": "Dragon Dance", "level": 51 },
-  { "move": "Poison Jab", "level": 54 },
-  { "move": "Toxic", "level": 57 },
-  { "move": "Dragon Rush", "level": 60 },
-  { "move": "Gunk Shot", "level": 65 },
-  { "move": "Outrage", "level": 70 }
-]
+      {
+        "move": "Leer",
+        "level": 1
+      },
+      {
+        "move": "Bite",
+        "level": 1
+      },
+      {
+        "move": "Poison Sting",
+        "level": 1
+      },
+      {
+        "move": "Rage",
+        "level": 1
+      },
+      {
+        "move": "Poison Fang",
+        "level": 40
+      },
+      {
+        "move": "Dragon Claw",
+        "level": 42
+      },
+      {
+        "move": "Cross Poison",
+        "level": 45
+      },
+      {
+        "move": "Crunch",
+        "level": 48
+      },
+      {
+        "move": "Dragon Dance",
+        "level": 51
+      },
+      {
+        "move": "Poison Jab",
+        "level": 54
+      },
+      {
+        "move": "Toxic",
+        "level": 57
+      },
+      {
+        "move": "Dragon Rush",
+        "level": 60
+      },
+      {
+        "move": "Gunk Shot",
+        "level": 65
+      },
+      {
+        "move": "Outrage",
+        "level": 70
+      }
+    ]
   },
   {
-  "name": "Unovan Magcargo",
-  "pokedex_id": 219,
-  "type1": "Poison",
-  "type2": "Ground",
-  "bst": 460,
-  "abilities": ["Aftermath", "Stench"],
-  "stats": {"hp": 75, "atk": 50, "def": 80, "spa": 110, "spd": 80, "spe": 65},
-  "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
-  "preevo": [
-    {
-      "name": "Slugma",
-      "pokedex_id": 218,
-      "type1": "Fire",
-      "abilities": ["Magma Armor", "Flame Body"],
-      "evo": "Use Black Sludge",
-      "moves": [
-        {"move": "Yawn", "level": 1},
-        {"move": "Smog", "level": 1},
-        {"move": "Ember", "level": 5},
-        {"move": "Rock Throw", "level": 10},
-        {"move": "Harden", "level": 14},
-        {"move": "Recover", "level": 19},
-        {"move": "Flame Burst", "level": 23},
-        {"move": "Ancient Power", "level": 28},
-        {"move": "Amnesia", "level": 32},
-        {"move": "Lava Plume", "level": 37},
-        {"move": "Rock Slide", "level": 41},
-        {"move": "Body Slam", "level": 46},
-        {"move": "Flamethrower", "level": 50},
-        {"move": "Earth Power", "level": 55}
-      ]
-    }
-  ],
-  "moves": [
-    {"move": "Acid Armor", "level": 1},
-    {"move": "Mud-Slap", "level": 1},
-    {"move": "Yawn", "level": 1},
-    {"move": "Smog", "level": 1},
-    {"move": "Acid", "level": 5},
-    {"move": "Mud Shot", "level": 10},
-    {"move": "Harden", "level": 14},
-    {"move": "Recover", "level": 19},
-    {"move": "Clear Smog", "level": 23},
-    {"move": "Mud Bomb", "level": 28},
-    {"move": "Amnesia", "level": 32},
-    {"move": "Venoshock", "level": 36},
-    {"move": "Toxic Spikes", "level": 40},
-    {"move": "Sludge Bomb", "level": 44},
-    {"move": "Earth Power", "level": 49},
-    {"move": "Toxic", "level": 54},
-    {"move": "Sludge Wave", "level": 59},
-    {"move": "Stealth Rock", "level": 64}
-  ]
-},
+    "name": "Unovan Magcargo",
+    "pokedex_id": 219,
+    "type1": "Poison",
+    "type2": "Ground",
+    "bst": 460,
+    "abilities": [
+      "Aftermath",
+      "Stench"
+    ],
+    "stats": {
+      "hp": 75,
+      "atk": 50,
+      "def": 80,
+      "spa": 110,
+      "spd": 80,
+      "spe": 65
+    },
+    "sprite": "https://play.pokemonshowdown.com/sprites/gen5ani/unown-question.gif",
+    "preevo": [
+      {
+        "name": "Slugma",
+        "pokedex_id": 218,
+        "type1": "Fire",
+        "abilities": [
+          "Magma Armor",
+          "Flame Body"
+        ],
+        "evo": "Use Black Sludge",
+        "moves": [
+          {
+            "move": "Yawn",
+            "level": 1
+          },
+          {
+            "move": "Smog",
+            "level": 1
+          },
+          {
+            "move": "Ember",
+            "level": 5
+          },
+          {
+            "move": "Rock Throw",
+            "level": 10
+          },
+          {
+            "move": "Harden",
+            "level": 14
+          },
+          {
+            "move": "Recover",
+            "level": 19
+          },
+          {
+            "move": "Flame Burst",
+            "level": 23
+          },
+          {
+            "move": "Ancient Power",
+            "level": 28
+          },
+          {
+            "move": "Amnesia",
+            "level": 32
+          },
+          {
+            "move": "Lava Plume",
+            "level": 37
+          },
+          {
+            "move": "Rock Slide",
+            "level": 41
+          },
+          {
+            "move": "Body Slam",
+            "level": 46
+          },
+          {
+            "move": "Flamethrower",
+            "level": 50
+          },
+          {
+            "move": "Earth Power",
+            "level": 55
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Acid Armor",
+        "level": 1
+      },
+      {
+        "move": "Mud-Slap",
+        "level": 1
+      },
+      {
+        "move": "Yawn",
+        "level": 1
+      },
+      {
+        "move": "Smog",
+        "level": 1
+      },
+      {
+        "move": "Acid",
+        "level": 5
+      },
+      {
+        "move": "Mud Shot",
+        "level": 10
+      },
+      {
+        "move": "Harden",
+        "level": 14
+      },
+      {
+        "move": "Recover",
+        "level": 19
+      },
+      {
+        "move": "Clear Smog",
+        "level": 23
+      },
+      {
+        "move": "Mud Bomb",
+        "level": 28
+      },
+      {
+        "move": "Amnesia",
+        "level": 32
+      },
+      {
+        "move": "Venoshock",
+        "level": 36
+      },
+      {
+        "move": "Toxic Spikes",
+        "level": 40
+      },
+      {
+        "move": "Earth Power",
+        "level": 42
+      },
+      {
+        "move": "Sludge Bomb",
+        "level": 44
+      },
+      {
+        "move": "Toxic",
+        "level": 54
+      },
+      {
+        "move": "Sludge Wave",
+        "level": 59
+      },
+      {
+        "move": "Stealth Rock",
+        "level": 64
+      }
+    ]
+  },
   {
     "name": "Unovan Steelix",
     "pokedex_id": 208,
@@ -1050,7 +1201,7 @@
         "level": 1
       },
       {
-        "move": "Water Gun",
+        "move": "Aqua Jet",
         "level": 1
       },
       {
@@ -1060,10 +1211,6 @@
       {
         "move": "Rock Throw",
         "level": 7
-      },
-      {
-        "move": "Bubble Beam",
-        "level": 12
       },
       {
         "move": "Iron Defense",
@@ -1082,8 +1229,8 @@
         "level": 28
       },
       {
-        "move": "Brine",
-        "level": 32
+        "move": "Waterfall",
+        "level": 31
       },
       {
         "move": "Rock Slide",
@@ -1092,10 +1239,6 @@
       {
         "move": "Aqua Tail",
         "level": 39
-      },
-      {
-        "move": "Whirlpool",
-        "level": 43
       },
       {
         "move": "Earthquake",
@@ -1110,20 +1253,12 @@
         "level": 55
       },
       {
-        "move": "Hydro Pump",
-        "level": 57
-      },
-      {
         "move": "Heavy Slam",
         "level": 62
       },
       {
         "move": "Recover",
         "level": 68
-      },
-      {
-        "move": "Gyro Ball",
-        "level": 70
       }
     ]
   }
