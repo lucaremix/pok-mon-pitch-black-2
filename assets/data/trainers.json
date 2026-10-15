@@ -31,8 +31,8 @@
           "moves": [
             {"name": "Covet", "type": "Fairy"},
             {"name": "Sing", "type": "Normal"},
-            {"name": "Slack Off", "type": "Normal"},
-            {"name": "Disarming Voice", "type": "Fairy"}
+            {"name": "Pound", "type": "Normal"},
+            {"name": "Quick Attack", "type": "Normal"}
           ]
         },
         {
@@ -58,9 +58,9 @@
           "item": "Sitrus Berry",
           "moves": [
             {"name": "Uproar", "type": "Normal"},
-            {"name": "Psychic", "type": "Psychic"},
-            {"name": "Superpower", "type": "Fighting"},
-            {"name": "Sucker Punch", "type": "Dark"}
+            {"name": "Psybeam", "type": "Psychic"},
+            {"name": "Mach Punch", "type": "Fighting"},
+            {"name": "Feint Attack", "type": "Dark"}
           ]
         },
         {
@@ -74,7 +74,7 @@
             {"name": "Bug Bite", "type": "Bug"},
             {"name": "Body Slam", "type": "Normal"},
             {"name": "Slack Off", "type": "Normal"},
-            {"name": "Aqua Tail", "type": "Water"}
+            {"name": "Aqua Jet", "type": "Water"}
           ]
         },
         {
@@ -86,8 +86,8 @@
           "item": "Oran Berry",
           "moves": [
             {"name": "Headbutt", "type": "Normal"},
-            {"name": "Dragon Breath", "type": "Dragon"},
-            {"name": "Rock Slide", "type": "Rock"},
+            {"name": "Twister", "type": "Dragon"},
+            {"name": "Rock Tomb", "type": "Rock"},
             {"name": "Glare", "type": "Normal"}
           ]
         },
@@ -99,10 +99,10 @@
           "ability": "Vital Spirit",
           "item": "Focus Sash",
           "moves": [
-            {"name": "Take Down", "type": "Normal"},
+            {"name": "Work up", "type": "Normal"},
             {"name": "Ice Fang", "type": "Ice"},
-            {"name": "Crunch", "type": "Dark"},
-            {"name": "Ice Shard", "type": "Ice"}
+            {"name": "Pursuit", "type": "Dark"},
+            {"name": "Retaliate", "type": "Normal"}
           ]
         }
       ]
@@ -115,7 +115,7 @@
       "sprite": "roxie",
       "hidden": false,
       "order": 2,
-      "bag": [{"item": "Potion", "count": 2}],
+      "bag": [{"item": "Super Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Trubbish",
@@ -126,9 +126,9 @@
           "item": "Black Sludge",
           "moves": [
             {"name": "Toxic Spikes", "type": "Poison"},
-            {"name": "Sludge Bomb", "type": "Poison"},
-            {"name": "Thunderbolt", "type": "Electric"},
-            {"name": "Bullet Seed", "type": "Grass"}
+            {"name": "Clear Smog", "type": "Poison"},
+            {"name": "Drain Punch", "type": "Fighting"},
+            {"name": "Explosion", "type": "Normal"}
           ]
         },
         {
@@ -140,7 +140,7 @@
           "item": "Poison Barb",
           "moves": [
             {"name": "Poison Fang", "type": "Poison"},
-            {"name": "Crunch", "type": "Dark"},
+            {"name": "Bite", "type": "Dark"},
             {"name": "Glare", "type": "Normal"},
             {"name": "Aqua Tail", "type": "Water"}
           ]
@@ -153,10 +153,10 @@
           "ability": "Aftermath",
           "item": "Leftovers",
           "moves": [
-            {"name": "Earth Power", "type": "Ground"},
-            {"name": "Sludge Bomb", "type": "Poison"},
+            {"name": "Mud Bomb", "type": "Ground"},
+            {"name": "Venoshock", "type": "Poison"},
             {"name": "Recover", "type": "Normal"},
-            {"name": "Toxic", "type": "Poison"}
+            {"name": "Flame Burst", "type": "Fire"}
           ]
         },
         {
@@ -167,10 +167,10 @@
           "ability": "Hydration",
           "item": "Mystic Water",
           "moves": [
-            {"name": "Muddy Water", "type": "Water"},
+            {"name": "Water Pulse", "type": "Water"},
             {"name": "Bulldoze", "type": "Ground"},
-            {"name": "Ice Beam", "type": "Ice"},
-            {"name": "Toxic", "type": "Poison"}
+            {"name": "Icy Windy", "type": "Ice"},
+            {"name": "Venoshock", "type": "Poison"}
           ]
         },
         {
@@ -181,9 +181,9 @@
           "ability": "Poison Point",
           "item": "Sitrus Berry",
           "moves": [
-            {"name": "Sludge Bomb", "type": "Poison"},
-            {"name": "Earth Power", "type": "Ground"},
-            {"name": "Psycho Cut", "type": "Psychic"},
+            {"name": "Venoshock", "type": "Poison"},
+            {"name": "Giga Drain", "type": "Grass"},
+            {"name": "Zen Headbutt", "type": "Psychic"},
             {"name": "Double Kick", "type": "Fighting"}
           ]
         },
@@ -195,10 +195,10 @@
           "ability": "Hustle",
           "item": "Eviolite",
           "moves": [
-            {"name": "Dragon Pulse", "type": "Dragon"},
-            {"name": "Sludge Bomb", "type": "Poison"},
-            {"name": "Dark Pulse", "type": "Dark"},
-            {"name": "Flamethrower", "type": "Fire"}
+            {"name": "Dragon Rage", "type": "Dragon"},
+            {"name": "Poison Fang", "type": "Poison"},
+            {"name": "Crunch", "type": "Dark"},
+            {"name": "Scald", "type": "Water"}
           ]
         }
       ]
@@ -225,7 +225,7 @@
             {"name": "Wing Attack", "type": "Flying"},
             {"name": "Quick Attack", "type": "Normal"},
             {"name": "Sand Attack", "type": "Ground"},
-            {"name": "Whirlwind", "type": "Normal"}
+            {"name": "U-Turn", "type": "Bug"}
           ]
         },
         {
@@ -238,8 +238,8 @@
           "moves": [
             {"name": "Psybeam", "type": "Psychic"},
             {"name": "Disable", "type": "Normal"},
-            {"name": "Recover", "type": "Normal"},
-            {"name": "Reflect", "type": "Psychic"}
+            {"name": "Focus Blast", "type": "Fighting"},
+            {"name": "Energy Ball", "type": "Grass"}
           ]
         },
         {
@@ -251,7 +251,7 @@
           "item": "Oran Berry",
           "moves": [
             {"name": "Flare Blitz", "type": "Fire"},
-            {"name": "Return", "type": "Normal"},
+            {"name": "Retaliate", "type": "Normal"},
             {"name": "Crunch", "type": "Dark"},
             {"name": "Wild Charge", "type": "Electric"}
           ]
@@ -271,17 +271,17 @@
           ]
         },
         {
-          "species": "Exeggcute",
-          "sprite": "exeggcute",
+          "species": "Exeggutor",
+          "sprite": "exeggutor",
           "level": 23,
           "types": ["Grass", "Psychic"],
           "ability": "Harvest",
           "item": "Leftovers",
           "moves": [
             {"name": "Hypnosis", "type": "Psychic"},
-            {"name": "Confusion", "type": "Psychic"},
+            {"name": "Psybeam", "type": "Psychic"},
             {"name": "Leech Seed", "type": "Grass"},
-            {"name": "Stun Spore", "type": "Grass"}
+            {"name": "Giga Drain", "type": "Grass"}
           ]
         },
         {
@@ -308,7 +308,7 @@
       "sprite": "burgh",
       "hidden": false,
       "order": 4,
-      "bag": [{"item": "Super Potion", "count": 2}],
+      "bag": [{"item": "Hyper Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Accelgor",
@@ -372,7 +372,7 @@
           "level": 27,
           "types": ["Bug", "Steel"],
           "ability": "Mold Breaker",
-          "item": "Life Orb",
+          "item": "Occa Berry",
           "moves": [
             {"name": "Megahorn", "type": "Bug"},
             {"name": "Iron Head", "type": "Steel"},
@@ -405,14 +405,14 @@
       "sprite": "colress",
       "hidden": false,
       "order": 5,
-      "bag": [{"item": "Super Potion", "count": 2}],
+      "bag": [{"item": "Hyper Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Electrode",
           "sprite": "electrode",
           "level": 30,
           "types": ["Electric", "Steel"],
-          "ability": "Motor Drive",
+          "ability": "Speed Boost",
           "item": "Focus Sash",
           "moves": [
             {"name": "Thunderbolt", "type": "Electric"},
@@ -422,8 +422,8 @@
           ]
         },
         {
-          "species": "Klink",
-          "sprite": "klink",
+          "species": "Klang",
+          "sprite": "klang",
           "level": 30,
           "types": ["Steel", "Electric"],
           "ability": "Plus",
@@ -431,8 +431,8 @@
           "moves": [
             {"name": "Shift Gear", "type": "Steel"},
             {"name": "Gear Grind", "type": "Steel"},
-            {"name": "Discharge", "type": "Electric"},
-            {"name": "Flash Cannon", "type": "Steel"}
+            {"name": "Spark", "type": "Electric"},
+            {"name": "Autotomize", "type": "Steel"}
           ]
         },
         {
@@ -445,7 +445,7 @@
           "moves": [
             {"name": "Psychic", "type": "Psychic"},
             {"name": "Thunderbolt", "type": "Electric"},
-            {"name": "Signal Beam", "type": "Bug"},
+            {"name": "Energy Ball", "type": "Grass"},
             {"name": "Calm Mind", "type": "Psychic"}
           ]
         },
@@ -459,7 +459,7 @@
           "moves": [
             {"name": "Thunderbolt", "type": "Electric"},
             {"name": "Flash Cannon", "type": "Steel"},
-            {"name": "Hidden Power Fire", "type": "Fire"},
+            {"name": "Water Pulse", "type": "Water"},
             {"name": "Psychic", "type": "Psychic"}
           ]
         },
@@ -478,8 +478,8 @@
           ]
         },
         {
-          "species": "Porygon",
-          "sprite": "porygon",
+          "species": "Porygon2",
+          "sprite": "porygon2",
           "level": 31,
           "types": ["Normal"],
           "ability": "Download",
@@ -501,10 +501,10 @@
       "sprite": "elesa",
       "hidden": false,
       "order": 6,
-      "bag": [{"item": "Super Potion", "count": 1}, {"item": "Hyper Potion", "count": 1}],
+      "bag": [{"item": "Hyper Potion", "count": 2}],
       "pokemon": [
         {
-          "species": "Klink",
+          "species": "Klang",
           "sprite": "klink",
           "level": 35,
           "types": ["Steel", "Electric"],
@@ -513,7 +513,7 @@
           "moves": [
             {"name": "Shift Gear", "type": "Steel"},
             {"name": "Gear Grind", "type": "Steel"},
-            {"name": "Discharge", "type": "Electric"},
+            {"name": "Spark", "type": "Electric"},
             {"name": "Rock Slide", "type": "Rock"}
           ]
         },
@@ -523,26 +523,26 @@
           "level": 35,
           "types": ["Electric", "Normal"],
           "ability": "Sap Sipper",
-          "item": "Choice Scarf",
+          "item": "Silk Scarf",
           "moves": [
             {"name": "Wild Charge", "type": "Electric"},
-            {"name": "Return", "type": "Normal"},
+            {"name": "Retaliate", "type": "Normal"},
             {"name": "Overheat", "type": "Fire"},
             {"name": "Grass Knot", "type": "Grass"}
           ]
         },
         {
-          "species": "Eelektrik",
-          "sprite": "eelektrik",
+          "species": "Eelektross",
+          "sprite": "eelektross",
           "level": 35,
           "types": ["Electric", "Water"],
           "ability": "Levitate",
           "item": "Eviolite",
           "moves": [
-            {"name": "Charge Beam", "type": "Electric"},
+            {"name": "Wild Charge", "type": "Electric"},
             {"name": "Thunder Wave", "type": "Electric"},
-            {"name": "Water Pulse", "type": "Water"},
-            {"name": "Ice Beam", "type": "Ice"}
+            {"name": "Waterfall", "type": "Water"},
+            {"name": "Icicle Spear", "type": "Ice"}
           ]
         },
         {
@@ -578,8 +578,8 @@
           "sprite": "raikou",
           "level": 36,
           "types": ["Electric", "Ground"],
-          "ability": "Pressure",
-          "item": "Choice Specs",
+          "ability": "Volt Absorb",
+          "item": "Magnet",
           "moves": [
             {"name": "Thunderbolt", "type": "Electric"},
             {"name": "Earth Power", "type": "Ground"},
@@ -622,10 +622,10 @@
           "ability": "Levitate",
           "item": "Sitrus Berry",
           "moves": [
-            {"name": "Psychic", "type": "Psychic"},
-            {"name": "Power Gem", "type": "Rock"},
+            {"name": "Zen Headbutt", "type": "Psychic"},
+            {"name": "Rock Slide", "type": "Rock"},
             {"name": "Earth Power", "type": "Ground"},
-            {"name": "Rapid Spin", "type": "Normal"}
+            {"name": "Power Trick", "type": "Normal"}
           ]
         },
         {
@@ -636,7 +636,7 @@
           "ability": "Storm Drain",
           "item": "Leftovers",
           "moves": [
-            {"name": "Stealth Rock", "type": "Rock"},
+            {"name": "Ingrain", "type": "Grass"},
             {"name": "Giga Drain", "type": "Grass"},
             {"name": "Rock Slide", "type": "Rock"},
             {"name": "Recover", "type": "Normal"}
@@ -694,7 +694,7 @@
       "sprite": "clay",
       "hidden": false,
       "order": 8,
-      "bag": [{"item": "Hyper Potion", "count": 2}],
+      "bag": [{"item": "Full Restore", "count": 1}],
       "pokemon": [
         {
           "species": "Hippowdon",
@@ -790,7 +790,7 @@
       "sprite": "skyla",
       "hidden": false,
       "order": 9,
-      "bag": [{"item": "Hyper Potion", "count": 3}],
+      "bag": [{"item": "Full Restore", "count": 1}, {"item": "Hyper Potion", "count": 1}],
       "pokemon": [
         {
           "species": "Swoobat",
@@ -854,7 +854,7 @@
           "level": 52,
           "types": ["Flying", "Fighting"],
           "ability": "Justified",
-          "item": "Life Orb",
+          "item": "",
           "moves": [
             {"name": "Swords Dance", "type": "Normal"},
             {"name": "Close Combat", "type": "Fighting"},
@@ -887,7 +887,7 @@
       "sprite": "n",
       "hidden": true,
       "order": 10,
-      "bag": [{"item": "Hyper Potion", "count": 2}, {"item": "Full Restore", "count": 1}],
+      "bag": [{"item": "Hyper Potion", "count": 1}, {"item": "Full Restore", "count": 1}],
       "pokemon": [
         {
           "species": "Zoroark",
@@ -914,7 +914,7 @@
             {"name": "Shell Smash", "type": "Normal"},
             {"name": "Waterfall", "type": "Water"},
             {"name": "Stone Edge", "type": "Rock"},
-            {"name": "Earthquake", "type": "Ground"}
+            {"name": "Poison Jab", "type": "Ground"}
           ]
         },
         {
@@ -955,7 +955,7 @@
           "moves": [
             {"name": "Stone Edge", "type": "Rock"},
             {"name": "Dragon Claw", "type": "Dragon"},
-            {"name": "Earthquake", "type": "Ground"},
+            {"name": "Brave Bird", "type": "Ground"},
             {"name": "U-turn", "type": "Bug"}
           ]
         },
@@ -983,7 +983,7 @@
       "sprite": "drayden",
       "hidden": false,
       "order": 11,
-      "bag": [{"item": "Hyper Potion", "count": 2}, {"item": "Full Restore", "count": 1}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Druddigon",
@@ -996,7 +996,7 @@
             {"name": "Stealth Rock", "type": "Rock"},
             {"name": "Dragon Claw", "type": "Dragon"},
             {"name": "Close Combat", "type": "Fighting"},
-            {"name": "Sucker Punch", "type": "Dark"}
+            {"name": "Iron Head", "type": "Steel"}
           ]
         },
         {
@@ -1007,10 +1007,10 @@
           "ability": "Levitate",
           "item": "Focus Sash",
           "moves": [
-            {"name": "Stone Edge", "type": "Rock"},
+            {"name": "Rock Slide", "type": "Rock"},
             {"name": "Dragon Claw", "type": "Dragon"},
             {"name": "Earthquake", "type": "Ground"},
-            {"name": "U-turn", "type": "Bug"}
+            {"name": "Aerial Ace", "type": "Flying"}
           ]
         },
         {
@@ -1079,7 +1079,7 @@
       "sprite": "marlon",
       "hidden": false,
       "order": 12,
-      "bag": [{"item": "Hyper Potion", "count": 2}, {"item": "Full Restore", "count": 1}],
+      "bag": [{"item": "Full Restore", "count": 2}],
       "pokemon": [
         {
           "species": "Politoed",
@@ -1176,7 +1176,7 @@
       "sprite": "colress",
       "hidden": false,
       "order": 13,
-      "bag": [{"item": "Hyper Potion", "count": 2}, {"item": "Full Restore", "count": 1}],
+      "bag": [{"item": "Full Restore", "count": 1}],
       "pokemon": [
         {
           "species": "Magnezone",
@@ -1436,7 +1436,7 @@
           "ability": "Intimidate",
           "item": "Air Balloon",
           "moves": [
-            {"name": "Outrage", "type": "Dragon"},
+            {"name": "Outrage Rush", "type": "Dragon"},
             {"name": "Poison Jab", "type": "Poison"},
             {"name": "Earthquake", "type": "Ground"},
             {"name": "Stone Edge", "type": "Rock"}
@@ -1450,10 +1450,10 @@
           "ability": "Multiscale",
           "item": "Expert Belt",
           "moves": [
-            {"name": "Dragon Breath", "type": "Dragon"},
+            {"name": "Dragon Pulse", "type": "Dragon"},
             {"name": "Aqua Tail", "type": "Water"},
             {"name": "Extreme Speed", "type": "Normal"},
-            {"name": "Flamethrower", "type": "Fire"}
+            {"name": "Fire Punch", "type": "Fire"}
           ]
         }
       ]
