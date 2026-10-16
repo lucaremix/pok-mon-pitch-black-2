@@ -1,7 +1,7 @@
 [
   {
     "name": "Mudsdale",
-    "pokedex_id": 145,
+    "pokedex_id": 750,
     "type1": "Ground",
     "bst": 500,
     "abilities": [
@@ -20,7 +20,7 @@
     "preevo": [
       {
         "name": "Mudbray",
-        "pokedex_id": 144,
+        "pokedex_id": 749,
         "type1": "Ground",
         "abilities": [
           "Own Tempo",
@@ -141,7 +141,7 @@
   },
   {
     "name": "Turtonator",
-    "pokedex_id": 146,
+    "pokedex_id": 776,
     "type1": "Fire",
     "type2": "Dragon",
     "bst": 485,
@@ -219,7 +219,7 @@
   },
   {
     "name": "Sylveon",
-    "pokedex_id": 150,
+    "pokedex_id": 700,
     "type1": "Fairy",
     "bst": 525,
     "abilities": [
@@ -371,7 +371,7 @@
   },
   {
     "name": "Drampa",
-    "pokedex_id": 151,
+    "pokedex_id": 780,
     "type1": "Normal",
     "type2": "Dragon",
     "bst": 485,
@@ -454,7 +454,7 @@
   },
   {
     "name": "Vikavolt",
-    "pokedex_id": 154,
+    "pokedex_id": 738,
     "type1": "Bug",
     "type2": "Electric",
     "bst": 500,
@@ -473,7 +473,7 @@
     "preevo": [
       {
         "name": "Grubbin",
-        "pokedex_id": 152,
+        "pokedex_id": 736,
         "type1": "Bug",
         "abilities": [
           "Swarm"
@@ -525,7 +525,7 @@
       },
       {
         "name": "Charjabug",
-        "pokedex_id": 153,
+        "pokedex_id": 737,
         "type1": "Bug",
         "type2": "Electric",
         "abilities": [
@@ -654,7 +654,7 @@
   },
   {
     "name": "Kommo-o",
-    "pokedex_id": 157,
+    "pokedex_id": 784,
     "type1": "Dragon",
     "type2": "Fighting",
     "bst": 600,
@@ -674,7 +674,7 @@
     "preevo": [
       {
         "name": "Jangmo-o",
-        "pokedex_id": 155,
+        "pokedex_id": 782,
         "type1": "Dragon",
         "abilities": [
           "Overcoat",
@@ -743,7 +743,7 @@
       },
       {
         "name": "Hakamo-o",
-        "pokedex_id": 156,
+        "pokedex_id": 783,
         "type1": "Dragon",
         "type2": "Fighting",
         "abilities": [
@@ -905,7 +905,7 @@
   },
   {
     "name": "Dragapult",
-    "pokedex_id": 160,
+    "pokedex_id": 887,
     "type1": "Dragon",
     "type2": "Ghost",
     "bst": 600,
@@ -925,7 +925,7 @@
     "preevo": [
       {
         "name": "Dreepy",
-        "pokedex_id": 158,
+        "pokedex_id": 885,
         "type1": "Dragon",
         "type2": "Ghost",
         "abilities": [
@@ -987,7 +987,7 @@
       },
       {
         "name": "Drakloak",
-        "pokedex_id": 159,
+        "pokedex_id": 886,
         "type1": "Dragon",
         "type2": "Ghost",
         "abilities": [
@@ -1145,7 +1145,7 @@
   },
   {
     "name": "Araquanid",
-    "pokedex_id": 250,
+    "pokedex_id": 752,
     "type1": "Water",
     "type2": "Bug",
     "bst": 454,
@@ -1165,7 +1165,7 @@
     "preevo": [
       {
         "name": "Dewpider",
-        "pokedex_id": 249,
+        "pokedex_id": 751,
         "type1": "Water",
         "type2": "Bug",
         "abilities": [
@@ -1291,7 +1291,7 @@
   },
   {
     "name": "Dhelmise",
-    "pokedex_id": 251,
+    "pokedex_id": 781,
     "type1": "Ghost",
     "type2": "Grass",
     "bst": 517,
@@ -1385,7 +1385,7 @@
   },
   {
     "name": "Tyrantrum",
-    "pokedex_id": 253,
+    "pokedex_id": 697,
     "type1": "Rock",
     "type2": "Dragon",
     "bst": 521,
@@ -1405,7 +1405,7 @@
     "preevo": [
       {
         "name": "Tyrunt",
-        "pokedex_id": 252,
+        "pokedex_id": 696,
         "type1": "Rock",
         "type2": "Dragon",
         "abilities": [
@@ -1555,7 +1555,7 @@
   },
   {
     "name": "Palossand",
-    "pokedex_id": 255,
+    "pokedex_id": 770,
     "type1": "Ghost",
     "type2": "Ground",
     "bst": 480,
@@ -1575,7 +1575,7 @@
     "preevo": [
       {
         "name": "Sandygast",
-        "pokedex_id": 254,
+        "pokedex_id": 769,
         "type1": "Ghost",
         "type2": "Ground",
         "abilities": [
@@ -1705,7 +1705,7 @@
   },
   {
     "name": "Frosmoth",
-    "pokedex_id": 257,
+    "pokedex_id": 873,
     "type1": "Ice",
     "type2": "Bug",
     "bst": 475,
@@ -1725,7 +1725,7 @@
     "preevo": [
       {
         "name": "Snom",
-        "pokedex_id": 256,
+        "pokedex_id": 872,
         "type1": "Ice",
         "type2": "Bug",
         "abilities": [
@@ -1875,7 +1875,7 @@
   },
   {
     "name": "Basculegion",
-    "pokedex_id": 258,
+    "pokedex_id": 902,
     "type1": "Water",
     "type2": "Ghost",
     "bst": 530,
@@ -2048,7 +2048,7 @@
   },
   {
     "name": "Basculegion (Female)",
-    "pokedex_id": 258,
+    "pokedex_id": 902,
     "type1": "Water",
     "type2": "Ghost",
     "bst": 530,
@@ -2222,7 +2222,7 @@
   },
   {
     "name": "Clawitzer",
-    "pokedex_id": 260,
+    "pokedex_id": 693,
     "type1": "Water",
     "bst": 500,
     "abilities": [
@@ -2240,7 +2240,7 @@
     "preevo": [
       {
         "name": "Clauncher",
-        "pokedex_id": 259,
+        "pokedex_id": 692,
         "type1": "Water",
         "abilities": [
           "Technician"
@@ -2376,7 +2376,7 @@
   },
   {
     "name": "Pyroar",
-    "pokedex_id": 383,
+    "pokedex_id": 668,
     "type1": "Fire",
     "type2": "Normal",
     "bst": 507,
@@ -2396,7 +2396,7 @@
     "preevo": [
       {
         "name": "Litleo",
-        "pokedex_id": 382,
+        "pokedex_id": 667,
         "type1": "Fire",
         "type2": "Normal",
         "abilities": [
@@ -2538,7 +2538,7 @@
   },
   {
     "name": "Pangoro",
-    "pokedex_id": 385,
+    "pokedex_id": 675,
     "type1": "Fighting",
     "type2": "Dark",
     "bst": 495,
@@ -2558,7 +2558,7 @@
     "preevo": [
       {
         "name": "Pancham",
-        "pokedex_id": 384,
+        "pokedex_id": 674,
         "type1": "Fighting",
         "abilities": [
           "Iron Fist",
@@ -2703,7 +2703,7 @@
   },
   {
     "name": "Talonflame",
-    "pokedex_id": 389,
+    "pokedex_id": 663,
     "type1": "Fire",
     "type2": "Flying",
     "bst": 499,
@@ -2723,7 +2723,7 @@
     "preevo": [
       {
         "name": "Fletchling",
-        "pokedex_id": 387,
+        "pokedex_id": 661,
         "type1": "Normal",
         "type2": "Flying",
         "abilities": [
@@ -2793,7 +2793,7 @@
       },
       {
         "name": "Fletchinder",
-        "pokedex_id": 388,
+        "pokedex_id": 662,
         "type1": "Fire",
         "type2": "Flying",
         "abilities": [
@@ -2939,7 +2939,7 @@
   },
   {
     "name": "Shiinotic",
-    "pokedex_id": 391,
+    "pokedex_id": 756,
     "type1": "Grass",
     "type2": "Fairy",
     "bst": 405,
@@ -2959,7 +2959,7 @@
     "preevo": [
       {
         "name": "Morelull",
-        "pokedex_id": 390,
+        "pokedex_id": 755,
         "type1": "Grass",
         "type2": "Fairy",
         "abilities": [
@@ -3081,7 +3081,7 @@
   },
   {
     "name": "Ribombee",
-    "pokedex_id": 393,
+    "pokedex_id": 743,
     "type1": "Bug",
     "type2": "Fairy",
     "bst": 464,
@@ -3101,7 +3101,7 @@
     "preevo": [
       {
         "name": "Cutiefly",
-        "pokedex_id": 392,
+        "pokedex_id": 742,
         "type1": "Bug",
         "type2": "Fairy",
         "abilities": [
@@ -3207,7 +3207,7 @@
   },
   {
     "name": "Carbink",
-    "pokedex_id": 394,
+    "pokedex_id": 703,
     "type1": "Rock",
     "type2": "Fairy",
     "bst": 500,
@@ -3294,7 +3294,7 @@
   },
   {
     "name": "Komala",
-    "pokedex_id": 395,
+    "pokedex_id": 775,
     "type1": "Normal",
     "bst": 480,
     "abilities": [
@@ -3367,7 +3367,7 @@
   },
   {
     "name": "Trevenant",
-    "pokedex_id": 484,
+    "pokedex_id": 709,
     "type1": "Ghost",
     "type2": "Grass",
     "bst": 474,
@@ -3387,7 +3387,7 @@
     "preevo": [
       {
         "name": "Phantump",
-        "pokedex_id": 483,
+        "pokedex_id": 708,
         "type1": "Ghost",
         "type2": "Grass",
         "abilities": [
@@ -3513,7 +3513,7 @@
   },
   {
     "name": "Crabominable",
-    "pokedex_id": 491,
+    "pokedex_id": 740,
     "type1": "Fighting",
     "type2": "Ice",
     "bst": 478,
@@ -3533,7 +3533,7 @@
     "preevo": [
       {
         "name": "Crabrawler",
-        "pokedex_id": 487,
+        "pokedex_id": 739,
         "type1": "Fighting",
         "abilities": [
           "Hyper Cutter",
@@ -3658,7 +3658,7 @@
   },
   {
     "name": "Sandaconda",
-    "pokedex_id": 490,
+    "pokedex_id": 844,
     "type1": "Ground",
     "bst": 510,
     "abilities": [
@@ -3677,7 +3677,7 @@
     "preevo": [
       {
         "name": "Silicobra",
-        "pokedex_id": 489,
+        "pokedex_id": 843,
         "type1": "Ground",
         "abilities": [
           "Sand Veil",
@@ -3790,7 +3790,7 @@
   },
   {
     "name": "Zeraora",
-    "pokedex_id": 494,
+    "pokedex_id": 807,
     "type1": "Electric",
     "bst": 600,
     "abilities": [
