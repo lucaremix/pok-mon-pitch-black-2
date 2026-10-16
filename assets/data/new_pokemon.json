@@ -1,0 +1,3872 @@
+[
+  {
+    "name": "Mudsdale",
+    "pokedex_id": 145,
+    "type1": "Ground",
+    "bst": 500,
+    "abilities": [
+      "Own Tempo",
+      "Sturdy"
+    ],
+    "stats": {
+      "hp": 100,
+      "atk": 125,
+      "def": 100,
+      "spa": 55,
+      "spd": 85,
+      "spe": 35
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/750.gif",
+    "preevo": [
+      {
+        "name": "Mudbray",
+        "pokedex_id": 144,
+        "type1": "Ground",
+        "abilities": [
+          "Own Tempo",
+          "Sturdy"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/749.gif",
+        "evo": "Level 30",
+        "moves": [
+          {
+            "move": "Mud-Slap",
+            "level": 1
+          },
+          {
+            "move": "Mud Sport",
+            "level": 3
+          },
+          {
+            "move": "Bulldoze",
+            "level": 10
+          },
+          {
+            "move": "Double Kick",
+            "level": 15
+          },
+          {
+            "move": "Stomp",
+            "level": 17
+          },
+          {
+            "move": "Bide",
+            "level": 22
+          },
+          {
+            "move": "Drill Run",
+            "level": 24
+          },
+          {
+            "move": "Iron Defense",
+            "level": 29
+          },
+          {
+            "move": "Heavy Slam",
+            "level": 31
+          },
+          {
+            "move": "Counter",
+            "level": 36
+          },
+          {
+            "move": "Earthquake",
+            "level": 38
+          },
+          {
+            "move": "Mega Kick",
+            "level": 43
+          },
+          {
+            "move": "Superpower",
+            "level": 45
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Bulldoze",
+        "level": 1
+      },
+      {
+        "move": "Mud-Slap",
+        "level": 1
+      },
+      {
+        "move": "Mud Sport",
+        "level": 1
+      },
+      {
+        "move": "Double Kick",
+        "level": 15
+      },
+      {
+        "move": "Stomp",
+        "level": 17
+      },
+      {
+        "move": "Bide",
+        "level": 22
+      },
+      {
+        "move": "Drill Run",
+        "level": 24
+      },
+      {
+        "move": "Iron Defense",
+        "level": 29
+      },
+      {
+        "move": "Heavy Slam",
+        "level": 34
+      },
+      {
+        "move": "Counter",
+        "level": 42
+      },
+      {
+        "move": "Earthquake",
+        "level": 47
+      },
+      {
+        "move": "Mega Kick",
+        "level": 55
+      },
+      {
+        "move": "Superpower",
+        "level": 60
+      }
+    ]
+  },
+  {
+    "name": "Turtonator",
+    "pokedex_id": 146,
+    "type1": "Fire",
+    "type2": "Dragon",
+    "bst": 485,
+    "abilities": [
+      "Shell Armor"
+    ],
+    "stats": {
+      "hp": 60,
+      "atk": 78,
+      "def": 135,
+      "spa": 91,
+      "spd": 85,
+      "spe": 36
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/776.gif",
+    "preevo": [],
+    "moves": [
+      {
+        "move": "Ember",
+        "level": 1
+      },
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Smog",
+        "level": 5
+      },
+      {
+        "move": "Protect",
+        "level": 9
+      },
+      {
+        "move": "Incinerate",
+        "level": 13
+      },
+      {
+        "move": "Flail",
+        "level": 17
+      },
+      {
+        "move": "Endure",
+        "level": 21
+      },
+      {
+        "move": "Iron Defense",
+        "level": 25
+      },
+      {
+        "move": "Flamethrower",
+        "level": 29
+      },
+      {
+        "move": "Body Slam",
+        "level": 33
+      },
+      {
+        "move": "Shell Smash",
+        "level": 37
+      },
+      {
+        "move": "Dragon Pulse",
+        "level": 41
+      },
+      {
+        "move": "Overheat",
+        "level": 45
+      },
+      {
+        "move": "Explosion",
+        "level": 53
+      }
+    ]
+  },
+  {
+    "name": "Sylveon",
+    "pokedex_id": 150,
+    "type1": "Fairy",
+    "bst": 525,
+    "abilities": [
+      "Cute Charm",
+      "Adaptability"
+    ],
+    "stats": {
+      "hp": 95,
+      "atk": 65,
+      "def": 65,
+      "spa": 110,
+      "spd": 130,
+      "spe": 60
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/700.gif",
+    "preevo": [
+      {
+        "name": "Eevee",
+        "pokedex_id": 133,
+        "type1": "Normal",
+        "abilities": [
+          "Run Away",
+          "Adaptability"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/133.gif",
+        "evo": "Use Shiny Stone",
+        "moves": [
+          {
+            "move": "Helping Hand",
+            "level": 1
+          },
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Tail Whip",
+            "level": 1
+          },
+          {
+            "move": "Sand Attack",
+            "level": 5
+          },
+          {
+            "move": "Growl",
+            "level": 9
+          },
+          {
+            "move": "Quick Attack",
+            "level": 13
+          },
+          {
+            "move": "Bite",
+            "level": 17
+          },
+          {
+            "move": "Covet",
+            "level": 21
+          },
+          {
+            "move": "Take Down",
+            "level": 25
+          },
+          {
+            "move": "Charm",
+            "level": 29
+          },
+          {
+            "move": "Baton Pass",
+            "level": 33
+          },
+          {
+            "move": "Double-Edge",
+            "level": 37
+          },
+          {
+            "move": "Last Resort",
+            "level": 41
+          },
+          {
+            "move": "Trump Card",
+            "level": 45
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Disarming Voice",
+        "level": 1
+      },
+      {
+        "move": "Helping Hand",
+        "level": 1
+      },
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Tail Whip",
+        "level": 1
+      },
+      {
+        "move": "Sand Attack",
+        "level": 5
+      },
+      {
+        "move": "Sweet Kiss",
+        "level": 9
+      },
+      {
+        "move": "Quick Attack",
+        "level": 13
+      },
+      {
+        "move": "Swift",
+        "level": 17
+      },
+      {
+        "move": "Draining Kiss",
+        "level": 20
+      },
+      {
+        "move": "Skill Swap",
+        "level": 25
+      },
+      {
+        "move": "Safeguard",
+        "level": 29
+      },
+      {
+        "move": "Light Screen",
+        "level": 33
+      },
+      {
+        "move": "Moonblast",
+        "level": 37
+      },
+      {
+        "move": "Last Resort",
+        "level": 41
+      },
+      {
+        "move": "Psych Up",
+        "level": 45
+      }
+    ]
+  },
+  {
+    "name": "Drampa",
+    "pokedex_id": 151,
+    "type1": "Normal",
+    "type2": "Dragon",
+    "bst": 485,
+    "abilities": [
+      "Anger Point",
+      "Sap Sipper"
+    ],
+    "stats": {
+      "hp": 78,
+      "atk": 60,
+      "def": 85,
+      "spa": 135,
+      "spd": 91,
+      "spe": 36
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/780.gif",
+    "preevo": [],
+    "moves": [
+      {
+        "move": "Echoed Voice",
+        "level": 1
+      },
+      {
+        "move": "Growl",
+        "level": 1
+      },
+      {
+        "move": "Twister",
+        "level": 5
+      },
+      {
+        "move": "Protect",
+        "level": 9
+      },
+      {
+        "move": "Glare",
+        "level": 13
+      },
+      {
+        "move": "Light Screen",
+        "level": 17
+      },
+      {
+        "move": "Dragon Rage",
+        "level": 21
+      },
+      {
+        "move": "Natural Gift",
+        "level": 25
+      },
+      {
+        "move": "Dragon Breath",
+        "level": 29
+      },
+      {
+        "move": "Safeguard",
+        "level": 33
+      },
+      {
+        "move": "Extrasensory",
+        "level": 37
+      },
+      {
+        "move": "Dragon Pulse",
+        "level": 41
+      },
+      {
+        "move": "Fly",
+        "level": 45
+      },
+      {
+        "move": "Hyper Voice",
+        "level": 49
+      },
+      {
+        "move": "Outrage",
+        "level": 53
+      }
+    ]
+  },
+  {
+    "name": "Vikavolt",
+    "pokedex_id": 154,
+    "type1": "Bug",
+    "type2": "Electric",
+    "bst": 500,
+    "abilities": [
+      "Levitate"
+    ],
+    "stats": {
+      "hp": 77,
+      "atk": 70,
+      "def": 90,
+      "spa": 145,
+      "spd": 75,
+      "spe": 43
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/738.gif",
+    "preevo": [
+      {
+        "name": "Grubbin",
+        "pokedex_id": 152,
+        "type1": "Bug",
+        "abilities": [
+          "Swarm"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/736.gif",
+        "evo": "Level 20",
+        "moves": [
+          {
+            "move": "Vise Grip",
+            "level": 1
+          },
+          {
+            "move": "String Shot",
+            "level": 4
+          },
+          {
+            "move": "Mud-Slap",
+            "level": 7
+          },
+          {
+            "move": "Bite",
+            "level": 10
+          },
+          {
+            "move": "Bug Bite",
+            "level": 13
+          },
+          {
+            "move": "Spark",
+            "level": 16
+          },
+          {
+            "move": "Acrobatics",
+            "level": 19
+          },
+          {
+            "move": "Crunch",
+            "level": 22
+          },
+          {
+            "move": "X-Scissor",
+            "level": 25
+          },
+          {
+            "move": "Dig",
+            "level": 28
+          }
+        ]
+      },
+      {
+        "name": "Charjabug",
+        "pokedex_id": 153,
+        "type1": "Bug",
+        "type2": "Electric",
+        "abilities": [
+          "Static"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/737.gif",
+        "evo": "Use Thunder Stone",
+        "moves": [
+          {
+            "move": "Bite",
+            "level": 1
+          },
+          {
+            "move": "Charge",
+            "level": 1
+          },
+          {
+            "move": "Mud-Slap",
+            "level": 1
+          },
+          {
+            "move": "String Shot",
+            "level": 1
+          },
+          {
+            "move": "Vise Grip",
+            "level": 1
+          },
+          {
+            "move": "Bug Bite",
+            "level": 13
+          },
+          {
+            "move": "Spark",
+            "level": 16
+          },
+          {
+            "move": "Acrobatics",
+            "level": 19
+          },
+          {
+            "move": "Crunch",
+            "level": 25
+          },
+          {
+            "move": "X-Scissor",
+            "level": 31
+          },
+          {
+            "move": "Dig",
+            "level": 37
+          },
+          {
+            "move": "Discharge",
+            "level": 43
+          },
+          {
+            "move": "Iron Defense",
+            "level": 49
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Air Slash",
+        "level": 1
+      },
+      {
+        "move": "Bite",
+        "level": 1
+      },
+      {
+        "move": "Charge",
+        "level": 1
+      },
+      {
+        "move": "Mud-Slap",
+        "level": 1
+      },
+      {
+        "move": "String Shot",
+        "level": 1
+      },
+      {
+        "move": "Thunderbolt",
+        "level": 1
+      },
+      {
+        "move": "Vise Grip",
+        "level": 1
+      },
+      {
+        "move": "Bug Bite",
+        "level": 13
+      },
+      {
+        "move": "Spark",
+        "level": 16
+      },
+      {
+        "move": "Acrobatics",
+        "level": 19
+      },
+      {
+        "move": "Guillotine",
+        "level": 25
+      },
+      {
+        "move": "Bug Buzz",
+        "level": 31
+      },
+      {
+        "move": "Dig",
+        "level": 37
+      },
+      {
+        "move": "Zap Cannon",
+        "level": 41
+      },
+      {
+        "move": "Agility",
+        "level": 49
+      }
+    ]
+  },
+  {
+    "name": "Kommo-o",
+    "pokedex_id": 157,
+    "type1": "Dragon",
+    "type2": "Fighting",
+    "bst": 600,
+    "abilities": [
+      "Overcoat",
+      "Soundproof"
+    ],
+    "stats": {
+      "hp": 75,
+      "atk": 110,
+      "def": 125,
+      "spa": 100,
+      "spd": 105,
+      "spe": 85
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/784.gif",
+    "preevo": [
+      {
+        "name": "Jangmo-o",
+        "pokedex_id": 155,
+        "type1": "Dragon",
+        "abilities": [
+          "Overcoat",
+          "Soundproof"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/782.gif",
+        "evo": "Level 35",
+        "moves": [
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Leer",
+            "level": 5
+          },
+          {
+            "move": "Bide",
+            "level": 9
+          },
+          {
+            "move": "Protect",
+            "level": 13
+          },
+          {
+            "move": "Dragon Tail",
+            "level": 17
+          },
+          {
+            "move": "Scary Face",
+            "level": 21
+          },
+          {
+            "move": "Headbutt",
+            "level": 25
+          },
+          {
+            "move": "Work Up",
+            "level": 29
+          },
+          {
+            "move": "Screech",
+            "level": 33
+          },
+          {
+            "move": "Iron Defense",
+            "level": 37
+          },
+          {
+            "move": "Dragon Claw",
+            "level": 41
+          },
+          {
+            "move": "Growl",
+            "level": 45
+          },
+          {
+            "move": "Dragon Dance",
+            "level": 49
+          },
+          {
+            "move": "Outrage",
+            "level": 53
+          }
+        ]
+      },
+      {
+        "name": "Hakamo-o",
+        "pokedex_id": 156,
+        "type1": "Dragon",
+        "type2": "Fighting",
+        "abilities": [
+          "Overcoat",
+          "Soundproof"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/783.gif",
+        "evo": "Level 45",
+        "moves": [
+          {
+            "move": "Autotomize",
+            "level": 1
+          },
+          {
+            "move": "Bide",
+            "level": 1
+          },
+          {
+            "move": "Leer",
+            "level": 1
+          },
+          {
+            "move": "Protect",
+            "level": 1
+          },
+          {
+            "move": "Sky Uppercut",
+            "level": 1
+          },
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Dragon Tail",
+            "level": 17
+          },
+          {
+            "move": "Scary Face",
+            "level": 21
+          },
+          {
+            "move": "Headbutt",
+            "level": 25
+          },
+          {
+            "move": "Work Up",
+            "level": 29
+          },
+          {
+            "move": "Screech",
+            "level": 33
+          },
+          {
+            "move": "Iron Defense",
+            "level": 38
+          },
+          {
+            "move": "Dragon Claw",
+            "level": 43
+          },
+          {
+            "move": "Growl",
+            "level": 48
+          },
+          {
+            "move": "Dragon Dance",
+            "level": 53
+          },
+          {
+            "move": "Outrage",
+            "level": 58
+          },
+          {
+            "move": "Close Combat",
+            "level": 63
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Autotomize",
+        "level": 1
+      },
+      {
+        "move": "Belly Drum",
+        "level": 1
+      },
+      {
+        "move": "Bide",
+        "level": 1
+      },
+      {
+        "move": "Dragon Pulse",
+        "level": 1
+      },
+      {
+        "move": "Leer",
+        "level": 1
+      },
+      {
+        "move": "Protect",
+        "level": 1
+      },
+      {
+        "move": "Sky Uppercut",
+        "level": 1
+      },
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Dragon Tail",
+        "level": 17
+      },
+      {
+        "move": "Scary Face",
+        "level": 21
+      },
+      {
+        "move": "Headbutt",
+        "level": 25
+      },
+      {
+        "move": "Work Up",
+        "level": 29
+      },
+      {
+        "move": "Screech",
+        "level": 33
+      },
+      {
+        "move": "Iron Defense",
+        "level": 38
+      },
+      {
+        "move": "Dragon Claw",
+        "level": 43
+      },
+      {
+        "move": "Growl",
+        "level": 51
+      },
+      {
+        "move": "Dragon Dance",
+        "level": 59
+      },
+      {
+        "move": "Outrage",
+        "level": 67
+      },
+      {
+        "move": "Close Combat",
+        "level": 75
+      }
+    ]
+  },
+  {
+    "name": "Dragapult",
+    "pokedex_id": 160,
+    "type1": "Dragon",
+    "type2": "Ghost",
+    "bst": 600,
+    "abilities": [
+      "Clear Body",
+      "Infiltrator"
+    ],
+    "stats": {
+      "hp": 88,
+      "atk": 120,
+      "def": 75,
+      "spa": 100,
+      "spd": 75,
+      "spe": 142
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/887.gif",
+    "preevo": [
+      {
+        "name": "Dreepy",
+        "pokedex_id": 158,
+        "type1": "Dragon",
+        "type2": "Ghost",
+        "abilities": [
+          "Clear Body",
+          "Infiltrator"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/885.gif",
+        "evo": "Level 50",
+        "moves": [
+          {
+            "move": "Astonish",
+            "level": 1
+          },
+          {
+            "move": "Bite",
+            "level": 1
+          },
+          {
+            "move": "Bug Bite",
+            "level": 1
+          },
+          {
+            "move": "Quick Attack",
+            "level": 1
+          },
+          {
+            "move": "Lock-On",
+            "level": 6
+          },
+          {
+            "move": "Assurance",
+            "level": 12
+          },
+          {
+            "move": "Hex",
+            "level": 18
+          },
+          {
+            "move": "Agility",
+            "level": 24
+          },
+          {
+            "move": "Double Hit",
+            "level": 30
+          },
+          {
+            "move": "U-turn",
+            "level": 36
+          },
+          {
+            "move": "Dragon Dance",
+            "level": 42
+          },
+          {
+            "move": "Shadow Force",
+            "level": 48
+          }
+        ]
+      },
+      {
+        "name": "Drakloak",
+        "pokedex_id": 159,
+        "type1": "Dragon",
+        "type2": "Ghost",
+        "abilities": [
+          "Clear Body",
+          "Infiltrator"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/886.gif",
+        "evo": "Level 60",
+        "moves": [
+          {
+            "move": "Astonish",
+            "level": 1
+          },
+          {
+            "move": "Bite",
+            "level": 1
+          },
+          {
+            "move": "Dragon Pulse",
+            "level": 1
+          },
+          {
+            "move": "Bug Bite",
+            "level": 1
+          },
+          {
+            "move": "Quick Attack",
+            "level": 1
+          },
+          {
+            "move": "Lock-On",
+            "level": 6
+          },
+          {
+            "move": "Assurance",
+            "level": 12
+          },
+          {
+            "move": "Hex",
+            "level": 18
+          },
+          {
+            "move": "Agility",
+            "level": 24
+          },
+          {
+            "move": "Double Hit",
+            "level": 30
+          },
+          {
+            "move": "U-turn",
+            "level": 36
+          },
+          {
+            "move": "Dragon Dance",
+            "level": 42
+          },
+          {
+            "move": "Shadow Force",
+            "level": 48
+          },
+          {
+            "move": "Take Down",
+            "level": 54
+          },
+          {
+            "move": "Dragon Rush",
+            "level": 61
+          },
+          {
+            "move": "Double-Edge",
+            "level": 66
+          },
+          {
+            "move": "Last Resort",
+            "level": 72
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Astonish",
+        "level": 1
+      },
+      {
+        "move": "Bite",
+        "level": 1
+      },
+      {
+        "move": "Dragon Breath",
+        "level": 1
+      },
+      {
+        "move": "Dual Chop",
+        "level": 1
+      },
+      {
+        "move": "Bug Bite",
+        "level": 1
+      },
+      {
+        "move": "Quick Attack",
+        "level": 1
+      },
+      {
+        "move": "Lock-On",
+        "level": 6
+      },
+      {
+        "move": "Assurance",
+        "level": 12
+      },
+      {
+        "move": "Hex",
+        "level": 18
+      },
+      {
+        "move": "Agility",
+        "level": 24
+      },
+      {
+        "move": "Double Hit",
+        "level": 30
+      },
+      {
+        "move": "U-turn",
+        "level": 36
+      },
+      {
+        "move": "Dragon Dance",
+        "level": 42
+      },
+      {
+        "move": "Shadow Force",
+        "level": 48
+      },
+      {
+        "move": "Take Down",
+        "level": 54
+      },
+      {
+        "move": "Dragon Rush",
+        "level": 63
+      },
+      {
+        "move": "Double-Edge",
+        "level": 70
+      },
+      {
+        "move": "Last Resort",
+        "level": 78
+      }
+    ]
+  },
+  {
+    "name": "Araquanid",
+    "pokedex_id": 250,
+    "type1": "Water",
+    "type2": "Bug",
+    "bst": 454,
+    "abilities": [
+      "Water Veil",
+      "Water Absorb"
+    ],
+    "stats": {
+      "hp": 68,
+      "atk": 70,
+      "def": 92,
+      "spa": 50,
+      "spd": 132,
+      "spe": 42
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/752.gif",
+    "preevo": [
+      {
+        "name": "Dewpider",
+        "pokedex_id": 249,
+        "type1": "Water",
+        "type2": "Bug",
+        "abilities": [
+          "Water Veil",
+          "Water Absorb"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/751.gif",
+        "evo": "Level 22",
+        "moves": [
+          {
+            "move": "Bubble",
+            "level": 1
+          },
+          {
+            "move": "Water Sport",
+            "level": 1
+          },
+          {
+            "move": "Bug Bite",
+            "level": 5
+          },
+          {
+            "move": "Spider Web",
+            "level": 8
+          },
+          {
+            "move": "Bubble Beam",
+            "level": 16
+          },
+          {
+            "move": "Bite",
+            "level": 21
+          },
+          {
+            "move": "Aqua Ring",
+            "level": 24
+          },
+          {
+            "move": "Leech Life",
+            "level": 29
+          },
+          {
+            "move": "Crunch",
+            "level": 32
+          },
+          {
+            "move": "X-Scissor",
+            "level": 37
+          },
+          {
+            "move": "Mirror Coat",
+            "level": 40
+          },
+          {
+            "move": "Waterfall",
+            "level": 45
+          },
+          {
+            "move": "Entrainment",
+            "level": 48
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Bubble",
+        "level": 1
+      },
+      {
+        "move": "Bug Bite",
+        "level": 1
+      },
+      {
+        "move": "Soak",
+        "level": 1
+      },
+      {
+        "move": "Spider Web",
+        "level": 1
+      },
+      {
+        "move": "Wide Guard",
+        "level": 1
+      },
+      {
+        "move": "Bubble Beam",
+        "level": 16
+      },
+      {
+        "move": "Bite",
+        "level": 21
+      },
+      {
+        "move": "Aqua Ring",
+        "level": 26
+      },
+      {
+        "move": "Leech Life",
+        "level": 33
+      },
+      {
+        "move": "Crunch",
+        "level": 38
+      },
+      {
+        "move": "X-Scissor",
+        "level": 45
+      },
+      {
+        "move": "Mirror Coat",
+        "level": 50
+      },
+      {
+        "move": "Waterfall",
+        "level": 57
+      },
+      {
+        "move": "Entrainment",
+        "level": 62
+      }
+    ]
+  },
+  {
+    "name": "Dhelmise",
+    "pokedex_id": 251,
+    "type1": "Ghost",
+    "type2": "Grass",
+    "bst": 517,
+    "abilities": [
+      "Heavy Metal"
+    ],
+    "stats": {
+      "hp": 70,
+      "atk": 131,
+      "def": 100,
+      "spa": 86,
+      "spd": 90,
+      "spe": 40
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/781.gif",
+    "preevo": [],
+    "moves": [
+      {
+        "move": "Absorb",
+        "level": 1
+      },
+      {
+        "move": "Astonish",
+        "level": 1
+      },
+      {
+        "move": "Growth",
+        "level": 1
+      },
+      {
+        "move": "Rapid Spin",
+        "level": 1
+      },
+      {
+        "move": "Switcheroo",
+        "level": 1
+      },
+      {
+        "move": "Mega Drain",
+        "level": 5
+      },
+      {
+        "move": "Wrap",
+        "level": 9
+      },
+      {
+        "move": "Gyro Ball",
+        "level": 14
+      },
+      {
+        "move": "Metal Sound",
+        "level": 18
+      },
+      {
+        "move": "Giga Drain",
+        "level": 23
+      },
+      {
+        "move": "Whirlpool",
+        "level": 27
+      },
+      {
+        "move": "Iron Head",
+        "level": 32
+      },
+      {
+        "move": "Shadow Ball",
+        "level": 36
+      },
+      {
+        "move": "Energy Ball",
+        "level": 41
+      },
+      {
+        "move": "Slam",
+        "level": 45
+      },
+      {
+        "move": "Heavy Slam",
+        "level": 50
+      },
+      {
+        "move": "Shadow Force",
+        "level": 54
+      },
+      {
+        "move": "Power Whip",
+        "level": 59
+      }
+    ]
+  },
+  {
+    "name": "Tyrantrum",
+    "pokedex_id": 253,
+    "type1": "Rock",
+    "type2": "Dragon",
+    "bst": 521,
+    "abilities": [
+      "Sheer Force",
+      "Rock Head"
+    ],
+    "stats": {
+      "hp": 82,
+      "atk": 121,
+      "def": 119,
+      "spa": 69,
+      "spd": 59,
+      "spe": 71
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/697.gif",
+    "preevo": [
+      {
+        "name": "Tyrunt",
+        "pokedex_id": 252,
+        "type1": "Rock",
+        "type2": "Dragon",
+        "abilities": [
+          "Sheer Force",
+          "Sturdy"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/696.gif",
+        "evo": "Level 39",
+        "moves": [
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Tail Whip",
+            "level": 1
+          },
+          {
+            "move": "Roar",
+            "level": 6
+          },
+          {
+            "move": "Stomp",
+            "level": 10
+          },
+          {
+            "move": "Bide",
+            "level": 12
+          },
+          {
+            "move": "Stealth Rock",
+            "level": 15
+          },
+          {
+            "move": "Bite",
+            "level": 17
+          },
+          {
+            "move": "Charm",
+            "level": 20
+          },
+          {
+            "move": "Ancient Power",
+            "level": 26
+          },
+          {
+            "move": "Dragon Tail",
+            "level": 30
+          },
+          {
+            "move": "Crunch",
+            "level": 34
+          },
+          {
+            "move": "Dragon Claw",
+            "level": 37
+          },
+          {
+            "move": "Thrash",
+            "level": 40
+          },
+          {
+            "move": "Earthquake",
+            "level": 44
+          },
+          {
+            "move": "Horn Drill",
+            "level": 49
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Head Smash",
+        "level": 1
+      },
+      {
+        "move": "Roar",
+        "level": 1
+      },
+      {
+        "move": "Rock Slide",
+        "level": 1
+      },
+      {
+        "move": "Stomp",
+        "level": 1
+      },
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Tail Whip",
+        "level": 1
+      },
+      {
+        "move": "Bide",
+        "level": 12
+      },
+      {
+        "move": "Stealth Rock",
+        "level": 15
+      },
+      {
+        "move": "Bite",
+        "level": 17
+      },
+      {
+        "move": "Charm",
+        "level": 20
+      },
+      {
+        "move": "Ancient Power",
+        "level": 26
+      },
+      {
+        "move": "Dragon Tail",
+        "level": 30
+      },
+      {
+        "move": "Crunch",
+        "level": 34
+      },
+      {
+        "move": "Dragon Claw",
+        "level": 37
+      },
+      {
+        "move": "Thrash",
+        "level": 42
+      },
+      {
+        "move": "Earthquake",
+        "level": 47
+      },
+      {
+        "move": "Horn Drill",
+        "level": 53
+      },
+      {
+        "move": "Giga Impact",
+        "level": 68
+      }
+    ]
+  },
+  {
+    "name": "Palossand",
+    "pokedex_id": 255,
+    "type1": "Ghost",
+    "type2": "Ground",
+    "bst": 480,
+    "abilities": [
+      "Water Absorb",
+      "Sand Veil"
+    ],
+    "stats": {
+      "hp": 85,
+      "atk": 75,
+      "def": 110,
+      "spa": 100,
+      "spd": 75,
+      "spe": 35
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/770.gif",
+    "preevo": [
+      {
+        "name": "Sandygast",
+        "pokedex_id": 254,
+        "type1": "Ghost",
+        "type2": "Ground",
+        "abilities": [
+          "Water Absorb",
+          "Sand Veil"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/769.gif",
+        "evo": "Level 42",
+        "moves": [
+          {
+            "move": "Absorb",
+            "level": 1
+          },
+          {
+            "move": "Harden",
+            "level": 1
+          },
+          {
+            "move": "Astonish",
+            "level": 5
+          },
+          {
+            "move": "Sand Attack",
+            "level": 9
+          },
+          {
+            "move": "Sand Tomb",
+            "level": 14
+          },
+          {
+            "move": "Mega Drain",
+            "level": 18
+          },
+          {
+            "move": "Bulldoze",
+            "level": 23
+          },
+          {
+            "move": "Hypnosis",
+            "level": 27
+          },
+          {
+            "move": "Iron Defense",
+            "level": 32
+          },
+          {
+            "move": "Giga Drain",
+            "level": 36
+          },
+          {
+            "move": "Shadow Ball",
+            "level": 41
+          },
+          {
+            "move": "Earth Power",
+            "level": 45
+          },
+          {
+            "move": "Recover",
+            "level": 50
+          },
+          {
+            "move": "Sandstorm",
+            "level": 54
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Absorb",
+        "level": 1
+      },
+      {
+        "move": "Astonish",
+        "level": 1
+      },
+      {
+        "move": "Harden",
+        "level": 1
+      },
+      {
+        "move": "Sand Attack",
+        "level": 1
+      },
+      {
+        "move": "Sand Tomb",
+        "level": 14
+      },
+      {
+        "move": "Mega Drain",
+        "level": 18
+      },
+      {
+        "move": "Bulldoze",
+        "level": 23
+      },
+      {
+        "move": "Hypnosis",
+        "level": 27
+      },
+      {
+        "move": "Iron Defense",
+        "level": 32
+      },
+      {
+        "move": "Giga Drain",
+        "level": 36
+      },
+      {
+        "move": "Shadow Ball",
+        "level": 41
+      },
+      {
+        "move": "Earth Power",
+        "level": 47
+      },
+      {
+        "move": "Recover",
+        "level": 54
+      },
+      {
+        "move": "Sandstorm",
+        "level": 60
+      }
+    ]
+  },
+  {
+    "name": "Frosmoth",
+    "pokedex_id": 257,
+    "type1": "Ice",
+    "type2": "Bug",
+    "bst": 475,
+    "abilities": [
+      "Shield Dust",
+      "Ice Body"
+    ],
+    "stats": {
+      "hp": 70,
+      "atk": 65,
+      "def": 60,
+      "spa": 125,
+      "spd": 90,
+      "spe": 65
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/873.gif",
+    "preevo": [
+      {
+        "name": "Snom",
+        "pokedex_id": 256,
+        "type1": "Ice",
+        "type2": "Bug",
+        "abilities": [
+          "Shield Dust",
+          "Ice Body"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/872.gif",
+        "evo": "Level up with high friendship at night",
+        "moves": [
+          {
+            "move": "Powder Snow",
+            "level": 1
+          },
+          {
+            "move": "Struggle Bug",
+            "level": 1
+          },
+          {
+            "move": "Stun Spore",
+            "level": 4
+          },
+          {
+            "move": "Bug Bite",
+            "level": 8
+          },
+          {
+            "move": "Mist",
+            "level": 12
+          },
+          {
+            "move": "Defog",
+            "level": 16
+          },
+          {
+            "move": "Feather Dance",
+            "level": 21
+          },
+          {
+            "move": "Aurora Beam",
+            "level": 24
+          },
+          {
+            "move": "Hail",
+            "level": 28
+          },
+          {
+            "move": "Bug Buzz",
+            "level": 32
+          },
+          {
+            "move": "Light Screen",
+            "level": 36
+          },
+          {
+            "move": "Blizzard",
+            "level": 40
+          },
+          {
+            "move": "Tailwind",
+            "level": 44
+          },
+          {
+            "move": "Wide Guard",
+            "level": 48
+          },
+          {
+            "move": "Quiver Dance",
+            "level": 52
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Attract",
+        "level": 1
+      },
+      {
+        "move": "Helping Hand",
+        "level": 1
+      },
+      {
+        "move": "Icy Wind",
+        "level": 1
+      },
+      {
+        "move": "Powder Snow",
+        "level": 1
+      },
+      {
+        "move": "Struggle Bug",
+        "level": 1
+      },
+      {
+        "move": "Stun Spore",
+        "level": 4
+      },
+      {
+        "move": "Bug Bite",
+        "level": 8
+      },
+      {
+        "move": "Mist",
+        "level": 12
+      },
+      {
+        "move": "Defog",
+        "level": 16
+      },
+      {
+        "move": "Feather Dance",
+        "level": 21
+      },
+      {
+        "move": "Aurora Beam",
+        "level": 24
+      },
+      {
+        "move": "Hail",
+        "level": 28
+      },
+      {
+        "move": "Bug Buzz",
+        "level": 32
+      },
+      {
+        "move": "Light Screen",
+        "level": 36
+      },
+      {
+        "move": "Blizzard",
+        "level": 40
+      },
+      {
+        "move": "Tailwind",
+        "level": 44
+      },
+      {
+        "move": "Wide Guard",
+        "level": 48
+      },
+      {
+        "move": "Quiver Dance",
+        "level": 52
+      }
+    ]
+  },
+  {
+    "name": "Basculegion",
+    "pokedex_id": 258,
+    "type1": "Water",
+    "type2": "Ghost",
+    "bst": 530,
+    "abilities": [
+      "Swift Swim",
+      "Adaptability"
+    ],
+    "stats": {
+      "hp": 120,
+      "atk": 112,
+      "def": 65,
+      "spa": 80,
+      "spd": 75,
+      "spe": 78
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/902.gif",
+    "preevo": [
+      {
+        "name": "Basculin",
+        "pokedex_id": 550,
+        "type1": "Water",
+        "abilities": [
+          "Reckless",
+          "Adaptability"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/550.gif",
+        "evo": "Level up at night holding Reaper Cloth (male)",
+        "moves": [
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Water Gun",
+            "level": 1
+          },
+          {
+            "move": "Uproar",
+            "level": 4
+          },
+          {
+            "move": "Headbutt",
+            "level": 7
+          },
+          {
+            "move": "Bite",
+            "level": 10
+          },
+          {
+            "move": "Aqua Jet",
+            "level": 13
+          },
+          {
+            "move": "Chip Away",
+            "level": 16
+          },
+          {
+            "move": "Take Down",
+            "level": 20
+          },
+          {
+            "move": "Crunch",
+            "level": 24
+          },
+          {
+            "move": "Aqua Tail",
+            "level": 28
+          },
+          {
+            "move": "Soak",
+            "level": 32
+          },
+          {
+            "move": "Double-Edge",
+            "level": 36
+          },
+          {
+            "move": "Scary Face",
+            "level": 41
+          },
+          {
+            "move": "Flail",
+            "level": 46
+          },
+          {
+            "move": "Final Gambit",
+            "level": 51
+          },
+          {
+            "move": "Thrash",
+            "level": 56
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Shadow Force",
+        "level": 1
+      },
+      {
+        "move": "Shadow Ball",
+        "level": 1
+      },
+      {
+        "move": "Tail Whip",
+        "level": 1
+      },
+      {
+        "move": "Water Gun",
+        "level": 1
+      },
+      {
+        "move": "Tackle",
+        "level": 4
+      },
+      {
+        "move": "Flail",
+        "level": 8
+      },
+      {
+        "move": "Aqua Jet",
+        "level": 12
+      },
+      {
+        "move": "Bite",
+        "level": 16
+      },
+      {
+        "move": "Scary Face",
+        "level": 20
+      },
+      {
+        "move": "Headbutt",
+        "level": 24
+      },
+      {
+        "move": "Soak",
+        "level": 28
+      },
+      {
+        "move": "Crunch",
+        "level": 32
+      },
+      {
+        "move": "Take Down",
+        "level": 36
+      },
+      {
+        "move": "Uproar",
+        "level": 40
+      },
+      {
+        "move": "Aqua Tail",
+        "level": 44
+      },
+      {
+        "move": "Thrash",
+        "level": 48
+      },
+      {
+        "move": "Double-Edge",
+        "level": 52
+      },
+      {
+        "move": "Head Smash",
+        "level": 56
+      }
+    ]
+  },
+  {
+    "name": "Basculegion (Female)",
+    "pokedex_id": 258,
+    "type1": "Water",
+    "type2": "Ghost",
+    "bst": 530,
+    "abilities": [
+      "Swift Swim",
+      "Adaptability"
+    ],
+    "stats": {
+      "hp": 120,
+      "atk": 92,
+      "def": 65,
+      "spa": 100,
+      "spd": 75,
+      "spe": 78
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/10248.gif",
+    "preevo": [
+      {
+        "name": "Basculin",
+        "pokedex_id": 550,
+        "type1": "Water",
+        "abilities": [
+          "Reckless",
+          "Adaptability"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/550.gif",
+        "evo": "Level up at night holding Reaper Cloth (female)",
+        "moves": [
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Water Gun",
+            "level": 1
+          },
+          {
+            "move": "Uproar",
+            "level": 4
+          },
+          {
+            "move": "Headbutt",
+            "level": 7
+          },
+          {
+            "move": "Bite",
+            "level": 10
+          },
+          {
+            "move": "Aqua Jet",
+            "level": 13
+          },
+          {
+            "move": "Chip Away",
+            "level": 16
+          },
+          {
+            "move": "Take Down",
+            "level": 20
+          },
+          {
+            "move": "Crunch",
+            "level": 24
+          },
+          {
+            "move": "Aqua Tail",
+            "level": 28
+          },
+          {
+            "move": "Soak",
+            "level": 32
+          },
+          {
+            "move": "Double-Edge",
+            "level": 36
+          },
+          {
+            "move": "Scary Face",
+            "level": 41
+          },
+          {
+            "move": "Flail",
+            "level": 46
+          },
+          {
+            "move": "Final Gambit",
+            "level": 51
+          },
+          {
+            "move": "Thrash",
+            "level": 56
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Shadow Force",
+        "level": 1
+      },
+      {
+        "move": "Shadow Ball",
+        "level": 1
+      },
+      {
+        "move": "Tail Whip",
+        "level": 1
+      },
+      {
+        "move": "Water Gun",
+        "level": 1
+      },
+      {
+        "move": "Tackle",
+        "level": 4
+      },
+      {
+        "move": "Flail",
+        "level": 8
+      },
+      {
+        "move": "Aqua Jet",
+        "level": 12
+      },
+      {
+        "move": "Bite",
+        "level": 16
+      },
+      {
+        "move": "Scary Face",
+        "level": 20
+      },
+      {
+        "move": "Headbutt",
+        "level": 24
+      },
+      {
+        "move": "Soak",
+        "level": 28
+      },
+      {
+        "move": "Crunch",
+        "level": 32
+      },
+      {
+        "move": "Take Down",
+        "level": 36
+      },
+      {
+        "move": "Uproar",
+        "level": 40
+      },
+      {
+        "move": "Aqua Tail",
+        "level": 44
+      },
+      {
+        "move": "Thrash",
+        "level": 48
+      },
+      {
+        "move": "Double-Edge",
+        "level": 52
+      },
+      {
+        "move": "Head Smash",
+        "level": 56
+      }
+    ],
+    "form_of": "Basculegion"
+  },
+  {
+    "name": "Clawitzer",
+    "pokedex_id": 260,
+    "type1": "Water",
+    "bst": 500,
+    "abilities": [
+      "Technician"
+    ],
+    "stats": {
+      "hp": 71,
+      "atk": 73,
+      "def": 88,
+      "spa": 120,
+      "spd": 89,
+      "spe": 59
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/693.gif",
+    "preevo": [
+      {
+        "name": "Clauncher",
+        "pokedex_id": 259,
+        "type1": "Water",
+        "abilities": [
+          "Technician"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/692.gif",
+        "evo": "Level 37",
+        "moves": [
+          {
+            "move": "Splash",
+            "level": 1
+          },
+          {
+            "move": "Water Gun",
+            "level": 1
+          },
+          {
+            "move": "Water Sport",
+            "level": 7
+          },
+          {
+            "move": "Vise Grip",
+            "level": 9
+          },
+          {
+            "move": "Bubble",
+            "level": 12
+          },
+          {
+            "move": "Flail",
+            "level": 16
+          },
+          {
+            "move": "Bubble Beam",
+            "level": 20
+          },
+          {
+            "move": "Swords Dance",
+            "level": 25
+          },
+          {
+            "move": "Crabhammer",
+            "level": 30
+          },
+          {
+            "move": "Water Pulse",
+            "level": 34
+          },
+          {
+            "move": "Smack Down",
+            "level": 39
+          },
+          {
+            "move": "Aqua Jet",
+            "level": 43
+          },
+          {
+            "move": "Muddy Water",
+            "level": 48
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Aura Sphere",
+        "level": 1
+      },
+      {
+        "move": "Dark Pulse",
+        "level": 1
+      },
+      {
+        "move": "Dragon Pulse",
+        "level": 1
+      },
+      {
+        "move": "Heal Pulse",
+        "level": 1
+      },
+      {
+        "move": "Splash",
+        "level": 1
+      },
+      {
+        "move": "Vise Grip",
+        "level": 1
+      },
+      {
+        "move": "Water Gun",
+        "level": 1
+      },
+      {
+        "move": "Water Sport",
+        "level": 1
+      },
+      {
+        "move": "Bubble",
+        "level": 12
+      },
+      {
+        "move": "Flail",
+        "level": 16
+      },
+      {
+        "move": "Bubble Beam",
+        "level": 20
+      },
+      {
+        "move": "Swords Dance",
+        "level": 25
+      },
+      {
+        "move": "Crabhammer",
+        "level": 30
+      },
+      {
+        "move": "Water Pulse",
+        "level": 34
+      },
+      {
+        "move": "Smack Down",
+        "level": 42
+      },
+      {
+        "move": "Aqua Jet",
+        "level": 49
+      },
+      {
+        "move": "Muddy Water",
+        "level": 57
+      }
+    ]
+  },
+  {
+    "name": "Pyroar",
+    "pokedex_id": 383,
+    "type1": "Fire",
+    "type2": "Normal",
+    "bst": 507,
+    "abilities": [
+      "Rivalry",
+      "Unnerve"
+    ],
+    "stats": {
+      "hp": 86,
+      "atk": 68,
+      "def": 72,
+      "spa": 109,
+      "spd": 66,
+      "spe": 106
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/668.gif",
+    "preevo": [
+      {
+        "name": "Litleo",
+        "pokedex_id": 382,
+        "type1": "Fire",
+        "type2": "Normal",
+        "abilities": [
+          "Rivalry",
+          "Unnerve"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/667.gif",
+        "evo": "Level 35",
+        "moves": [
+          {
+            "move": "Leer",
+            "level": 1
+          },
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Ember",
+            "level": 5
+          },
+          {
+            "move": "Work Up",
+            "level": 8
+          },
+          {
+            "move": "Headbutt",
+            "level": 11
+          },
+          {
+            "move": "Growl",
+            "level": 15
+          },
+          {
+            "move": "Take Down",
+            "level": 20
+          },
+          {
+            "move": "Fire Fang",
+            "level": 23
+          },
+          {
+            "move": "Endeavor",
+            "level": 28
+          },
+          {
+            "move": "Echoed Voice",
+            "level": 33
+          },
+          {
+            "move": "Flamethrower",
+            "level": 36
+          },
+          {
+            "move": "Crunch",
+            "level": 39
+          },
+          {
+            "move": "Hyper Voice",
+            "level": 43
+          },
+          {
+            "move": "Incinerate",
+            "level": 46
+          },
+          {
+            "move": "Overheat",
+            "level": 50
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Ember",
+        "level": 1
+      },
+      {
+        "move": "Hyper Beam",
+        "level": 1
+      },
+      {
+        "move": "Leer",
+        "level": 1
+      },
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Work Up",
+        "level": 1
+      },
+      {
+        "move": "Headbutt",
+        "level": 11
+      },
+      {
+        "move": "Growl",
+        "level": 15
+      },
+      {
+        "move": "Take Down",
+        "level": 20
+      },
+      {
+        "move": "Fire Fang",
+        "level": 23
+      },
+      {
+        "move": "Endeavor",
+        "level": 28
+      },
+      {
+        "move": "Echoed Voice",
+        "level": 33
+      },
+      {
+        "move": "Flamethrower",
+        "level": 38
+      },
+      {
+        "move": "Crunch",
+        "level": 42
+      },
+      {
+        "move": "Hyper Voice",
+        "level": 48
+      },
+      {
+        "move": "Incinerate",
+        "level": 51
+      },
+      {
+        "move": "Overheat",
+        "level": 57
+      }
+    ]
+  },
+  {
+    "name": "Pangoro",
+    "pokedex_id": 385,
+    "type1": "Fighting",
+    "type2": "Dark",
+    "bst": 495,
+    "abilities": [
+      "Iron Fist",
+      "Mold Breaker"
+    ],
+    "stats": {
+      "hp": 95,
+      "atk": 124,
+      "def": 78,
+      "spa": 69,
+      "spd": 71,
+      "spe": 58
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/675.gif",
+    "preevo": [
+      {
+        "name": "Pancham",
+        "pokedex_id": 384,
+        "type1": "Fighting",
+        "abilities": [
+          "Iron Fist",
+          "Mold Breaker"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/674.gif",
+        "evo": "Level 32",
+        "moves": [
+          {
+            "move": "Leer",
+            "level": 1
+          },
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Arm Thrust",
+            "level": 7
+          },
+          {
+            "move": "Work Up",
+            "level": 10
+          },
+          {
+            "move": "Karate Chop",
+            "level": 12
+          },
+          {
+            "move": "Comet Punch",
+            "level": 15
+          },
+          {
+            "move": "Slash",
+            "level": 20
+          },
+          {
+            "move": "Circle Throw",
+            "level": 25
+          },
+          {
+            "move": "Vital Throw",
+            "level": 27
+          },
+          {
+            "move": "Body Slam",
+            "level": 33
+          },
+          {
+            "move": "Crunch",
+            "level": 39
+          },
+          {
+            "move": "Entrainment",
+            "level": 42
+          },
+          {
+            "move": "U-turn",
+            "level": 45
+          },
+          {
+            "move": "Sky Uppercut",
+            "level": 48
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Arm Thrust",
+        "level": 1
+      },
+      {
+        "move": "Bullet Punch",
+        "level": 1
+      },
+      {
+        "move": "Entrainment",
+        "level": 1
+      },
+      {
+        "move": "Hammer Arm",
+        "level": 1
+      },
+      {
+        "move": "Leer",
+        "level": 1
+      },
+      {
+        "move": "Low Sweep",
+        "level": 1
+      },
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Work Up",
+        "level": 1
+      },
+      {
+        "move": "Karate Chop",
+        "level": 12
+      },
+      {
+        "move": "Comet Punch",
+        "level": 15
+      },
+      {
+        "move": "Slash",
+        "level": 20
+      },
+      {
+        "move": "Circle Throw",
+        "level": 25
+      },
+      {
+        "move": "Vital Throw",
+        "level": 27
+      },
+      {
+        "move": "Body Slam",
+        "level": 35
+      },
+      {
+        "move": "Crunch",
+        "level": 42
+      },
+      {
+        "move": "U-turn",
+        "level": 48
+      },
+      {
+        "move": "Sky Uppercut",
+        "level": 52
+      },
+      {
+        "move": "Taunt",
+        "level": 65
+      }
+    ]
+  },
+  {
+    "name": "Talonflame",
+    "pokedex_id": 389,
+    "type1": "Fire",
+    "type2": "Flying",
+    "bst": 499,
+    "abilities": [
+      "Flame Body",
+      "Quick Feet"
+    ],
+    "stats": {
+      "hp": 78,
+      "atk": 81,
+      "def": 71,
+      "spa": 74,
+      "spd": 69,
+      "spe": 126
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/663.gif",
+    "preevo": [
+      {
+        "name": "Fletchling",
+        "pokedex_id": 387,
+        "type1": "Normal",
+        "type2": "Flying",
+        "abilities": [
+          "Big Pecks",
+          "Quick Feet"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/661.gif",
+        "evo": "Level 17",
+        "moves": [
+          {
+            "move": "Growl",
+            "level": 1
+          },
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Quick Attack",
+            "level": 6
+          },
+          {
+            "move": "Peck",
+            "level": 10
+          },
+          {
+            "move": "Agility",
+            "level": 13
+          },
+          {
+            "move": "Flail",
+            "level": 16
+          },
+          {
+            "move": "Roost",
+            "level": 21
+          },
+          {
+            "move": "Razor Wind",
+            "level": 25
+          },
+          {
+            "move": "Natural Gift",
+            "level": 29
+          },
+          {
+            "move": "Flame Charge",
+            "level": 34
+          },
+          {
+            "move": "Acrobatics",
+            "level": 39
+          },
+          {
+            "move": "Me First",
+            "level": 41
+          },
+          {
+            "move": "Tailwind",
+            "level": 45
+          },
+          {
+            "move": "Steel Wing",
+            "level": 48
+          }
+        ]
+      },
+      {
+        "name": "Fletchinder",
+        "pokedex_id": 388,
+        "type1": "Fire",
+        "type2": "Flying",
+        "abilities": [
+          "Flame Body",
+          "Quick Feet"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/662.gif",
+        "evo": "Level 35",
+        "moves": [
+          {
+            "move": "Ember",
+            "level": 1
+          },
+          {
+            "move": "Growl",
+            "level": 1
+          },
+          {
+            "move": "Quick Attack",
+            "level": 1
+          },
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Peck",
+            "level": 10
+          },
+          {
+            "move": "Agility",
+            "level": 13
+          },
+          {
+            "move": "Flail",
+            "level": 16
+          },
+          {
+            "move": "Roost",
+            "level": 25
+          },
+          {
+            "move": "Razor Wind",
+            "level": 27
+          },
+          {
+            "move": "Natural Gift",
+            "level": 31
+          },
+          {
+            "move": "Flame Charge",
+            "level": 38
+          },
+          {
+            "move": "Acrobatics",
+            "level": 42
+          },
+          {
+            "move": "Me First",
+            "level": 46
+          },
+          {
+            "move": "Tailwind",
+            "level": 51
+          },
+          {
+            "move": "Steel Wing",
+            "level": 55
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Brave Bird",
+        "level": 1
+      },
+      {
+        "move": "Ember",
+        "level": 1
+      },
+      {
+        "move": "Flare Blitz",
+        "level": 1
+      },
+      {
+        "move": "Growl",
+        "level": 1
+      },
+      {
+        "move": "Peck",
+        "level": 1
+      },
+      {
+        "move": "Quick Attack",
+        "level": 1
+      },
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Agility",
+        "level": 13
+      },
+      {
+        "move": "Flail",
+        "level": 16
+      },
+      {
+        "move": "Roost",
+        "level": 25
+      },
+      {
+        "move": "Razor Wind",
+        "level": 27
+      },
+      {
+        "move": "Natural Gift",
+        "level": 31
+      },
+      {
+        "move": "Flame Charge",
+        "level": 39
+      },
+      {
+        "move": "Acrobatics",
+        "level": 44
+      },
+      {
+        "move": "Me First",
+        "level": 49
+      },
+      {
+        "move": "Tailwind",
+        "level": 55
+      },
+      {
+        "move": "Steel Wing",
+        "level": 60
+      }
+    ]
+  },
+  {
+    "name": "Shiinotic",
+    "pokedex_id": 391,
+    "type1": "Grass",
+    "type2": "Fairy",
+    "bst": 405,
+    "abilities": [
+      "Illuminate",
+      "Effect Spore"
+    ],
+    "stats": {
+      "hp": 60,
+      "atk": 45,
+      "def": 80,
+      "spa": 90,
+      "spd": 100,
+      "spe": 30
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/756.gif",
+    "preevo": [
+      {
+        "name": "Morelull",
+        "pokedex_id": 390,
+        "type1": "Grass",
+        "type2": "Fairy",
+        "abilities": [
+          "Illuminate",
+          "Effect Spore"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/755.gif",
+        "evo": "Level 24",
+        "moves": [
+          {
+            "move": "Absorb",
+            "level": 1
+          },
+          {
+            "move": "Astonish",
+            "level": 4
+          },
+          {
+            "move": "Flash",
+            "level": 8
+          },
+          {
+            "move": "Moonlight",
+            "level": 11
+          },
+          {
+            "move": "Mega Drain",
+            "level": 15
+          },
+          {
+            "move": "Sleep Powder",
+            "level": 18
+          },
+          {
+            "move": "Ingrain",
+            "level": 22
+          },
+          {
+            "move": "Confuse Ray",
+            "level": 25
+          },
+          {
+            "move": "Giga Drain",
+            "level": 29
+          },
+          {
+            "move": "Spore",
+            "level": 36
+          },
+          {
+            "move": "Moonblast",
+            "level": 39
+          },
+          {
+            "move": "Dream Eater",
+            "level": 43
+          },
+          {
+            "move": "Follow Me",
+            "level": 46
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Absorb",
+        "level": 1
+      },
+      {
+        "move": "Astonish",
+        "level": 1
+      },
+      {
+        "move": "Flash",
+        "level": 1
+      },
+      {
+        "move": "Ingrain",
+        "level": 1
+      },
+      {
+        "move": "Moonlight",
+        "level": 11
+      },
+      {
+        "move": "Mega Drain",
+        "level": 15
+      },
+      {
+        "move": "Sleep Powder",
+        "level": 18
+      },
+      {
+        "move": "Confuse Ray",
+        "level": 26
+      },
+      {
+        "move": "Giga Drain",
+        "level": 31
+      },
+      {
+        "move": "Spore",
+        "level": 40
+      },
+      {
+        "move": "Moonblast",
+        "level": 44
+      },
+      {
+        "move": "Dream Eater",
+        "level": 49
+      },
+      {
+        "move": "Follow Me",
+        "level": 53
+      }
+    ]
+  },
+  {
+    "name": "Ribombee",
+    "pokedex_id": 393,
+    "type1": "Bug",
+    "type2": "Fairy",
+    "bst": 464,
+    "abilities": [
+      "Honey Gather",
+      "Shield Dust"
+    ],
+    "stats": {
+      "hp": 60,
+      "atk": 55,
+      "def": 60,
+      "spa": 95,
+      "spd": 70,
+      "spe": 124
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/743.gif",
+    "preevo": [
+      {
+        "name": "Cutiefly",
+        "pokedex_id": 392,
+        "type1": "Bug",
+        "type2": "Fairy",
+        "abilities": [
+          "Honey Gather",
+          "Shield Dust"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/742.gif",
+        "evo": "Level 25",
+        "moves": [
+          {
+            "move": "Absorb",
+            "level": 1
+          },
+          {
+            "move": "Disarming Voice",
+            "level": 4
+          },
+          {
+            "move": "Stun Spore",
+            "level": 7
+          },
+          {
+            "move": "Struggle Bug",
+            "level": 10
+          },
+          {
+            "move": "Silver Wind",
+            "level": 13
+          },
+          {
+            "move": "Draining Kiss",
+            "level": 16
+          },
+          {
+            "move": "Sweet Scent",
+            "level": 21
+          },
+          {
+            "move": "Bug Buzz",
+            "level": 26
+          },
+          {
+            "move": "Dazzling Gleam",
+            "level": 31
+          },
+          {
+            "move": "Aromatherapy",
+            "level": 36
+          },
+          {
+            "move": "Quiver Dance",
+            "level": 41
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Absorb",
+        "level": 1
+      },
+      {
+        "move": "Disarming Voice",
+        "level": 1
+      },
+      {
+        "move": "Bug Buzz",
+        "level": 1
+      },
+      {
+        "move": "Struggle Bug",
+        "level": 1
+      },
+      {
+        "move": "Stun Spore",
+        "level": 1
+      },
+      {
+        "move": "Silver Wind",
+        "level": 13
+      },
+      {
+        "move": "Draining Kiss",
+        "level": 16
+      },
+      {
+        "move": "Sweet Scent",
+        "level": 21
+      },
+      {
+        "move": "Dazzling Gleam",
+        "level": 35
+      },
+      {
+        "move": "Aromatherapy",
+        "level": 42
+      },
+      {
+        "move": "Quiver Dance",
+        "level": 49
+      }
+    ]
+  },
+  {
+    "name": "Carbink",
+    "pokedex_id": 394,
+    "type1": "Rock",
+    "type2": "Fairy",
+    "bst": 500,
+    "abilities": [
+      "Clear Body",
+      "Sturdy"
+    ],
+    "stats": {
+      "hp": 50,
+      "atk": 50,
+      "def": 150,
+      "spa": 50,
+      "spd": 150,
+      "spe": 50
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/703.gif",
+    "preevo": [],
+    "moves": [
+      {
+        "move": "Harden",
+        "level": 1
+      },
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Rock Throw",
+        "level": 5
+      },
+      {
+        "move": "Sharpen",
+        "level": 8
+      },
+      {
+        "move": "Smack Down",
+        "level": 12
+      },
+      {
+        "move": "Reflect",
+        "level": 18
+      },
+      {
+        "move": "Stealth Rock",
+        "level": 21
+      },
+      {
+        "move": "Guard Split",
+        "level": 27
+      },
+      {
+        "move": "Ancient Power",
+        "level": 31
+      },
+      {
+        "move": "Flail",
+        "level": 35
+      },
+      {
+        "move": "Skill Swap",
+        "level": 40
+      },
+      {
+        "move": "Power Gem",
+        "level": 46
+      },
+      {
+        "move": "Stone Edge",
+        "level": 49
+      },
+      {
+        "move": "Moonblast",
+        "level": 50
+      },
+      {
+        "move": "Light Screen",
+        "level": 60
+      },
+      {
+        "move": "Safeguard",
+        "level": 70
+      }
+    ]
+  },
+  {
+    "name": "Komala",
+    "pokedex_id": 395,
+    "type1": "Normal",
+    "bst": 480,
+    "abilities": [
+      "Natural Cure"
+    ],
+    "stats": {
+      "hp": 65,
+      "atk": 115,
+      "def": 65,
+      "spa": 75,
+      "spd": 95,
+      "spe": 65
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/775.gif",
+    "preevo": [],
+    "moves": [
+      {
+        "move": "Defense Curl",
+        "level": 1
+      },
+      {
+        "move": "Rollout",
+        "level": 1
+      },
+      {
+        "move": "Spit Up",
+        "level": 6
+      },
+      {
+        "move": "Stockpile",
+        "level": 6
+      },
+      {
+        "move": "Swallow",
+        "level": 6
+      },
+      {
+        "move": "Rapid Spin",
+        "level": 11
+      },
+      {
+        "move": "Yawn",
+        "level": 16
+      },
+      {
+        "move": "Slam",
+        "level": 21
+      },
+      {
+        "move": "Flail",
+        "level": 26
+      },
+      {
+        "move": "Sucker Punch",
+        "level": 31
+      },
+      {
+        "move": "Psych Up",
+        "level": 36
+      },
+      {
+        "move": "Wood Hammer",
+        "level": 41
+      },
+      {
+        "move": "Thrash",
+        "level": 46
+      }
+    ]
+  },
+  {
+    "name": "Trevenant",
+    "pokedex_id": 484,
+    "type1": "Ghost",
+    "type2": "Grass",
+    "bst": 474,
+    "abilities": [
+      "Natural Cure",
+      "Frisk"
+    ],
+    "stats": {
+      "hp": 85,
+      "atk": 110,
+      "def": 76,
+      "spa": 65,
+      "spd": 82,
+      "spe": 56
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/709.gif",
+    "preevo": [
+      {
+        "name": "Phantump",
+        "pokedex_id": 483,
+        "type1": "Ghost",
+        "type2": "Grass",
+        "abilities": [
+          "Natural Cure",
+          "Frisk"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/708.gif",
+        "evo": "Use Dusk Stone",
+        "moves": [
+          {
+            "move": "Confuse Ray",
+            "level": 1
+          },
+          {
+            "move": "Tackle",
+            "level": 1
+          },
+          {
+            "move": "Astonish",
+            "level": 5
+          },
+          {
+            "move": "Growth",
+            "level": 8
+          },
+          {
+            "move": "Ingrain",
+            "level": 13
+          },
+          {
+            "move": "Feint Attack",
+            "level": 19
+          },
+          {
+            "move": "Leech Seed",
+            "level": 23
+          },
+          {
+            "move": "Curse",
+            "level": 28
+          },
+          {
+            "move": "Will-O-Wisp",
+            "level": 31
+          },
+          {
+            "move": "Destiny Bond",
+            "level": 39
+          },
+          {
+            "move": "Shadow Force",
+            "level": 45
+          },
+          {
+            "move": "Wood Hammer",
+            "level": 49
+          },
+          {
+            "move": "Horn Leech",
+            "level": 54
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Astonish",
+        "level": 1
+      },
+      {
+        "move": "Confuse Ray",
+        "level": 1
+      },
+      {
+        "move": "Growth",
+        "level": 1
+      },
+      {
+        "move": "Horn Leech",
+        "level": 1
+      },
+      {
+        "move": "Shadow Claw",
+        "level": 1
+      },
+      {
+        "move": "Tackle",
+        "level": 1
+      },
+      {
+        "move": "Ingrain",
+        "level": 13
+      },
+      {
+        "move": "Feint Attack",
+        "level": 19
+      },
+      {
+        "move": "Leech Seed",
+        "level": 23
+      },
+      {
+        "move": "Curse",
+        "level": 28
+      },
+      {
+        "move": "Will-O-Wisp",
+        "level": 31
+      },
+      {
+        "move": "Destiny Bond",
+        "level": 39
+      },
+      {
+        "move": "Shadow Force",
+        "level": 45
+      },
+      {
+        "move": "Wood Hammer",
+        "level": 49
+      }
+    ]
+  },
+  {
+    "name": "Crabominable",
+    "pokedex_id": 491,
+    "type1": "Fighting",
+    "type2": "Ice",
+    "bst": 478,
+    "abilities": [
+      "Hyper Cutter",
+      "Iron Fist"
+    ],
+    "stats": {
+      "hp": 97,
+      "atk": 132,
+      "def": 77,
+      "spa": 62,
+      "spd": 67,
+      "spe": 43
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/740.gif",
+    "preevo": [
+      {
+        "name": "Crabrawler",
+        "pokedex_id": 487,
+        "type1": "Fighting",
+        "abilities": [
+          "Hyper Cutter",
+          "Iron Fist"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/739.gif",
+        "evo": "Level up during the day holding Never-Melt Ice",
+        "moves": [
+          {
+            "move": "Bubble",
+            "level": 1
+          },
+          {
+            "move": "Rock Smash",
+            "level": 5
+          },
+          {
+            "move": "Leer",
+            "level": 9
+          },
+          {
+            "move": "Pursuit",
+            "level": 13
+          },
+          {
+            "move": "Bubble Beam",
+            "level": 17
+          },
+          {
+            "move": "Force Palm",
+            "level": 22
+          },
+          {
+            "move": "Dizzy Punch",
+            "level": 25
+          },
+          {
+            "move": "Payback",
+            "level": 29
+          },
+          {
+            "move": "Reversal",
+            "level": 33
+          },
+          {
+            "move": "Crabhammer",
+            "level": 37
+          },
+          {
+            "move": "Iron Defense",
+            "level": 42
+          },
+          {
+            "move": "Dynamic Punch",
+            "level": 45
+          },
+          {
+            "move": "Close Combat",
+            "level": 49
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Bubble",
+        "level": 1
+      },
+      {
+        "move": "Ice Punch",
+        "level": 1
+      },
+      {
+        "move": "Leer",
+        "level": 1
+      },
+      {
+        "move": "Pursuit",
+        "level": 1
+      },
+      {
+        "move": "Rock Smash",
+        "level": 1
+      },
+      {
+        "move": "Bubble Beam",
+        "level": 17
+      },
+      {
+        "move": "Force Palm",
+        "level": 22
+      },
+      {
+        "move": "Dizzy Punch",
+        "level": 25
+      },
+      {
+        "move": "Avalanche",
+        "level": 29
+      },
+      {
+        "move": "Reversal",
+        "level": 33
+      },
+      {
+        "move": "Icicle Crash",
+        "level": 37
+      },
+      {
+        "move": "Iron Defense",
+        "level": 42
+      },
+      {
+        "move": "Dynamic Punch",
+        "level": 45
+      },
+      {
+        "move": "Close Combat",
+        "level": 49
+      }
+    ]
+  },
+  {
+    "name": "Sandaconda",
+    "pokedex_id": 490,
+    "type1": "Ground",
+    "bst": 510,
+    "abilities": [
+      "Sand Veil",
+      "Shed Skin"
+    ],
+    "stats": {
+      "hp": 72,
+      "atk": 107,
+      "def": 125,
+      "spa": 65,
+      "spd": 70,
+      "spe": 71
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/844.gif",
+    "preevo": [
+      {
+        "name": "Silicobra",
+        "pokedex_id": 489,
+        "type1": "Ground",
+        "abilities": [
+          "Sand Veil",
+          "Shed Skin"
+        ],
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/843.gif",
+        "evo": "Level 36",
+        "moves": [
+          {
+            "move": "Sand Attack",
+            "level": 1
+          },
+          {
+            "move": "Wrap",
+            "level": 1
+          },
+          {
+            "move": "Minimize",
+            "level": 5
+          },
+          {
+            "move": "Feint Attack",
+            "level": 10
+          },
+          {
+            "move": "Bulldoze",
+            "level": 15
+          },
+          {
+            "move": "Headbutt",
+            "level": 20
+          },
+          {
+            "move": "Glare",
+            "level": 25
+          },
+          {
+            "move": "Dig",
+            "level": 30
+          },
+          {
+            "move": "Sandstorm",
+            "level": 35
+          },
+          {
+            "move": "Slam",
+            "level": 40
+          },
+          {
+            "move": "Coil",
+            "level": 45
+          },
+          {
+            "move": "Sand Tomb",
+            "level": 50
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "move": "Feint Attack",
+        "level": 1
+      },
+      {
+        "move": "Minimize",
+        "level": 1
+      },
+      {
+        "move": "Sand Attack",
+        "level": 1
+      },
+      {
+        "move": "Wrap",
+        "level": 1
+      },
+      {
+        "move": "Bulldoze",
+        "level": 15
+      },
+      {
+        "move": "Headbutt",
+        "level": 20
+      },
+      {
+        "move": "Glare",
+        "level": 25
+      },
+      {
+        "move": "Dig",
+        "level": 30
+      },
+      {
+        "move": "Sandstorm",
+        "level": 35
+      },
+      {
+        "move": "Slam",
+        "level": 42
+      },
+      {
+        "move": "Coil",
+        "level": 49
+      },
+      {
+        "move": "Sand Tomb",
+        "level": 51
+      }
+    ]
+  },
+  {
+    "name": "Zeraora",
+    "pokedex_id": 494,
+    "type1": "Electric",
+    "bst": 600,
+    "abilities": [
+      "Volt Absorb"
+    ],
+    "stats": {
+      "hp": 88,
+      "atk": 112,
+      "def": 75,
+      "spa": 102,
+      "spd": 80,
+      "spe": 143
+    },
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/807.gif",
+    "preevo": [],
+    "moves": [
+      {
+        "move": "Scratch",
+        "level": 1
+      },
+      {
+        "move": "Spark",
+        "level": 1
+      },
+      {
+        "move": "Hone Claws",
+        "level": 5
+      },
+      {
+        "move": "Quick Attack",
+        "level": 8
+      },
+      {
+        "move": "Fury Swipes",
+        "level": 12
+      },
+      {
+        "move": "Volt Switch",
+        "level": 15
+      },
+      {
+        "move": "Snarl",
+        "level": 19
+      },
+      {
+        "move": "Fake Out",
+        "level": 22
+      },
+      {
+        "move": "Charge",
+        "level": 26
+      },
+      {
+        "move": "Thunder Punch",
+        "level": 29
+      },
+      {
+        "move": "Slash",
+        "level": 33
+      },
+      {
+        "move": "Wild Charge",
+        "level": 36
+      },
+      {
+        "move": "Quick Guard",
+        "level": 40
+      },
+      {
+        "move": "Close Combat",
+        "level": 47
+      },
+      {
+        "move": "Discharge",
+        "level": 50
+      }
+    ]
+  }
+]
