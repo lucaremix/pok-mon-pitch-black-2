@@ -662,12 +662,22 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&
 
 // "Deoxys (Attack)" -> "deoxys-attack"
 const SD = "https://play.pokemonshowdown.com/sprites/gen5ani/";
-function spriteURL(name, custom) { return custom || (SD + spriteName(name) + ".gif"); }
+function spriteURL(name) { return SD + spriteName(name) + ".gif"; }
+// if the Showdown sprite is missing, try the "sprite" link from the JSON, then the placeholder
+function spriteFail(img) {
+  const fb = img.dataset.fb;
+  if (fb) { img.dataset.fb = ""; img.src = fb; return; }
+  img.onerror = null; img.src = PLACEHOLDER;
+}
+// Showdown ids: "Kommo-o" -> kommoo, "Basculegion (Female)" -> basculegion-f
+const FORME_IDS = { female: "f", male: "" };
 function spriteName(name) {
-  let s = name.toLowerCase();
-  const m = s.match(/^(.*?)\s*\((.*)\)$/);
-  if (m) s = m[1] + "-" + m[2];
-  return s.replace(/[^a-z0-9-]/g, "");
+  const m = String(name).match(/^(.*?)\s*\((.*)\)$/);
+  const base = (m ? m[1] : name).toLowerCase().replace(/[^a-z0-9]/g, "");
+  if (!m) return base;
+  const f = m[2].toLowerCase();
+  const id = f in FORME_IDS ? FORME_IDS[f] : f.replace(/[^a-z0-9]/g, "");
+  return id ? base + "-" + id : base;
 }
 
 // Every sprite is scaled so its longest side equals the same box: all Pokémon show at one size.
@@ -862,8 +872,8 @@ function evoNodeHTML(n, k, active) {
   const [c1, c2] = colorsOf(n.types);
   return '<div class="evo-node' + (active ? " active" : "") + '" data-k="' + k + '" style="--c1:' + c1 + ";--c2:" + c2 + '">' +
     '<button class="evo-pick" type="button" aria-pressed="' + (active ? "true" : "false") + '">' +
-      '<span class="thumb"><img data-box="64" src="' + esc(spriteURL(n.name, n.sprite)) + '" alt="" ' +
-        'loading="lazy" onload="fitSprite(this)" onerror="this.onerror=null;this.src=PLACEHOLDER"></span>' +
+      '<span class="thumb"><img data-box="64" src="' + esc(spriteURL(n.name)) + '" data-fb="' + esc(n.sprite || "") + '" alt="" ' +
+        'loading="lazy" onload="fitSprite(this)" onerror="spriteFail(this)"></span>' +
       '<span class="evo-info"><span class="evo-id">#' + String(n.id).padStart(3, "0") + '</span><span class="evo-name">' + esc(n.name) + "</span>" +
         '<span class="evo-types">' + n.types.map((t) =>
           '<img src="' + (TYPE_ICONS[t] || "") + '" alt="' + esc(t) + ' type" title="' + esc(t) + '" width="20" height="20" loading="lazy">').join("") + "</span></span>" +
@@ -908,8 +918,8 @@ function cardHTML(p, i) {
   return '<li class="card' + (types.length < 2 ? " mono" : "") + (more ? " can-open" : "") + '" data-i="' + i + '" style="--c1:' + c1 + ";--c2:" + c2 + '">' +
     '<div class="stage">' +
       '<span class="id">#' + id + "</span>" +
-      '<div class="sprite"><img src="' + esc(spriteURL(p.name, p.sprite)) + '" ' +
-        'alt="' + esc(p.name) + ' sprite" loading="lazy" onload="fitSprite(this)" onerror="this.onerror=null;this.src=PLACEHOLDER"></div>' +
+      '<div class="sprite"><img src="' + esc(spriteURL(p.name)) + '" data-fb="' + esc(p.sprite || "") + '" ' +
+        'alt="' + esc(p.name) + ' sprite" loading="lazy" onload="fitSprite(this)" onerror="spriteFail(this)"></div>' +
       '<div class="types">' + types.map(typeBadge).join("") + "</div>" + toggle +
     "</div>" +
     '<div class="body">' +
